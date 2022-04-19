@@ -18,7 +18,9 @@ Jeroen
 #### Je startniveau:
 Mijn startniveau is: blauw, omdat het toch alweer een tijdje geleden is dat ik heb gewerkt met code.
 De laatste keer was vorig jaar bij het vak "Frontend voor Designers".
-<img src="readme-images/4.png" width="350px" alt="eerste versie/schets">
+
+
+<img src="readme-images/4.png" width="150px" alt="eerste versie/schets">
 
 
 
@@ -31,12 +33,15 @@ De laatste keer was vorig jaar bij het vak "Frontend voor Designers".
 
   ### De eerste versie/schets:
   <img src="readme-images/1.png" width="700px" alt="eerste versie/schets">
+  
   De gebruiker kan op de tijdlijn aangeven over welke Game Boy hij/zij informatie wil. De informatie zal te zien zijn op het schermpje waneer de gebruiker op de aan/uit knop heeft gedrukt. Ben wel 'bang' dat ik bij dit concept teveel JavaScript moet gebruiken.
   
   <img src="readme-images/2.png" width="700px" alt="eerste versie/schets">
+  
   Interface bestaat uit een plank van een boekenkast waar Game Boys 'tentoongesteld' worden - een soort van verzameling van iemand. Het verwerven van informatie werkt op dezelfde manier als bij concept 1.
   
   <img src="readme-images/3.png" width="700px" alt="eerste versie/schets">
+  
   Dit idee ontstond doordat ik toevallig vandaag een oude laopen deed en mijn oude controllers van verschillende PlayStation generaties zag liggen. De oudste controllers lagen achterin de la - de nieuwste (wel kapot) lagen voorin.
   Een unieke tijdlijn eigenlijk. Ik wil ook dat de gebruiker de la open en dicht kan doen (met misschien iets van een 'paasei'. Informatie over de Game Boy werkt hetzelfde als bij concept 1.
     
