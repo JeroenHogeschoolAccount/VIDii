@@ -31,23 +31,19 @@ De laatste keer was vorig jaar bij het vak "Frontend voor Designers".
 <details open>
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
-  ### De eerste versie/schets:
+  ## De eerste versie/schets:
+  
+  ### Concept 1
   <img src="readme-images/1.png" width="700px" alt="eerste versie/schets">
   
   De gebruiker kan op de tijdlijn aangeven over welke Game Boy hij/zij informatie wil. De informatie zal te zien zijn op het schermpje waneer de gebruiker op de aan/uit knop heeft gedrukt. Ben wel 'bang' dat ik bij dit concept teveel JavaScript moet gebruiken.
   
-  
-  
-  
-  
+  ### Concept 2
   <img src="readme-images/2.png" width="700px" alt="eerste versie/schets">
   
   Interface bestaat uit een plank van een boekenkast waar Game Boys 'tentoongesteld' worden - een soort van verzameling van iemand. Het verwerven van informatie werkt op dezelfde manier als bij concept 1.
   
-  
-  
-  
-  
+  ### Concept 3
   <img src="readme-images/3.png" width="700px" alt="eerste versie/schets">
   
   Dit idee ontstond doordat ik toevallig vandaag een oude laopen deed en mijn oude controllers van verschillende PlayStation generaties zag liggen. De oudste controllers lagen achterin de la - de nieuwste (wel kapot) lagen voorin.
