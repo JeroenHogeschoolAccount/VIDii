@@ -37,9 +37,15 @@ De laatste keer was vorig jaar bij het vak "Frontend voor Designers".
   De gebruiker kan op de tijdlijn aangeven over welke Game Boy hij/zij informatie wil. De informatie zal te zien zijn op het schermpje waneer de gebruiker op de aan/uit knop heeft gedrukt. Ben wel 'bang' dat ik bij dit concept teveel JavaScript moet gebruiken.
   
   
+  
+  
+  
   <img src="readme-images/2.png" width="700px" alt="eerste versie/schets">
   
   Interface bestaat uit een plank van een boekenkast waar Game Boys 'tentoongesteld' worden - een soort van verzameling van iemand. Het verwerven van informatie werkt op dezelfde manier als bij concept 1.
+  
+  
+  
   
   
   <img src="readme-images/3.png" width="700px" alt="eerste versie/schets">
