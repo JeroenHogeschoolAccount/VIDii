@@ -70,23 +70,34 @@ De laatste keer was vorig jaar bij het vak "Frontend voor Designers".
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+ Goed kijken waar de aan/uit knop zit - dit is bij elke Game Boy anders. Soms zit het aan de bovenkant, waardoor ik even goed moet kijken hoe ik dit werkend wil krijgen (animatie en interactie).
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+Ik heb hier nog geen oplossing voor. Ik zou eventueel de gebruiker op een andere knop kunnen laten klikken, maar dit is wel minder realistisch. 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Ik had nog niet nagedacht over easter eggs.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+Tijdens het feedbackgesprek kreeg ik idee over een mogelijke easter egg. Wanneer de gebruiker de la dicht doet, kan ik ervoor zorgen dat iets te zien is op de grond (onder de la). 
 
 
   ### Bevinding 3:
-  ...
+Mijn plan was om alles te maken met code - ook alle verschillende Game Boys. Ik kreeg tijdens het feedbackgesprek te horen dat het misschien beter is om niet alles met CSS te maken in verband met de korte tijd die we hebben.
+
+  #### oplossing:
+Wanneer ik merk dat ik te weinig tijd heb, kan ik ervoor kiezen om bijvoorbeeld een paar Game Boys in CSS te maken en de rest in Adobe Illustrator (het scherm en de buttons wel met CSS, zodat ik wel animaties en interacties kan toevoegen).
+
+
+  ### Bevinding 4:
+De la met de verschillende generaties Game Boys dient als tijdlijn. Als feedback kreeg ik te horen dat ik de tijdlijn kan uitbreiden door games op het scherm af te spelen. Hierdoor ziet de gebruiker ook direct het verschil in games (en niet alleen het design van de Game Boy zelf).
+
+  #### oplossing:
+Wanneer de gebruiker op een bepaalde knop drukt zal er een video afspelen met een game uit de tijd van de desbetreffende Game Boy. Info over de Game Boy zal ook 'gewoon nog' te zien zijn wanneer de gebruiker op een andere knop klikt.  
+
+
+
 
 </details>
 

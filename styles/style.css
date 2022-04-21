@@ -1,19 +1,215 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
-html, body {
-  height:100%;
-  margin:0;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #b5814e;
+    background-color: #847dc7;
+      background-color: #7b83e3;
+    /*     background-image: url(https://images.unsplash.com/photo-1588421874990-1fe162747f9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);*/
+
 }
 
 button:not([disabled]) {
-  cursor:pointer;
+    cursor: darkgrey;
 }
 
-/* jouw CSS vanaf hier */
 
-h1 {
-  color:crimson;
+
+/* Algemeen */
+:root {
+    --kleurAchtergrondBody: grey;
 }
+
+
+@media (prefers-color-scheme:dark) {
+    :root {
+        --kleurAchtergrondBody: #333333;
+    }
+}
+
+
+/* Titel & omschrijving tijdlijn  */
+
+
+/*
+h1:nth-of-type(1) {
+    font-family: helvetica, sans-serif;
+    font-family: Gloria Hallelujah, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* De la */
+
+article:nth-of-type(1) {
+    position: relative;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+    width: 70em;
+    height: 40em;
+    /*    margin: 0 auto;*/
+    left: 10em;
+    background-color: #c2c2c2;
+    background-color: #e0e0e0;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 5em;
+    box-shadow: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+article:nth-of-type(1)::after {
+    content: "";
+    position: absolute;
+    width: 75em;
+    height: 5em;
+    top: 100%;
+    left: -7.5em;
+    background-color: white;
+}
+
+article:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    width: 6em;
+    height: 2em;
+    top: 112.5%;
+    left: 27em;
+    background-color: white;
+    box-shadow: inset 0px 10px 6px 1px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/*Game Boy lijst*/
+
+
+/**************/
+/* DE GAMEBOY 1089 */
+/**************/
+article:nth-of-type(2) {
+    position: relative;
+    top: -38em;
+    left: 17em;
+    height: 16em;
+    width: 10em;
+    background-color: #C1BEB9;
+    border-radius: 1em 1em 4em 2em / 1em 1em 4em 1em;
+    box-shadow:
+        inset -.20em -.25em .25em darkgrey,
+        inset .25em .25em .25em rgb(255 255 255),
+        1em 1em 2em rgb(0 0 0 / .05);
+}
+
+.scherm {
+    position: absolute;
+    height: 6em;
+    width: 8.36em;
+    top: 1em;
+    left: 0.85em;
+    z-index: 1;
+    background-color: #5A5664;
+    border-radius: 0.1em 0em 1em 0em / 0em 0em 1em 0em;
+}
+
+div:nth-of-type(1) {
+    position: absolute;
+    height: 4.9em;
+    width: 5.36em;
+    top: 0.5em;
+    z-index: 1;
+    background-color: #4E5F17;
+    left: 1.5em;
+    box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
+}
+
+h1:nth-of-type(1) {
+    font-size: 10px;
+    top: 10.6em;
+    left: 1.3em;
+    color: #1C2162;
+    position: absolute;
+    font-family: Gloria Hallelujah, sans-serif;
+}
+
+h1:nth-of-type(1)::after{
+    content: "GAME BOY";
+    color: #1C2162;
+    font-size: 11px;
+    font-weight: 400;
+/*
+    position: absolute;
+    width: 6em;
+    height: 2em;
+    top: 112.5%;
+    left: 27em;
+    background-color: white;
+    box-shadow: inset 0px 10px 6px 1px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+*/
+}
+
+button:nth-of-type(1){
+    border-radius: 50%;
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #7F0947;
+    border-style: none;
+    left: 9.55em;
+    top: 11.5em;
+      box-shadow: 0px 0px 1px black,  0px 0.1px 2px black;
+}
+
+button:nth-of-type(1):hover{
+    cursor: pointer;
+}
+
+
+button:nth-of-type(1):active{
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+
+button:nth-of-type(2){
+    border-radius: 50%;
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #7F0947;
+    border-style: none;
+    left: 8.05em;
+    top: 13em;
+       box-shadow: 0px 0px 1px black,  0px 0.1px 2px black;
+}
+
+button:nth-of-type(2):hover{
+    cursor: pointer;
+}
+
+button:nth-of-type(2):active{
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
