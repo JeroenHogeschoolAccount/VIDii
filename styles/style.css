@@ -11,7 +11,7 @@ body {
     margin: 0;
     background-color: #b5814e;
     background-color: #847dc7;
-      background-color: #7b83e3;
+    background-color: #7b83e3;
     /*     background-image: url(https://images.unsplash.com/photo-1588421874990-1fe162747f9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);*/
 
 }
@@ -105,7 +105,7 @@ article:nth-of-type(1)::before {
 
 
 /**************/
-/* DE GAMEBOY 1089 */
+/* DE GAMEBOY 1989 */
 /**************/
 article:nth-of-type(2) {
     position: relative;
@@ -114,7 +114,7 @@ article:nth-of-type(2) {
     height: 16em;
     width: 10em;
     background-color: #C1BEB9;
-    border-radius: 1em 1em 4em 2em / 1em 1em 4em 1em;
+    border-radius: 0.5em 0.5em 2em 0.5em / 0.5em 0.5em 2em 0.5em;
     box-shadow:
         inset -.20em -.25em .25em darkgrey,
         inset .25em .25em .25em rgb(255 255 255),
@@ -152,12 +152,12 @@ h1:nth-of-type(1) {
     font-family: Gloria Hallelujah, sans-serif;
 }
 
-h1:nth-of-type(1)::after{
+h1:nth-of-type(1)::after {
     content: "GAME BOY";
     color: #1C2162;
     font-size: 11px;
     font-weight: 400;
-/*
+    /*
     position: absolute;
     width: 6em;
     height: 2em;
@@ -169,7 +169,7 @@ h1:nth-of-type(1)::after{
 */
 }
 
-button:nth-of-type(1){
+button:nth-of-type(1) {
     border-radius: 50%;
     position: absolute;
     width: 1.5em;
@@ -178,38 +178,218 @@ button:nth-of-type(1){
     border-style: none;
     left: 9.55em;
     top: 11.5em;
-      box-shadow: 0px 0px 1px black,  0px 0.1px 2px black;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-button:nth-of-type(1):hover{
+button:nth-of-type(1)::after {
+    content: "A";
+    color: #1C2162;
+    font-size: 7px;
+    font-weight: bold;
+    position: absolute;
+    transform: rotate(-30deg);
+    top: 2.8em;
+    left: 2.2em;
+}
+
+button:nth-of-type(1):hover {
     cursor: pointer;
 }
 
 
-button:nth-of-type(1):active{
+button:nth-of-type(1):active {
     box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
 
 
-button:nth-of-type(2){
+button:nth-of-type(2) {
     border-radius: 50%;
     position: absolute;
     width: 1.5em;
     height: 1.5em;
     background-color: #7F0947;
     border-style: none;
-    left: 8.05em;
-    top: 13em;
-       box-shadow: 0px 0px 1px black,  0px 0.1px 2px black;
+    left: 7.8em;
+    top: 12.4em;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-button:nth-of-type(2):hover{
+button:nth-of-type(2)::after {
+    content: "B";
+    color: #1C2162;
+    font-size: 7px;
+    font-weight: bold;
+    position: absolute;
+    transform: rotate(-30deg);
+    top: 2.8em;
+    left: 2.2em;
+}
+
+button:nth-of-type(2):hover {
     cursor: pointer;
 }
 
-button:nth-of-type(2):active{
+button:nth-of-type(2):active {
     box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
 
+button:nth-of-type(3) {
+    border-radius: 40%;
+    position: absolute;
+    width: 1.5em;
+    height: 0.4em;
+    background-color: #6C6C74;
+    border-style: none;
+    left: 4em;
+    top: 15.5em;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    transform: rotate(-30deg);
+}
+
+button:nth-of-type(3)::after {
+    content: "SELECT";
+    color: #1C2162;
+    font-size: 5px;
+    font-weight: bold;
+    position: relative;
+    left: -1em;
+}
+
+button:nth-of-type(3):hover {
+    cursor: pointer;
+}
+
+button:nth-of-type(3):active {
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+button:nth-of-type(4) {
+    border-radius: 40%;
+    position: absolute;
+    width: 1.5em;
+    height: 0.4em;
+    background-color: #6C6C74;
+    border-style: none;
+    left: 6em;
+    top: 15.5em;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    transform: rotate(-30deg);
+}
+
+button:nth-of-type(4)::after {
+    content: "START";
+    color: #1C2162;
+    font-size: 5px;
+    font-weight: bold;
+    position: relative;
+    left: -0.6em;
+}
+
+button:nth-of-type(4):hover {
+    cursor: pointer;
+}
+
+button:nth-of-type(4):active {
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+#dpad {
+    background: #121421;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    height: 0.8em;
+    left: 1.1em;
+    position: absolute;
+    top: 10em;
+    width: 2.2em;
+    border: none;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+#dpad div {
+    background: #121421;
+    border-radius: 0.2em;
+    height: 2.2em;
+    left: 0.7em;
+    position: absolute;
+    top: -0.7em;
+    width: 0.8em;
+    border: none;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+
+
+
+section:nth-of-type(3) {
+    position: absolute;
+    transform: rotate(-35deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    margin-top: 6.1em;;
+    left: 5.8em;
+    top: 8.4em;
+}
+
+#streep1GameBoy {
+    display: none;
+}
+
+#streep2GameBoy{
+    background: radial-gradient(#b3b3b3,
+            #757573);
+    height: 1.6em;
+    width: 0.25em;
+    margin-left: 0.6em;
+    position: absolute;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+#streep3GameBoy {
+    background: radial-gradient(#b3b3b3,
+            #757573);
+    height: 1.6em;
+    width: 0.25em;
+    margin-left: 1.24em;
+    position: absolute;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+#streep4GameBoy {
+    background: radial-gradient(#b3b3b3,
+            #757573);
+    height: 1.6em;
+    width: 0.25em;
+    margin-left: 1.86em;
+    position: absolute;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+#streep5GameBoy {
+    background: radial-gradient(#b3b3b3,
+            #757573);
+    height: 1.6em;
+    width: 0.25em;
+    margin-left: 2.5em;
+    position: absolute;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+#streep6GameBoy {
+    background: radial-gradient(#b3b3b3,
+            #757573);
+    height: 1.6em;
+    width: 0.25em;
+    margin-left: 3.14em;
+    position: absolute;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
