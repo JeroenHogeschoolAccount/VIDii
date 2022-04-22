@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+
+
+/* ALGEMENE STYLING */
+
 html,
 body {
     height: 100%;
@@ -20,35 +24,15 @@ button:not([disabled]) {
     cursor: darkgrey;
 }
 
-
-
-/* Algemeen */
 :root {
     --kleurAchtergrondBody: #7b83e3;
 }
-
 
 @media (prefers-color-scheme:dark) {
     :root {
         --kleurAchtergrondBody: #454c96;
     }
 }
-
-
-/* Titel & omschrijving tijdlijn  */
-
-
-/*
-h1:nth-of-type(1) {
-    font-family: helvetica, sans-serif;
-    font-family: Gloria Hallelujah, sans-serif;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
-
 
 p {
     display: flex;
@@ -57,18 +41,13 @@ p {
 }
 
 
-/* De la */
+
+/* DE VERGETEN LA */
 
 article:nth-of-type(1) {
     position: relative;
-    /*
-    display: flex;
-    justify-content: center;
-    align-items: center;
-*/
     width: 70em;
     height: 40em;
-    /*    margin: 0 auto;*/
     left: 10em;
     background-color: #c2c2c2;
     background-color: #e0e0e0;
@@ -77,7 +56,6 @@ article:nth-of-type(1) {
     border-width: 0 5em;
     box-shadow: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
 }
-
 
 article:nth-of-type(1)::after {
     content: "";
@@ -102,14 +80,15 @@ article:nth-of-type(1)::before {
 }
 
 
-/* DE GAMEBOY 1989 */
+
+/* GAME BOY 1989 */
 
 article:nth-of-type(2) {
     position: relative;
-    top: -38em;
-    left: 17em;
     height: 16em;
     width: 10em;
+    top: -38em;
+    left: 17em;
     background-color: #C1BEB9;
     border-radius: 0.5em 0.5em 2em 0.5em / 0.5em 0.5em 2em 0.5em;
     box-shadow:
@@ -120,8 +99,8 @@ article:nth-of-type(2) {
 
 article:nth-of-type(2) section:nth-of-type(1) {
     position: absolute;
-    height: 6em;
     width: 8.36em;
+    height: 6em;
     top: 1em;
     left: 0.85em;
     z-index: 1;
@@ -131,52 +110,52 @@ article:nth-of-type(2) section:nth-of-type(1) {
 
 article:nth-of-type(2) div:nth-of-type(1) {
     position: absolute;
-    height: 4.9em;
     width: 5.36em;
+    height: 4.9em;
     top: 0.5em;
-    z-index: 1;
-    background-color: #4E5F17;
     left: 1.5em;
+    background-color: #4E5F17;
+    z-index: 1;
     box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
 }
 
 article:nth-of-type(2) h1:nth-of-type(1) {
+    position: absolute;
+    font-family: Gloria Hallelujah, sans-serif;
     font-size: 10px;
     top: 10.6em;
     left: 1.3em;
     color: #1C2162;
-    position: absolute;
-    font-family: Gloria Hallelujah, sans-serif;
 }
 
 article:nth-of-type(2) h1:nth-of-type(1)::after {
     content: "GAME BOY";
-    color: #1C2162;
     font-size: 11px;
     font-weight: 400;
+    color: #1C2162;
 }
 
 article:nth-of-type(2) button:nth-of-type(1) {
-    border-radius: 50%;
     position: absolute;
     width: 1.5em;
     height: 1.5em;
-    background-color: #7F0947;
-    border-style: none;
     left: 9.55em;
     top: 11.5em;
+    border-radius: 50%;
+    background-color: #7F0947;
+    border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(2) button:nth-of-type(1)::after {
     content: "A";
-    color: #1C2162;
-    font-size: 7px;
-    font-weight: bold;
     position: absolute;
-    transform: rotate(-30deg);
     top: 2.8em;
     left: 2.2em;
+    font-size: 7px;
+    font-weight: bold;
+    color: #1C2162;
+    transform: rotate(-30deg);
 }
 
 article:nth-of-type(2) button:nth-of-type(1):hover {
@@ -185,31 +164,31 @@ article:nth-of-type(2) button:nth-of-type(1):hover {
 
 
 article:nth-of-type(2) button:nth-of-type(1):active {
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 article:nth-of-type(2) button:nth-of-type(2) {
-    border-radius: 50%;
     position: absolute;
     width: 1.5em;
     height: 1.5em;
-    background-color: #7F0947;
-    border-style: none;
     left: 7.8em;
     top: 12.4em;
+    border-radius: 50%;
+    background-color: #7F0947;
+    border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(2) button:nth-of-type(2)::after {
     content: "B";
+    position: absolute;
+    top: 2.8em;
+    left: 2.2em;
     color: #1C2162;
     font-size: 7px;
     font-weight: bold;
-    position: absolute;
     transform: rotate(-30deg);
-    top: 2.8em;
-    left: 2.2em;
 }
 
 article:nth-of-type(2) button:nth-of-type(2):hover {
@@ -217,30 +196,30 @@ article:nth-of-type(2) button:nth-of-type(2):hover {
 }
 
 article:nth-of-type(2) button:nth-of-type(2):active {
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 article:nth-of-type(2) button:nth-of-type(3) {
-    border-radius: 40%;
     position: absolute;
     width: 1.5em;
     height: 0.4em;
-    background-color: #6C6C74;
-    border-style: none;
     left: 4em;
     top: 15.5em;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    background-color: #6C6C74;
+    border-radius: 40%;
+    border-style: none;
     transform: rotate(-30deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(2) button:nth-of-type(3)::after {
     content: "SELECT";
+    position: relative;
+    left: -1em;
     color: #1C2162;
     font-size: 5px;
     font-weight: bold;
-    position: relative;
-    left: -1em;
 }
 
 article:nth-of-type(2) button:nth-of-type(3):hover {
@@ -248,30 +227,30 @@ article:nth-of-type(2) button:nth-of-type(3):hover {
 }
 
 article:nth-of-type(2) button:nth-of-type(3):active {
-    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 article:nth-of-type(2) button:nth-of-type(4) {
-    border-radius: 40%;
     position: absolute;
     width: 1.5em;
     height: 0.4em;
-    background-color: #6C6C74;
-    border-style: none;
     left: 6em;
     top: 15.5em;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    border-radius: 40%;
+    background-color: #6C6C74;
+    border-style: none;
     transform: rotate(-30deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(2) button:nth-of-type(4)::after {
     content: "START";
+    position: relative;
+    left: -0.6em;
     color: #1C2162;
     font-size: 5px;
     font-weight: bold;
-    position: relative;
-    left: -0.6em;
 }
 
 article:nth-of-type(2) button:nth-of-type(4):hover {
@@ -279,47 +258,43 @@ article:nth-of-type(2) button:nth-of-type(4):hover {
 }
 
 article:nth-of-type(2) button:nth-of-type(4):active {
-    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 #dpad {
+    position: absolute;
+    width: 2.2em;
+    height: 0.8em;
+    left: 1.1em;
+    top: 10em;
     background: #121421;
     border-radius: 0.15em;
     box-sizing: border-box;
-    height: 0.8em;
-    left: 1.1em;
-    position: absolute;
-    top: 10em;
-    width: 2.2em;
     border: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 #dpad div {
-    background: #121421;
-    border-radius: 0.15em;
+    position: absolute;
+    width: 0.8em;
     height: 2.2em;
     left: 0.7em;
-    position: absolute;
     top: -0.7em;
-    width: 0.8em;
+    background: #121421;
+    border-radius: 0.15em;
     border: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-
-
-
 article:nth-of-type(2) section:nth-of-type(3) {
     position: absolute;
+    left: 5.8em;
+    top: 8.4em;
+    margin-top: 6.1em;
     transform: rotate(-35deg);
     -ms-transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
-    margin-top: 6.1em;
-    ;
-    left: 5.8em;
-    top: 8.4em;
 }
 
 article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(1) {
@@ -327,113 +302,106 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(1) {
 }
 
 article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(2) {
-    background: radial-gradient(#b3b3b3,
-            #757573);
-    height: 1.6em;
-    width: 0.25em;
-    margin-left: 0.6em;
     position: absolute;
+    width: 0.25em;
+    height: 1.6em;
+    margin-left: 0.6em;
+    background: radial-gradient(#b3b3b3, #757573);
     border-radius: 1em;
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(3) {
-    background: radial-gradient(#b3b3b3,
-            #757573);
-    height: 1.6em;
-    width: 0.25em;
-    margin-left: 1.24em;
     position: absolute;
+    width: 0.25em;
+    height: 1.6em;
+    margin-left: 1.24em;
     border-radius: 1em;
+    background: radial-gradient(#b3b3b3,#757573);
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(4) {
-    background: radial-gradient(#b3b3b3,
-            #757573);
-    height: 1.6em;
-    width: 0.25em;
-    margin-left: 1.86em;
     position: absolute;
+    width: 0.25em;
+    height: 1.6em;
+    margin-left: 1.86em;
     border-radius: 1em;
+    background: radial-gradient(#b3b3b3,#757573);
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(5) {
-    background: radial-gradient(#b3b3b3,
-            #757573);
-    height: 1.6em;
-    width: 0.25em;
-    margin-left: 2.5em;
     position: absolute;
+    width: 0.25em;
+    height: 1.6em;
+    margin-left: 2.5em;
     border-radius: 1em;
+    background: radial-gradient(#b3b3b3,#757573);
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(6) {
-    background: radial-gradient(#b3b3b3,
-            #757573);
-    height: 1.6em;
-    width: 0.25em;
-    margin-left: 3.14em;
     position: absolute;
+    width: 0.25em;
+    height: 1.6em;
+    margin-left: 3.14em;
     border-radius: 1em;
+    background: radial-gradient(#b3b3b3, #757573);
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 
 
-
-
-/* Game Boy Pocket*/
+/* GAME BOY POCKET */
 
 article:nth-of-type(3) {
     position: relative;
+    width: 10em;
+    height: 16em;
     top: -54em;
     left: 30em;
-    height: 16em;
-    width: 10em;
     background-color: #F4D405;
     border-radius: 0.5em 0.5em 2em 0.5em / 0.5em 0.5em 2em 0.5em;
+    transform: rotate(-2deg);
     box-shadow:
         inset -.20em -.25em .25em #a89200,
         inset .25em .25em .25em rgb(222, 193, 0),
         1em 1em 2em rgb(0 0 0 / .05);
-    transform: rotate(-2deg);
 }
 
 article:nth-of-type(3) section:nth-of-type(1) {
     position: absolute;
-    height: 7.3em;
     width: 8.45em;
+    height: 7.3em;
     top: 1em;
     left: 0.77em;
-    z-index: 1;
     background-color: black;
+    z-index: 1;
     border-radius: 0.1em 0em 1em 0em / 0em 0em 1em 0em;
 }
 
 article:nth-of-type(3) div:nth-of-type(1) {
     position: absolute;
-    height: 5.7em;
     width: 6em;
+    height: 5.7em;
     top: 0.64em;
-    z-index: 1;
+    left: 1.26em;
     background-color: #556258;
     border-radius: 0.3em;
-    left: 1.26em;
+    z-index: 1;
     box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
 }
 
 article:nth-of-type(3) h1 {
-    font-size: 7px;
+    position: absolute;
     top: 16.5em;
     left: 4.7em;
+    font-family: Gloria Hallelujah, sans-serif;
+    font-size: 7px;
+    font-weight: 100;
     color: grey;
     z-index: 1;
-    font-weight: 100;
-    position: absolute;
-    font-family: Gloria Hallelujah, sans-serif;
 }
 
 article:nth-of-type(3) h1::after {
@@ -445,42 +413,40 @@ article:nth-of-type(3) h1::after {
 
 article:nth-of-type(3) h1::before {
     content: "NINTENDO";
-    width: 8em;
-    color: #c9af00;
-    font-weight: bold;
-    text-align: center;
-    border: 0.3em solid #c9af00;
-    border-radius: 11px;
-    margin-top: 30px;
     position: absolute;
+    width: 8em;
     left: 5.5em;
     top: -2em;
+    color: #c9af00;
     font-size: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    border: 0.3em solid #c9af00;
+    border-radius: 11px;
 }
 
-
-
 article:nth-of-type(3) button:nth-of-type(1) {
-    border-radius: 50%;
     position: absolute;
     width: 1.5em;
     height: 1.5em;
-    background-color: black;
-    border-style: none;
     left: 9.55em;
     top: 11.5em;
+    background-color: black;
+    border-radius: 50%;
+    border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(3) button:nth-of-type(1)::after {
     content: "A";
+    position: absolute;
+    top: 2.8em;
+    left: 2.2em;
     color: black;
     font-size: 7px;
     font-weight: bold;
-    position: absolute;
     transform: rotate(-30deg);
-    top: 2.8em;
-    left: 2.2em;
 }
 
 article:nth-of-type(3) button:nth-of-type(1):hover {
@@ -489,32 +455,32 @@ article:nth-of-type(3) button:nth-of-type(1):hover {
 
 
 article:nth-of-type(3) button:nth-of-type(1):active {
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 
 article:nth-of-type(3) button:nth-of-type(2) {
-    border-radius: 50%;
     position: absolute;
     width: 1.5em;
     height: 1.5em;
-    background-color: black;
-    border-style: none;
     left: 7.8em;
     top: 12.4em;
+    background-color: black;
+    border-radius: 50%;
+    border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(3) button:nth-of-type(2)::after {
     content: "B";
+    position: absolute;
+    top: 2.8em;
+    left: 2.2em;
     color: black;
     font-size: 7px;
     font-weight: bold;
-    position: absolute;
     transform: rotate(-30deg);
-    top: 2.8em;
-    left: 2.2em;
 }
 
 article:nth-of-type(3) button:nth-of-type(2):hover {
@@ -522,30 +488,30 @@ article:nth-of-type(3) button:nth-of-type(2):hover {
 }
 
 article:nth-of-type(3) button:nth-of-type(2):active {
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 article:nth-of-type(3) button:nth-of-type(3) {
-    border-radius: 25%;
     position: absolute;
     width: 1.5em;
     height: 0.4em;
-    background-color: black;
-    border-style: none;
     left: 4.4em;
     top: 15.5em;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    background-color: black;
+    border-radius: 25%;
+    border-style: none;
     transform: rotate(0deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(3) button:nth-of-type(3)::after {
     content: "SELECT";
+    position: relative;
+    left: -1em;
     color: black;
     font-size: 5px;
     font-weight: bold;
-    position: relative;
-    left: -1em;
 }
 
 article:nth-of-type(3) button:nth-of-type(3):hover {
@@ -553,30 +519,30 @@ article:nth-of-type(3) button:nth-of-type(3):hover {
 }
 
 article:nth-of-type(3) button:nth-of-type(3):active {
-    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 article:nth-of-type(3) button:nth-of-type(4) {
-    border-radius: 25%;
     position: absolute;
     width: 1.5em;
     height: 0.4em;
-    background-color: black;
-    border-style: none;
     left: 6.4em;
     top: 15.5em;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    background-color: black;
+    border-radius: 25%;
+    border-style: none;
     transform: rotate(0deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(3) button:nth-of-type(4)::after {
     content: "START";
+    position: relative;
+    left: -0.6em;
     color: #1C2162;
     font-size: 5px;
     font-weight: bold;
-    position: relative;
-    left: -0.6em;
 }
 
 article:nth-of-type(3) button:nth-of-type(4):hover {
@@ -584,33 +550,32 @@ article:nth-of-type(3) button:nth-of-type(4):hover {
 }
 
 article:nth-of-type(3) button:nth-of-type(4):active {
-    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 #dpad {
-    background: #121421;
-    border-radius: 0.2em;
-    box-sizing: border-box;
+    position: absolute;
+    width: 2.2em;
     height: 0.8em;
     left: 1.1em;
-    position: absolute;
     top: 10em;
-    width: 2.2em;
+    background: #121421;
     border: none;
+    border-radius: 0.2em;
+    box-sizing: border-box;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 
 article:nth-of-type(3) section:nth-of-type(3) {
     position: absolute;
+    left: 5.8em;
+    top: 8.4em;
+    margin-top: 6.1em;
     transform: rotate(-35deg);
     -ms-transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
-    margin-top: 6.1em;
-    ;
-    left: 5.8em;
-    top: 8.4em;
 }
 
 article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(1) {
@@ -618,152 +583,141 @@ article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(1) {
 }
 
 article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(2) {
-    background: radial-gradient(#b3b3b3,
-            #757573);
-    height: 0.3em;
-    width: 0.3em;
-    top: 0.2em;
-    margin-left: 0.6em;
     position: absolute;
-    border-radius: 1em;
+    width: 0.3em;
+    height: 0.3em;
     left: 0.4em;
     top: 0.9em;
+    background: radial-gradient(#b3b3b3, #757573);
+    margin-left: 0.6em;
+    border-radius: 1em;
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.);
 }
 
 article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(3) {
-    background: black;
-    height: 0.3em;
-    width: 0.3em;
-    margin-left: 1.24em;
     position: absolute;
-    border-radius: 1em;
-    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    width: 0.3em;
+    height: 0.3em;
     left: 0.2em;
     top: 0.7em;
+    background: black;
+    margin-left: 1.24em;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(3)::after {
     content: "";
-    background: black;
-    height: 0.3em;
-    width: 0.3em;
     position: absolute;
-    border-radius: 1em;
-    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    width: 0.3em;
+    height: 0.3em;
     top: 0.5em;
     left: 0em;
+    background: black;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-
 article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4) {
-    background: radial-gradient(#b3b3b3,
-            #757573);
-    height: 0.3em;
-    width: 0.3em;
-    top: 0.5em;
-    margin-left: 1.86em;
     position: absolute;
+    width: 0.3em;
+    height: 0.3em;
+    top: 0.5em;
+    background: radial-gradient(#b3b3b3, #757573);
+    margin-left: 1.86em;
     border-radius: 1em;
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4)::after {
-    content: "";
-    background: radial-gradient(#b3b3b3,
-            #757573);
-    height: 0.3em;
-    width: 0.3em;
     position: absolute;
-    border-radius: 1em;
-    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    content: "";
+    width: 0.3em;
+    height: 0.3em;
     top: 0.5em;
     left: 0em;
+    background: radial-gradient(#b3b3b3, #757573);
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4)::before {
     content: "";
-    background: radial-gradient(#b3b3b3,
-            #757573);
-    height: 0.3em;
-    width: 0.3em;
     position: absolute;
-    border-radius: 1em;
-    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    width: 0.3em;
+    height: 0.3em;
     top: 1em;
     left: 0em;
+    background: radial-gradient(#b3b3b3, #757573);
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(5) {
-    background: black;
-    height: 0.3em;
+    position: absolute;
     width: 0.3em;
+    height: 0.3em;
     top: 0.8em;
     left: -0.2em;
+    background: black;
     margin-left: 2.5em;
-    position: absolute;
     border-radius: 1em;
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(5)::after {
     content: "";
-    background: black;
-    height: 0.3em;
-    width: 0.3em;
     position: absolute;
-    border-radius: 1em;
-    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    width: 0.3em;
+    height: 0.3em;
     top: 0.5em;
     left: 0em;
+    background: black;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(6) {
-    background: radial-gradient(#b3b3b3,
-            #757573);
-    height: 0.3em;
-    width: 0.3em;
-    margin-left: 3.14em;
     position: absolute;
-    border-radius: 1em;
+    background: radial-gradient(#b3b3b3, #757573);
+    width: 0.3em;
+    height: 0.3em;
     top: 1.1em;
     left: -0.4em;
+    margin-left: 3.14em;
+    border-radius: 1em;
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 
 
-
-
-/* Game Boy Color*/
+/* GAME BOY COLOR*/
 
 article:nth-of-type(4) {
     position: relative;
+    width: 10em;
+    height: 17em;
     top: -70em;
     left: 44em;
-    height: 17em;
-    width: 10em;
     background-color: #EA2642;
-    border-radius: 0.5em 0.5em 2em 0.5em / 0.5em 0.5em 2em 0.5em;
-    box-shadow:
-        inset -.20em -.25em .25em #b0152c,
-        inset .25em .25em .25em #b0152c,
-        1em 1em 2em rgb(0 0 0 / .05);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 50% 20px;
     border-bottom-right-radius: 50% 20px;
+    box-shadow:
+        inset -.20em -.25em .25em #b0152c,
+        inset .25em .25em .25em #b0152c,
+        1em 1em 2em rgb(0 0 0 / .05);
 }
 
 article:nth-of-type(4) section:nth-of-type(1) {
     position: absolute;
-    height: 7.3em;
     width: 8.45em;
+    height: 7.3em;
     top: 1em;
     left: 0.77em;
-    z-index: 1;
     background-color: black;
-    border-radius: 0.1em 0em 1em 0em / 0em 0em 1em 0em;
+    z-index: 1;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 50% 10px;
@@ -772,157 +726,153 @@ article:nth-of-type(4) section:nth-of-type(1) {
 
 article:nth-of-type(4) div:nth-of-type(1) {
     position: absolute;
-    height: 4.8em;
     width: 5.3em;
+    height: 4.8em;
     top: 0.8em;
-    z-index: 1;
-    background-color: #A6B5B2;
     left: 1.57em;
+    background-color: #A6B5B2;
+    z-index: 1;
     box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
 }
 
 article:nth-of-type(4) h1 {
-    font-size: 8px;
+    position: absolute;
     top: 13.4em;
     left: 4.7em;
-    color: #98B8C5;
-    z-index: 1;
+    font-size: 8px;
     font-weight: bold;
     font-style: italic;
-    position: absolute;
     font-family: Gloria Hallelujah, sans-serif;
+    color: #98B8C5;
+    z-index: 1;
 }
 
 article:nth-of-type(4) span:nth-of-type(1) {
+    position: relative;
+    left: 6.6em;
+    top: 8.4em;
+     font-family: 'Kalam', cursive;
+    font-size: 0.8em;
     font-style: italic;
     font-weight: bold;
-    font-family: 'Kalam', cursive;
     color: #BB4B7E;
-    top: 8.4em;
-    left: 6.6em;
-    position: relative;
     z-index: 1;
-    font-size: 0.8em;
 }
 
 article:nth-of-type(4) span:nth-of-type(2) {
+    position: relative;
+    top: 8.4em;
+    left: 6.2em;
     font-style: italic;
+    font-size: 0.8em;
     font-weight: bold;
     font-family: 'Kalam', cursive;
     color: #6E77B8;
-    top: 8.4em;
-    left: 6.2em;
     z-index: 1;
-    position: relative;
-    font-size: 0.8em;
 }
 
 article:nth-of-type(4) span:nth-of-type(3) {
-    font-style: italic;
-    font-weight: bold;
-    font-family: 'Kalam', cursive;
-    color: #96D096;
+    position: relative;
     top: 8.4em;
     left: 5.9em;
-    position: relative;
-    z-index: 1;
+    font-family: 'Kalam', cursive;
     font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+    color: #96D096;
+    z-index: 1;
 }
 
 article:nth-of-type(4) span:nth-of-type(4) {
-    font-style: italic;
-    font-weight: bold;
-    font-family: 'Kalam', cursive;
-    color: yellow;
+    position: relative;
     top: 8.4em;
     left: 5.5em;
-    position: relative;
-    z-index: 1;
+    font-family: 'Kalam', cursive;
     font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+    color: yellow;
+    z-index: 1;
 }
 
 article:nth-of-type(4) span:nth-of-type(5) {
-    font-style: italic;
-    font-weight: bold;
-    font-family: 'Kalam', cursive;
-    color: #0DA9C7;
+    position: relative;
     top: 8.4em;
     left: 5.1em;
-    position: relative;
-    z-index: 1;
+    font-family: 'Kalam', cursive;
     font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+    color: #0DA9C7;
+    z-index: 1;
 }
 
 article:nth-of-type(4) h1::before {
     content: "NINTENDO";
-    width: 8em;
-    color: #800819;
-    font-weight: bold;
-    text-align: center;
-    border: 0.3em solid #800819;
-    border-radius: 11px;
-    margin-top: 30px;
     position: absolute;
+     width: 8em;
     left: 4.3em;
     top: -1em;
+    color: #800819;
+    font-weight: bold;
     font-size: 5px;
+    text-align: center;
+    margin-top: 30px;
+    border: 0.3em solid #800819;
+    border-radius: 11px;
 }
 
-
-
 article:nth-of-type(4) button:nth-of-type(1) {
-    border-radius: 50%;
     position: absolute;
     width: 1.5em;
     height: 1.5em;
-    background-color: black;
-    border-style: none;
     left: 9.55em;
     top: 11.5em;
+    background-color: black;
+    border-radius: 50%;
+    border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(4) button:nth-of-type(1)::after {
     content: "A";
-    color: dimgrey;
-    font-size: 7px;
-    font-weight: bold;
     position: absolute;
     top: 0.95em;
     left: 1.15em;
+    color: dimgrey;
+    font-size: 7px;
+    font-weight: bold;
 }
 
 article:nth-of-type(4) button:nth-of-type(1):hover {
     cursor: pointer;
 }
 
-
 article:nth-of-type(4) button:nth-of-type(1):active {
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
-
 article:nth-of-type(4) button:nth-of-type(2) {
-    border-radius: 50%;
     position: absolute;
     width: 1.5em;
     height: 1.5em;
-    background-color: black;
-    border-style: none;
     left: 7.8em;
     top: 12.4em;
+    border-radius: 50%;
+    background-color: black;
+    border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(4) button:nth-of-type(2)::after {
     content: "B";
-    color: dimgrey;
-    font-size: 7px;
-    font-weight: bold;
     position: absolute;
     left: 1.1em;
     top: 0.95em;
+    color: dimgrey;
+    font-size: 7px;
+    font-weight: bold;
 }
 
 article:nth-of-type(4) button:nth-of-type(2):hover {
@@ -930,30 +880,30 @@ article:nth-of-type(4) button:nth-of-type(2):hover {
 }
 
 article:nth-of-type(4) button:nth-of-type(2):active {
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 article:nth-of-type(4) button:nth-of-type(3) {
-    border-radius: 25%;
     position: absolute;
     width: 1.5em;
     height: 0.4em;
-    background-color: black;
-    border-style: none;
     left: 4.3em;
     top: 15.5em;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    border-radius: 25%;
+    background-color: black;
+    border-style: none;
     transform: rotate(0deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(4) button:nth-of-type(3)::after {
     content: "SELECT";
+    position: relative;
+    left: -1em;
     color: #800819;
     font-size: 5px;
     font-weight: bold;
-    position: relative;
-    left: -1em;
 }
 
 article:nth-of-type(4) button:nth-of-type(3):hover {
@@ -961,30 +911,30 @@ article:nth-of-type(4) button:nth-of-type(3):hover {
 }
 
 article:nth-of-type(4) button:nth-of-type(3):active {
-    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 article:nth-of-type(4) button:nth-of-type(4) {
-    border-radius: 25%;
     position: absolute;
     width: 1.5em;
     height: 0.4em;
-    background-color: black;
-    border-style: none;
     left: 6.3em;
     top: 15.5em;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    background-color: black;
+    border-radius: 25%;
+    border-style: none;
     transform: rotate(0deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(4) button:nth-of-type(4)::after {
     content: "START";
+    position: relative;
+    left: -0.6em;
     color: #800819;
     font-size: 5px;
     font-weight: bold;
-    position: relative;
-    left: -0.6em;
 }
 
 article:nth-of-type(4) button:nth-of-type(4):hover {
@@ -992,35 +942,29 @@ article:nth-of-type(4) button:nth-of-type(4):hover {
 }
 
 article:nth-of-type(4) button:nth-of-type(4):active {
-    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 #dpad {
-    background: #121421;
-    border-radius: 0.2em;
-    box-sizing: border-box;
+    position: absolute;
+    width: 2.2em;
     height: 0.8em;
     left: 1.1em;
-    position: absolute;
     top: 10em;
-    width: 2.2em;
+    background: #121421;
     border: none;
+    border-radius: 0.2em;
+    box-sizing: border-box;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-
 article:nth-of-type(4) section:nth-of-type(3) {
     position: absolute;
+    left: 5.8em;
+    top: 8.4em;
+    margin-top: 6.1em;
     transform: rotate(-35deg);
     -ms-transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
-    margin-top: 6.1em;
-    ;
-    left: 5.8em;
-    top: 8.4em;
-}
-
-article:nth-of-type(4) section:nth-of-type(3) div:nth-of-type(1) {
-    display: none;
 }
