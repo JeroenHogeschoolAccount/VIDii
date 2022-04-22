@@ -11,7 +11,7 @@ body {
     margin: 0;
     background-color: #b5814e;
     background-color: #847dc7;
-    background-color: #7b83e3;
+    background-color: var(--kleurAchtergrondBody);
     /*     background-image: url(https://images.unsplash.com/photo-1588421874990-1fe162747f9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);*/
 
 }
@@ -24,13 +24,13 @@ button:not([disabled]) {
 
 /* Algemeen */
 :root {
-    --kleurAchtergrondBody: grey;
+    --kleurAchtergrondBody: #7b83e3;
 }
 
 
 @media (prefers-color-scheme:dark) {
     :root {
-        --kleurAchtergrondBody: #333333;
+        --kleurAchtergrondBody: #454c96;
     }
 }
 
@@ -101,12 +101,9 @@ article:nth-of-type(1)::before {
     z-index: 10;
 }
 
-/*Game Boy lijst*/
 
-
-/**************/
 /* DE GAMEBOY 1989 */
-/**************/
+
 article:nth-of-type(2) {
     position: relative;
     top: -38em;
@@ -121,7 +118,7 @@ article:nth-of-type(2) {
         1em 1em 2em rgb(0 0 0 / .05);
 }
 
-article:nth-of-type(2) section:nth-of-type(1){
+article:nth-of-type(2) section:nth-of-type(1) {
     position: absolute;
     height: 6em;
     width: 8.36em;
@@ -132,7 +129,7 @@ article:nth-of-type(2) section:nth-of-type(1){
     border-radius: 0.1em 0em 1em 0em / 0em 0em 1em 0em;
 }
 
-article:nth-last-of-type(2)  div:nth-of-type(1) {
+article:nth-of-type(2) div:nth-of-type(1) {
     position: absolute;
     height: 4.9em;
     width: 5.36em;
@@ -152,7 +149,7 @@ article:nth-of-type(2) h1:nth-of-type(1) {
     font-family: Gloria Hallelujah, sans-serif;
 }
 
-article:nth-last-of-type(2) h1:nth-of-type(1)::after {
+article:nth-of-type(2) h1:nth-of-type(1)::after {
     content: "GAME BOY";
     color: #1C2162;
     font-size: 11px;
@@ -170,6 +167,7 @@ article:nth-of-type(2) button:nth-of-type(1) {
     top: 11.5em;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
+
 article:nth-of-type(2) button:nth-of-type(1)::after {
     content: "A";
     color: #1C2162;
@@ -181,12 +179,12 @@ article:nth-of-type(2) button:nth-of-type(1)::after {
     left: 2.2em;
 }
 
-article:nth-of-type(2)  button:nth-of-type(1):hover {
+article:nth-of-type(2) button:nth-of-type(1):hover {
     cursor: pointer;
 }
 
 
-article:nth-of-type(2)  button:nth-of-type(1):active {
+article:nth-of-type(2) button:nth-of-type(1):active {
     box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
@@ -202,6 +200,7 @@ article:nth-of-type(2) button:nth-of-type(2) {
     top: 12.4em;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
+
 article:nth-of-type(2) button:nth-of-type(2)::after {
     content: "B";
     color: #1C2162;
@@ -317,16 +316,17 @@ article:nth-of-type(2) section:nth-of-type(3) {
     transform: rotate(-35deg);
     -ms-transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
-    margin-top: 6.1em;;
+    margin-top: 6.1em;
+    ;
     left: 5.8em;
     top: 8.4em;
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(1){
+article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(1) {
     display: none;
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(2){
+article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(2) {
     background: radial-gradient(#b3b3b3,
             #757573);
     height: 1.6em;
@@ -337,7 +337,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(2){
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(3){
+article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(3) {
     background: radial-gradient(#b3b3b3,
             #757573);
     height: 1.6em;
@@ -348,7 +348,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(3){
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(4){
+article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(4) {
     background: radial-gradient(#b3b3b3,
             #757573);
     height: 1.6em;
@@ -359,7 +359,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(4){
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(5){
+article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(5) {
     background: radial-gradient(#b3b3b3,
             #757573);
     height: 1.6em;
@@ -370,7 +370,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(5){
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(6){
+article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(6) {
     background: radial-gradient(#b3b3b3,
             #757573);
     height: 1.6em;
@@ -399,6 +399,7 @@ article:nth-of-type(3) {
         inset -.20em -.25em .25em #a89200,
         inset .25em .25em .25em rgb(222, 193, 0),
         1em 1em 2em rgb(0 0 0 / .05);
+    transform: rotate(-2deg);
 }
 
 article:nth-of-type(3) section:nth-of-type(1) {
@@ -444,13 +445,13 @@ article:nth-of-type(3) h1::after {
 
 article:nth-of-type(3) h1::before {
     content: "NINTENDO";
-    width:8em;
-    color:#c9af00;
-    font-weight:bold;
-    text-align:center;
-    border:0.3em solid #c9af00;
-    border-radius:11px;
-    margin-top:30px;
+    width: 8em;
+    color: #c9af00;
+    font-weight: bold;
+    text-align: center;
+    border: 0.3em solid #c9af00;
+    border-radius: 11px;
+    margin-top: 30px;
     position: absolute;
     left: 5.5em;
     top: -2em;
@@ -505,7 +506,7 @@ article:nth-of-type(3) button:nth-of-type(2) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(3)  button:nth-of-type(2)::after {
+article:nth-of-type(3) button:nth-of-type(2)::after {
     content: "B";
     color: black;
     font-size: 7px;
@@ -532,7 +533,7 @@ article:nth-of-type(3) button:nth-of-type(3) {
     height: 0.4em;
     background-color: black;
     border-style: none;
-    left: 4em;
+    left: 4.4em;
     top: 15.5em;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
     transform: rotate(0deg);
@@ -563,7 +564,7 @@ article:nth-of-type(3) button:nth-of-type(4) {
     height: 0.4em;
     background-color: black;
     border-style: none;
-    left: 6em;
+    left: 6.4em;
     top: 15.5em;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
     transform: rotate(0deg);
@@ -578,9 +579,10 @@ article:nth-of-type(3) button:nth-of-type(4)::after {
     left: -0.6em;
 }
 
-article:nth-of-type(3)  button:nth-of-type(4):hover {
+article:nth-of-type(3) button:nth-of-type(4):hover {
     cursor: pointer;
 }
+
 article:nth-of-type(3) button:nth-of-type(4):active {
     box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
     cursor: pointer;
@@ -600,21 +602,22 @@ article:nth-of-type(3) button:nth-of-type(4):active {
 }
 
 
-article:nth-of-type(3)  section:nth-of-type(3) {
+article:nth-of-type(3) section:nth-of-type(3) {
     position: absolute;
     transform: rotate(-35deg);
     -ms-transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
-    margin-top: 6.1em;;
+    margin-top: 6.1em;
+    ;
     left: 5.8em;
     top: 8.4em;
 }
 
-article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(1) {
+article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(1) {
     display: none;
 }
 
-article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(2) {
+article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(2) {
     background: radial-gradient(#b3b3b3,
             #757573);
     height: 0.3em;
@@ -628,9 +631,9 @@ article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(2) {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.);
 }
 
-article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(3) {
-    background:black;
-  height: 0.3em;
+article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(3) {
+    background: black;
+    height: 0.3em;
     width: 0.3em;
     margin-left: 1.24em;
     position: absolute;
@@ -640,7 +643,7 @@ article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(3) {
     top: 0.7em;
 }
 
-article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(3)::after {
+article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(3)::after {
     content: "";
     background: black;
     height: 0.3em;
@@ -648,15 +651,15 @@ article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(3)::after {
     position: absolute;
     border-radius: 1em;
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
-    top:0.5em;
+    top: 0.5em;
     left: 0em;
 }
 
 
-article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(4) {
+article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4) {
     background: radial-gradient(#b3b3b3,
             #757573);
-  height: 0.3em;
+    height: 0.3em;
     width: 0.3em;
     top: 0.5em;
     margin-left: 1.86em;
@@ -665,7 +668,7 @@ article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(4) {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(4)::after {
+article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4)::after {
     content: "";
     background: radial-gradient(#b3b3b3,
             #757573);
@@ -674,11 +677,11 @@ article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(4)::after {
     position: absolute;
     border-radius: 1em;
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
-    top:0.5em;
+    top: 0.5em;
     left: 0em;
 }
 
-article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(4)::before {
+article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4)::before {
     content: "";
     background: radial-gradient(#b3b3b3,
             #757573);
@@ -687,13 +690,13 @@ article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(4)::before {
     position: absolute;
     border-radius: 1em;
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
-    top:1em;
+    top: 1em;
     left: 0em;
 }
 
-article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(5) {
+article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(5) {
     background: black;
-   height: 0.3em;
+    height: 0.3em;
     width: 0.3em;
     top: 0.8em;
     left: -0.2em;
@@ -703,7 +706,7 @@ article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(5) {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(5)::after {
+article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(5)::after {
     content: "";
     background: black;
     height: 0.3em;
@@ -711,11 +714,11 @@ article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(5)::after {
     position: absolute;
     border-radius: 1em;
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
-    top:0.5em;
+    top: 0.5em;
     left: 0em;
 }
 
-article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(6) {
+article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(6) {
     background: radial-gradient(#b3b3b3,
             #757573);
     height: 0.3em;
@@ -731,3 +734,293 @@ article:nth-of-type(3)  section:nth-of-type(3) div:nth-of-type(6) {
 
 
 
+
+/* Game Boy Color*/
+
+article:nth-of-type(4) {
+    position: relative;
+    top: -70em;
+    left: 44em;
+    height: 17em;
+    width: 10em;
+    background-color: #EA2642;
+    border-radius: 0.5em 0.5em 2em 0.5em / 0.5em 0.5em 2em 0.5em;
+    box-shadow:
+        inset -.20em -.25em .25em #b0152c,
+        inset .25em .25em .25em #b0152c,
+        1em 1em 2em rgb(0 0 0 / .05);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+}
+
+article:nth-of-type(4) section:nth-of-type(1) {
+    position: absolute;
+    height: 7.3em;
+    width: 8.45em;
+    top: 1em;
+    left: 0.77em;
+    z-index: 1;
+    background-color: black;
+    border-radius: 0.1em 0em 1em 0em / 0em 0em 1em 0em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50% 10px;
+    border-bottom-right-radius: 50% 10px;
+}
+
+article:nth-of-type(4) div:nth-of-type(1) {
+    position: absolute;
+    height: 4.8em;
+    width: 5.3em;
+    top: 0.8em;
+    z-index: 1;
+    background-color: #A6B5B2;
+    left: 1.57em;
+    box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
+}
+
+article:nth-of-type(4) h1 {
+    font-size: 8px;
+    top: 13.4em;
+    left: 4.7em;
+    color: #98B8C5;
+    z-index: 1;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    font-family: Gloria Hallelujah, sans-serif;
+}
+
+article:nth-of-type(4) span:nth-of-type(1) {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    color: #BB4B7E;
+    top: 8.4em;
+    left: 6.6em;
+    position: relative;
+    z-index: 1;
+    font-size: 0.8em;
+}
+
+article:nth-of-type(4) span:nth-of-type(2) {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    color: #6E77B8;
+    top: 8.4em;
+    left: 6.2em;
+    z-index: 1;
+    position: relative;
+    font-size: 0.8em;
+}
+
+article:nth-of-type(4) span:nth-of-type(3) {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    color: #96D096;
+    top: 8.4em;
+    left: 5.9em;
+    position: relative;
+    z-index: 1;
+    font-size: 0.8em;
+}
+
+article:nth-of-type(4) span:nth-of-type(4) {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    color: yellow;
+    top: 8.4em;
+    left: 5.5em;
+    position: relative;
+    z-index: 1;
+    font-size: 0.8em;
+}
+
+article:nth-of-type(4) span:nth-of-type(5) {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    color: #0DA9C7;
+    top: 8.4em;
+    left: 5.1em;
+    position: relative;
+    z-index: 1;
+    font-size: 0.8em;
+}
+
+article:nth-of-type(4) h1::before {
+    content: "NINTENDO";
+    width: 8em;
+    color: #800819;
+    font-weight: bold;
+    text-align: center;
+    border: 0.3em solid #800819;
+    border-radius: 11px;
+    margin-top: 30px;
+    position: absolute;
+    left: 4.3em;
+    top: -1em;
+    font-size: 5px;
+}
+
+
+
+article:nth-of-type(4) button:nth-of-type(1) {
+    border-radius: 50%;
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: black;
+    border-style: none;
+    left: 9.55em;
+    top: 11.5em;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(4) button:nth-of-type(1)::after {
+    content: "A";
+    color: dimgrey;
+    font-size: 7px;
+    font-weight: bold;
+    position: absolute;
+    top: 0.95em;
+    left: 1.15em;
+}
+
+article:nth-of-type(4) button:nth-of-type(1):hover {
+    cursor: pointer;
+}
+
+
+article:nth-of-type(4) button:nth-of-type(1):active {
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+
+article:nth-of-type(4) button:nth-of-type(2) {
+    border-radius: 50%;
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: black;
+    border-style: none;
+    left: 7.8em;
+    top: 12.4em;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(4) button:nth-of-type(2)::after {
+    content: "B";
+    color: dimgrey;
+    font-size: 7px;
+    font-weight: bold;
+    position: absolute;
+    left: 1.1em;
+    top: 0.95em;
+}
+
+article:nth-of-type(4) button:nth-of-type(2):hover {
+    cursor: pointer;
+}
+
+article:nth-of-type(4) button:nth-of-type(2):active {
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+article:nth-of-type(4) button:nth-of-type(3) {
+    border-radius: 25%;
+    position: absolute;
+    width: 1.5em;
+    height: 0.4em;
+    background-color: black;
+    border-style: none;
+    left: 4.3em;
+    top: 15.5em;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    transform: rotate(0deg);
+}
+
+article:nth-of-type(4) button:nth-of-type(3)::after {
+    content: "SELECT";
+    color: #800819;
+    font-size: 5px;
+    font-weight: bold;
+    position: relative;
+    left: -1em;
+}
+
+article:nth-of-type(4) button:nth-of-type(3):hover {
+    cursor: pointer;
+}
+
+article:nth-of-type(4) button:nth-of-type(3):active {
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+article:nth-of-type(4) button:nth-of-type(4) {
+    border-radius: 25%;
+    position: absolute;
+    width: 1.5em;
+    height: 0.4em;
+    background-color: black;
+    border-style: none;
+    left: 6.3em;
+    top: 15.5em;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    transform: rotate(0deg);
+}
+
+article:nth-of-type(4) button:nth-of-type(4)::after {
+    content: "START";
+    color: #800819;
+    font-size: 5px;
+    font-weight: bold;
+    position: relative;
+    left: -0.6em;
+}
+
+article:nth-of-type(4) button:nth-of-type(4):hover {
+    cursor: pointer;
+}
+
+article:nth-of-type(4) button:nth-of-type(4):active {
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+#dpad {
+    background: #121421;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    height: 0.8em;
+    left: 1.1em;
+    position: absolute;
+    top: 10em;
+    width: 2.2em;
+    border: none;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+
+article:nth-of-type(4) section:nth-of-type(3) {
+    position: absolute;
+    transform: rotate(-35deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    margin-top: 6.1em;
+    ;
+    left: 5.8em;
+    top: 8.4em;
+}
+
+article:nth-of-type(4) section:nth-of-type(3) div:nth-of-type(1) {
+    display: none;
+}
