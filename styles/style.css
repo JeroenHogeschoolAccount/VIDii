@@ -456,7 +456,7 @@ article:nth-of-type(3) button:nth-of-type(1):hover {
 
 article:nth-of-type(3) button:nth-of-type(1):active {
     cursor: pointer;
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 1px 1px 0px #a89200;
 }
 
 
@@ -489,7 +489,7 @@ article:nth-of-type(3) button:nth-of-type(2):hover {
 
 article:nth-of-type(3) button:nth-of-type(2):active {
     cursor: pointer;
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 1px 1px 0px #a89200;
 }
 
 article:nth-of-type(3) button:nth-of-type(3) {
@@ -850,7 +850,7 @@ article:nth-of-type(4) button:nth-of-type(1):hover {
 
 article:nth-of-type(4) button:nth-of-type(1):active {
     cursor: pointer;
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 1px 1px 0px #b0152c;
 }
 
 article:nth-of-type(4) button:nth-of-type(2) {
@@ -881,7 +881,7 @@ article:nth-of-type(4) button:nth-of-type(2):hover {
 
 article:nth-of-type(4) button:nth-of-type(2):active {
     cursor: pointer;
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+     box-shadow: inset 0px 1px 1px 0px #b0152c;
 }
 
 article:nth-of-type(4) button:nth-of-type(3) {
@@ -960,6 +960,284 @@ article:nth-of-type(4) button:nth-of-type(4):active {
 }
 
 article:nth-of-type(4) section:nth-of-type(3) {
+    position: absolute;
+    left: 5.8em;
+    top: 8.4em;
+    margin-top: 6.1em;
+    transform: rotate(-35deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+}
+
+
+
+
+
+
+
+
+
+
+/* GAME BOY ADVANCE SP*/
+
+article:nth-of-type(5) {
+    position: relative;
+    width: 10.5em;
+    height: 9.4em;
+    top: -87em;
+    left: 60em;
+    background-color: #3059D4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow:
+        inset -.20em -.25em .25em #1a3891,
+        inset .25em .25em .25em #1a3891,
+        1em 1em 2em rgb(0 0 0 / .05);
+}
+
+article:nth-of-type(5)::after {
+    content: "";
+    position: absolute;
+    width: 10.5em;
+    height: 11em;
+    top: 100%;
+    background-color: #3059D4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow:
+        inset -.20em -.25em .25em #1a3891,
+        inset .25em .25em .25em #1a3891,
+        1em 1em 2em rgb(0 0 0 / .05);
+}
+
+
+article:nth-of-type(5) section:nth-of-type(1) div:nth-of-type(2){
+    position: absolute;
+    width: 10.5em;
+    height: 1.6em;
+    left: -0.8em;
+    top: 8em;
+    background: red;
+    z-index: 1;
+    background-color: #3059D4;
+    background: linear-gradient(#3059D4 20%, #6184ed  56%, #3059D4 90%) no-repeat;
+    border-radius: 2em;
+/*
+    box-shadow:
+     -.0em -.0em 0em white,
+     0em .2em .1em #1a3891,
+      1em 1em 2em rgb(0 0 0 / .05);
+*/
+     box-shadow:
+        inset -.20em -.25em .25em #1a3891,
+        inset .25em .25em .25em #1a3891,
+        1em 1em 2em rgb(0 0 0 / .05);
+    
+}
+
+article:nth-of-type(5) section:nth-of-type(1) {
+    position: absolute;
+    width: 8.7em;
+    height: 6.4em;
+    top: 1.3em;
+    left: 0.8em;
+    background-color: #22252e;
+    z-index: 1;
+   border-radius: 0.3em;
+    box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
+}
+
+article:nth-of-type(5) div:nth-of-type(1) {
+    position: absolute;
+    width: 7.8em;
+    height: 4.9em;
+    top: 0.45em;
+    left: 0.47em;
+    background-color: #A6B5B2;
+    z-index: 1;
+    box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
+}
+
+article:nth-of-type(5) h1 {
+    position: absolute;
+    top: 15em;
+    left: 6.15em;
+    font-size: 7px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Gloria Hallelujah, sans-serif;
+    color: silver;
+    z-index: 1;
+}
+
+
+article:nth-of-type(5) h1::before {
+    content: "Advance SP";
+    position: absolute;
+     width: 8em;
+    left: 7.1em;
+    color: silver;
+    font-weight: bold;
+    font-size: 6px;
+}
+
+article:nth-of-type(5) button:nth-of-type(1) {
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    left: 9.55em;
+    top: 14.5em;
+    background-color: grey;
+    border-radius: 50%;
+    border-style: none;
+    z-index: 1;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(5) button:nth-of-type(1)::after {
+    content: "A";
+    position: absolute;
+    top: 0.95em;
+    left: 1.15em;
+    color: dimgrey;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+article:nth-of-type(5) button:nth-of-type(1):hover {
+    cursor: pointer;
+}
+
+article:nth-of-type(5) button:nth-of-type(1):active {
+    cursor: pointer;
+    box-shadow: inset 0px 1px 1px 0px #b0152c;
+}
+
+article:nth-of-type(5) button:nth-of-type(2) {
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    left: 7.8em;
+    top: 15.4em;
+    border-radius: 50%;
+    background-color: grey;
+    border-style: none;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    z-index: 1;
+}
+
+article:nth-of-type(5) button:nth-of-type(2)::after {
+    content: "B";
+    position: absolute;
+    left: 1.1em;
+    top: 0.95em;
+    color: dimgrey;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+article:nth-of-type(5) button:nth-of-type(2):hover {
+    cursor: pointer;
+}
+
+article:nth-of-type(5) button:nth-of-type(2):active {
+    cursor: pointer;
+     box-shadow: inset 0px 1px 1px 0px #b0152c;
+}
+
+article:nth-of-type(5) button:nth-of-type(3) {
+    position: absolute;
+    width: 1.5em;
+    height: 0.4em;
+    left: 4.3em;
+    top: 15.5em;
+    border-radius: 25%;
+    background-color: black;
+    border-style: none;
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(5) button:nth-of-type(3)::after {
+    content: "SELECT";
+    position: relative;
+    left: -1em;
+    color: #800819;
+    font-size: 5px;
+    font-weight: bold;
+}
+
+article:nth-of-type(5) button:nth-of-type(3):hover {
+    cursor: pointer;
+}
+
+article:nth-of-type(5) button:nth-of-type(3):active {
+    cursor: pointer;
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+
+article:nth-of-type(5) button:nth-of-type(4) {
+    position: absolute;
+    width: 1.5em;
+    height: 0.4em;
+    left: 6.3em;
+    top: 15.5em;
+    background-color: black;
+    border-radius: 25%;
+    border-style: none;
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(5) button:nth-of-type(4)::after {
+    content: "START";
+    position: relative;
+    left: -0.6em;
+    color: #800819;
+    font-size: 5px;
+    font-weight: bold;
+}
+
+article:nth-of-type(5) button:nth-of-type(4):hover {
+    cursor: pointer;
+}
+
+article:nth-of-type(5) button:nth-of-type(4):active {
+    cursor: pointer;
+    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+
+article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1) {
+    position: absolute;
+    width: 2.2em;
+    height: 0.8em;
+    left: 1.1em;
+    top: 12em;
+    background: #121421;
+    border: none;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1)::after {
+    content: "";
+     position: absolute;
+    width: 2.2em;
+    height: 0.8em;
+    background: #121421;
+    border: none;
+    transform: rotate(90deg);
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(5) section:nth-of-type(3) {
     position: absolute;
     left: 5.8em;
     top: 8.4em;
