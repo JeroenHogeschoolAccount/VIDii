@@ -317,7 +317,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(3) {
     height: 1.6em;
     margin-left: 1.24em;
     border-radius: 1em;
-    background: radial-gradient(#b3b3b3,#757573);
+    background: radial-gradient(#b3b3b3, #757573);
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -327,7 +327,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(4) {
     height: 1.6em;
     margin-left: 1.86em;
     border-radius: 1em;
-    background: radial-gradient(#b3b3b3,#757573);
+    background: radial-gradient(#b3b3b3, #757573);
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -337,7 +337,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(5) {
     height: 1.6em;
     margin-left: 2.5em;
     border-radius: 1em;
-    background: radial-gradient(#b3b3b3,#757573);
+    background: radial-gradient(#b3b3b3, #757573);
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -751,7 +751,7 @@ article:nth-of-type(4) span:nth-of-type(1) {
     position: relative;
     left: 6.6em;
     top: 8.4em;
-     font-family: 'Kalam', cursive;
+    font-family: 'Kalam', cursive;
     font-size: 0.8em;
     font-style: italic;
     font-weight: bold;
@@ -810,7 +810,7 @@ article:nth-of-type(4) span:nth-of-type(5) {
 article:nth-of-type(4) h1::before {
     content: "NINTENDO";
     position: absolute;
-     width: 8em;
+    width: 8em;
     left: 4.3em;
     top: -1em;
     color: #800819;
@@ -881,7 +881,7 @@ article:nth-of-type(4) button:nth-of-type(2):hover {
 
 article:nth-of-type(4) button:nth-of-type(2):active {
     cursor: pointer;
-     box-shadow: inset 0px 1px 1px 0px #b0152c;
+    box-shadow: inset 0px 1px 1px 0px #b0152c;
 }
 
 article:nth-of-type(4) button:nth-of-type(3) {
@@ -1010,7 +1010,7 @@ article:nth-of-type(5)::after {
 }
 
 
-article:nth-of-type(5) section:nth-of-type(1) div:nth-of-type(2){
+article:nth-of-type(5) section:nth-of-type(1) div:nth-of-type(2) {
     position: absolute;
     width: 10.5em;
     height: 1.6em;
@@ -1018,7 +1018,7 @@ article:nth-of-type(5) section:nth-of-type(1) div:nth-of-type(2){
     top: 8em;
     background: red;
     z-index: 1;
-    background: linear-gradient(#3059D4 20%, #6184ed  56%, #3059D4 90%) no-repeat;
+    background: linear-gradient(#3059D4 20%, #6184ed 56%, #3059D4 90%) no-repeat;
     border-radius: 2em;
     box-shadow:
         inset -.20em -.25em .25em #1a3891,
@@ -1065,7 +1065,7 @@ article:nth-of-type(5) h1 {
 article:nth-of-type(5) h1::before {
     content: "Advance SP";
     position: absolute;
-     width: 8em;
+    width: 8em;
     left: 7.1em;
     color: silver;
     font-weight: bold;
@@ -1149,7 +1149,7 @@ article:nth-of-type(5) button:nth-of-type(3)::after {
     color: #5482de;
     font-size: 5px;
     font-weight: bold;
-    top:-3.5em;
+    top: -3.5em;
 }
 
 article:nth-of-type(5) button:nth-of-type(4) {
@@ -1170,7 +1170,7 @@ article:nth-of-type(5) button:nth-of-type(4)::after {
     content: "START";
     position: relative;
     left: -1.7em;
-    color:#5482de;
+    color: #5482de;
     font-size: 5px;
     font-weight: bold;
     top: -3.5em;
@@ -1215,7 +1215,7 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1) {
 
 article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1)::after {
     content: "";
-     position: absolute;
+    position: absolute;
     width: 2.2em;
     height: 0.8em;
     background-color: black;
@@ -1236,7 +1236,7 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(2) {
     border-radius: 50%;
     box-sizing: border-box;
     z-index: 1;
-     box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.8);
 }
 
 article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(3) {
@@ -1253,7 +1253,7 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(3) {
     box-sizing: border-box;
     transform: rotate(-30deg);
     z-index: 1;
-     box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.8);
 }
 
 article:nth-of-type(5) section:nth-of-type(3) {
@@ -1264,5 +1264,186 @@ article:nth-of-type(5) section:nth-of-type(3) {
     transform: rotate(-35deg);
     -ms-transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
+}
+
+
+
+
+/*GAME BOY MICRO*/
+
+article:nth-of-type(6) {
+    position: relative;
+    width: 12.7em;
+    height: 6.5em;
+    left: 17em;
+    top: -78.5em;
+    background-color: silver;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow:
+        inset -.20em -.25em .25em grey,
+        inset .25em .25em .25em silver,
+        1em 1em 2em rgb(0 0 0 / .05);
+}
+
+article:nth-of-type(6)::after {
+    content: "";
+    position: absolute;
+    width: 12.7em;
+    height: 6em;
+    top: 0.2em;
+    background-color: #242424;
+    border-top-left-radius: 200% 50%;
+    border-top-right-radius: 200% 50%;
+    border-bottom-left-radius: 200% 50%;
+    border-bottom-right-radius: 200% 50%;
+    box-shadow:
+        inset -1px -1px 1px black,
+        inset .1px .25px 1px black,
+        1em 1em 2em rgb(0 0 0 / .09);
+}
+
+
+article:nth-of-type(6) section:nth-of-type(1) div:nth-of-type(2) {
+    position: absolute;
+    width: 10.5em;
+    height: 1.6em;
+    left: -0.8em;
+    top: 8em;
+    background: red;
+    z-index: 1;
+    background: linear-gradient(#3059D4 20%, #6184ed 56%, #3059D4 90%) no-repeat;
+    border-radius: 2em;
+    box-shadow:
+        inset -.20em -.25em .25em #1a3891,
+        inset .25em .25em .25em #1a3891,
+        1em 1em 2em rgb(0 0 0 / .05);
+}
+
+article:nth-of-type(6) div:nth-of-type(1) {
+    position: absolute;
+    width: 5.8em;
+    height: 3.9em;
+    top: 1.3em;
+    left: 3.3em;
+    background-color: dimgrey;
+    z-index: 1;
+    box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
+}
+
+article:nth-of-type(6) button:nth-of-type(1) {
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    left: 13.3em;
+    top: 2.6em;
+    background-color: black;
+    border-radius: 50%;
+    border-style: none;
+    z-index: 2;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(6) button:nth-of-type(1)::after {
+    content: "A";
+    position: absolute;
+    top: 0.7em;
+    left: 0.85em;
+    color: dimgrey;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+article:nth-of-type(6) section:nth-of-type(2) button:hover {
+    cursor: pointer;
+}
+
+article:nth-of-type(6) section:nth-of-type(2) button:active {
+    cursor: pointer;
+    box-shadow: inset 0px 1px 1px 0px #262729;
+}
+
+article:nth-of-type(6) button:nth-of-type(2) {
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    left: 11.7em;
+    top: 3.3em;
+    border-radius: 50%;
+    background-color: grey;
+    background-color: black;
+    border-style: none;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    z-index: 2;
+}
+
+article:nth-of-type(6) button:nth-of-type(2)::after {
+    content: "B";
+    position: absolute;
+    left: 0.85em;
+    top: 0.75em;
+    color: dimgrey;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+article:nth-of-type(6) section:nth-of-type(2) div:nth-of-type(1) {
+    position: absolute;
+    width: 2.2em;
+    height: 0.8em;
+    left: 0.6em;
+    top: 2.8em;
+    background-color: black;
+    border: none;
+    box-sizing: border-box;
+    z-index: 2;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(6) section:nth-of-type(2) div:nth-of-type(1)::after {
+    content: "";
+    position: absolute;
+    width: 2.2em;
+    height: 0.8em;
+    background-color: black;
+    border: none;
+    transform: rotate(90deg);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(6) section:nth-of-type(3) div:nth-of-type(1) {
+    position: absolute;
+    width: 0.3em;
+    height: 0.15em;
+    left:9.7em;
+    top: 5em;
+    background: grey;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+article:nth-of-type(6) section:nth-of-type(3) div:nth-of-type(1)::after {
+    content: "";
+    position: absolute;
+    width: 0.3em;
+    height: 0.15em;
+    left:0.4em;
+    background: grey;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+article:nth-of-type(6) section:nth-of-type(3) div:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    width: 0.3em;
+    height: 0.15em;
+    left:0.8em;
+    background: grey;
+    border-radius: 1em;
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.4);
 }
 
