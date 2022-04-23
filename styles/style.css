@@ -1447,3 +1447,159 @@ article:nth-of-type(6) section:nth-of-type(3) div:nth-of-type(1)::before {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.4);
 }
 
+
+
+
+/* OUDE GAME 1 */
+article:nth-of-type(7){
+    position: absolute;
+    width: 7em;
+    height: 8em;
+    top: 28em;
+    left: 18em;
+    background-color: #B9B4B6;
+    transform: rotate(-4deg);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2), 0px 4px 4px rgba(0,0,0,0.22);
+}
+
+article:nth-of-type(7)::before{
+    content: "";
+    position: absolute;
+    width: 6em;
+    height: 1.5em;
+    left:0.5em;
+    top: 0.5em;
+    background: grey;
+    border-radius: 1em;
+    background: linear-gradient(silver 20%, #b5b5b5 56%, silver 90%) no-repeat;
+    box-shadow: inset 0px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+article:nth-of-type(7) h1:nth-of-type(1) {
+    position: absolute;
+    top: 1.5em;
+    left: 2.6em;
+    font-family: Gloria Hallelujah, sans-serif;
+    font-size: 7px;
+    color: grey;;
+}
+
+article:nth-of-type(7) h1:nth-of-type(1)::after {
+    content: "GAME BOY";
+    font-size: 8px;
+    font-weight: 400;
+    color: grey;
+}
+
+article:nth-of-type(7) section:nth-of-type(1){
+    position: absolute;
+    width: 5.4em;
+    height: 4.4em;
+    top: 2.3em;
+    left: 0.8em;
+    background-color: grey;
+    box-shadow: inset 0px 0px 0px 0.56px rgba(0, 0, 0, 0.3);
+}
+
+article:nth-of-type(7) section:nth-of-type(1)::after{
+    position: absolute;
+    content: "";
+    width: 1.1em;
+    height:0.6em;
+    top: 4.7em;
+    left: 2.2em;
+    background-color: #969294;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(180deg);
+}
+
+article:nth-of-type(7) section:nth-of-type(1) img:nth-of-type(1){
+    position: absolute;
+    width: 5.2em;
+    height: 4.2em;
+    left: 0.1em;
+    top: 0.1em;
+    background-color: grey;
+    border-radius: 0.2em;
+    box-shadow: inset 0px 0px 0px 0.56px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* OUDE GAME 2*/
+
+article:nth-of-type(8){
+    position: absolute;
+    width: 7em;
+    height: 8em;
+    top: 30em;
+    left: 22em;
+    background-color: #B9B4B6;
+    transform: rotate(4deg);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2), 0px 4px 4px rgba(0,0,0,0.22);
+}
+
+article:nth-of-type(8)::before{
+    content: "";
+    position: absolute;
+    width: 6em;
+    height: 1.5em;
+    left:0.5em;
+    top: 0.5em;
+    background: grey;
+    border-radius: 1em;
+    background: linear-gradient(silver 20%, #b5b5b5 56%, silver 90%) no-repeat;
+    box-shadow: inset 0px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+article:nth-of-type(8) h1:nth-of-type(1) {
+    position: absolute;
+    top: 1.5em;
+    left: 2.6em;
+    font-family: Gloria Hallelujah, sans-serif;
+    font-size: 7px;
+    color: grey;;
+}
+
+article:nth-of-type(8) h1:nth-of-type(1)::after {
+    content: "GAME BOY";
+    font-size: 8px;
+    font-weight: 400;
+    color: grey;
+}
+
+article:nth-of-type(8) section:nth-of-type(1){
+    position: absolute;
+    width: 5.4em;
+    height: 4.4em;
+    top: 2.3em;
+    left: 0.8em;
+    background-color: grey;
+    box-shadow: inset 0px 0px 0px 0.56px rgba(0, 0, 0, 0.3);
+}
+
+article:nth-of-type(8) section:nth-of-type(1)::after{
+  position: absolute;
+    content: "";
+    width: 1.1em;
+    height:0.6em;
+    top: 4.7em;
+    left: 2.2em;
+    background-color: #969294;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(180deg);
+}
+
+article:nth-of-type(8) section:nth-of-type(1) img:nth-of-type(1){
+    position: absolute;
+    width: 5.2em;
+    height: 4.2em;
+    left: 0.1em;
+    top: 0.1em;
+    background-color: grey;
+    border-radius: 0.2em;
+    box-shadow: inset 0px 0px 0px 0.56px rgba(0, 0, 0, 0.3);
+}
+
+

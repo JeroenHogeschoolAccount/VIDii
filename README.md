@@ -193,8 +193,8 @@ Wanneer de gebruiker op een bepaalde knop drukt zal er een video afspelen met ee
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
+1. Game Boy game afbeelding: https://www.polygon.com/features/2019/4/19/18412987/game-boy-best-games-nintendo-pokemon-tetris
+2.Vormen maken: https://bennettfeely.com/clippy/
 3. ...
 
 </details>
