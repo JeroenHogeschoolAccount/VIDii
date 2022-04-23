@@ -972,12 +972,6 @@ article:nth-of-type(4) section:nth-of-type(3) {
 
 
 
-
-
-
-
-
-
 /* GAME BOY ADVANCE SP*/
 
 article:nth-of-type(5) {
@@ -991,6 +985,7 @@ article:nth-of-type(5) {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    transform: rotate(3deg);
     box-shadow:
         inset -.20em -.25em .25em #1a3891,
         inset .25em .25em .25em #1a3891,
@@ -1023,20 +1018,12 @@ article:nth-of-type(5) section:nth-of-type(1) div:nth-of-type(2){
     top: 8em;
     background: red;
     z-index: 1;
-    background-color: #3059D4;
     background: linear-gradient(#3059D4 20%, #6184ed  56%, #3059D4 90%) no-repeat;
     border-radius: 2em;
-/*
     box-shadow:
-     -.0em -.0em 0em white,
-     0em .2em .1em #1a3891,
-      1em 1em 2em rgb(0 0 0 / .05);
-*/
-     box-shadow:
         inset -.20em -.25em .25em #1a3891,
         inset .25em .25em .25em #1a3891,
         1em 1em 2em rgb(0 0 0 / .05);
-    
 }
 
 article:nth-of-type(5) section:nth-of-type(1) {
@@ -1047,7 +1034,7 @@ article:nth-of-type(5) section:nth-of-type(1) {
     left: 0.8em;
     background-color: #22252e;
     z-index: 1;
-   border-radius: 0.3em;
+    border-radius: 0.3em;
     box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
 }
 
@@ -1055,7 +1042,7 @@ article:nth-of-type(5) div:nth-of-type(1) {
     position: absolute;
     width: 7.8em;
     height: 4.9em;
-    top: 0.45em;
+    top: .45em;
     left: 0.47em;
     background-color: #A6B5B2;
     z-index: 1;
@@ -1087,119 +1074,106 @@ article:nth-of-type(5) h1::before {
 
 article:nth-of-type(5) button:nth-of-type(1) {
     position: absolute;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.3em;
+    height: 1.3em;
     left: 9.55em;
-    top: 14.5em;
-    background-color: grey;
+    top: 16.7em;
+    background-color: black;
     border-radius: 50%;
     border-style: none;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(5) button:nth-of-type(1)::after {
     content: "A";
     position: absolute;
-    top: 0.95em;
-    left: 1.15em;
+    top: 0.7em;
+    left: 1em;
     color: dimgrey;
     font-size: 7px;
     font-weight: bold;
 }
 
-article:nth-of-type(5) button:nth-of-type(1):hover {
+article:nth-of-type(5) section:nth-of-type(2) button:hover {
     cursor: pointer;
 }
 
-article:nth-of-type(5) button:nth-of-type(1):active {
+article:nth-of-type(5) section:nth-of-type(2) button:active {
     cursor: pointer;
-    box-shadow: inset 0px 1px 1px 0px #b0152c;
+    box-shadow: inset 0px 1px 1px 0px #262729;
 }
 
 article:nth-of-type(5) button:nth-of-type(2) {
     position: absolute;
-    width: 1.5em;
-    height: 1.5em;
-    left: 7.8em;
-    top: 15.4em;
+    width: 1.3em;
+    height: 1.3em;
+    left: 7.9em;
+    top: 17.58em;
     border-radius: 50%;
     background-color: grey;
+    background-color: black;
     border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
-    z-index: 1;
+    z-index: 2;
 }
 
 article:nth-of-type(5) button:nth-of-type(2)::after {
     content: "B";
     position: absolute;
-    left: 1.1em;
-    top: 0.95em;
+    left: 1em;
+    top: 0.75em;
     color: dimgrey;
     font-size: 7px;
     font-weight: bold;
 }
 
-article:nth-of-type(5) button:nth-of-type(2):hover {
-    cursor: pointer;
-}
-
-article:nth-of-type(5) button:nth-of-type(2):active {
-    cursor: pointer;
-     box-shadow: inset 0px 1px 1px 0px #b0152c;
-}
-
 article:nth-of-type(5) button:nth-of-type(3) {
     position: absolute;
-    width: 1.5em;
-    height: 0.4em;
-    left: 4.3em;
-    top: 15.5em;
-    border-radius: 25%;
+    width: 0.9em;
+    height: 0.9em;
+    left: 5em;
+    top: 22em;
+    border-radius: 50%;
     background-color: black;
     border-style: none;
     transform: rotate(0deg);
+    z-index: 1;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(5) button:nth-of-type(3)::after {
     content: "SELECT";
     position: relative;
-    left: -1em;
-    color: #800819;
+    left: -2em;
+    color: #5482de;
     font-size: 5px;
     font-weight: bold;
-}
-
-article:nth-of-type(5) button:nth-of-type(3):hover {
-    cursor: pointer;
-}
-
-article:nth-of-type(5) button:nth-of-type(3):active {
-    cursor: pointer;
-    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
+    top:-3.5em;
 }
 
 article:nth-of-type(5) button:nth-of-type(4) {
     position: absolute;
-    width: 1.5em;
-    height: 0.4em;
-    left: 6.3em;
-    top: 15.5em;
+    width: 0.5em;
+    height: 0.9em;
+    left: 6.6em;
+    top: 22em;
     background-color: black;
-    border-radius: 25%;
+    border-radius: 50%;
     border-style: none;
     transform: rotate(0deg);
+    z-index: 1;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(5) button:nth-of-type(4)::after {
     content: "START";
     position: relative;
-    left: -0.6em;
-    color: #800819;
+    left: -1.7em;
+    color:#5482de;
     font-size: 5px;
     font-weight: bold;
+    top: -3.5em;
 }
 
 article:nth-of-type(5) button:nth-of-type(4):hover {
@@ -1208,19 +1182,34 @@ article:nth-of-type(5) button:nth-of-type(4):hover {
 
 article:nth-of-type(5) button:nth-of-type(4):active {
     cursor: pointer;
-    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 1px 1px 0px #262729;
+}
+
+article:nth-of-type(5) button:nth-of-type(5) {
+    position: absolute;
+    width: 0.5em;
+    height: 0.9em;
+    left: 5.8em;
+    top: 14em;
+    background-color: black;
+    border-radius: 50%;
+    border-style: none;
+    transform: rotate(0deg);
+    z-index: 1;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
 article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1) {
     position: absolute;
     width: 2.2em;
     height: 0.8em;
-    left: 1.1em;
-    top: 12em;
-    background: #121421;
+    left: 1.3em;
+    top: 14.6em;
+    background-color: black;
     border: none;
     border-radius: 0.2em;
     box-sizing: border-box;
+    z-index: 2;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
@@ -1229,12 +1218,42 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1)::after {
      position: absolute;
     width: 2.2em;
     height: 0.8em;
-    background: #121421;
+    background-color: black;
     border: none;
     transform: rotate(90deg);
     border-radius: 0.2em;
     box-sizing: border-box;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(2) {
+    position: absolute;
+    width: 3.4em;
+    height: 3.4em;
+    left: 0.71em;
+    top: 13.3em;
+    background-color: #3059D4;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 1;
+     box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.8);
+}
+
+article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(3) {
+    position: absolute;
+    width: 3.6em;
+    height: 1.7em;
+    left: 6em;
+    top: 13.96em;
+    background-color: #3059D4;
+    border-top-left-radius: 14px 14px;
+    border-top-right-radius: 14px 14px;
+    border-bottom-left-radius: 14px 14px;
+    border-bottom-right-radius: 14px 14px;
+    box-sizing: border-box;
+    transform: rotate(-30deg);
+    z-index: 1;
+     box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.8);
 }
 
 article:nth-of-type(5) section:nth-of-type(3) {
@@ -1246,3 +1265,4 @@ article:nth-of-type(5) section:nth-of-type(3) {
     -ms-transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
 }
+
