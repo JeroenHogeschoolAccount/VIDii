@@ -132,6 +132,12 @@ article:nth-of-type(2) section:nth-of-type(1) {
     border-radius: 0.1em 0em 1em 0em / 0em 0em 1em 0em;
 }
 
+
+article:nth-of-type(2) section:nth-of-type(1) :hover {
+background-image: url(../images/4.png);
+  background-size: cover;
+}
+
 /* Game Boy 1989 scherm */
 article:nth-of-type(2) div:nth-of-type(1) {
     position: absolute;
@@ -172,6 +178,7 @@ article:nth-of-type(2) button:nth-of-type(1) {
     background-color: #7F0947;
     border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    box-shadow:0px 1px 3px black, 0px 0px 2px black inset;
 }
 
 article:nth-of-type(2) button:nth-of-type(1)::after {
@@ -206,6 +213,7 @@ article:nth-of-type(2) button:nth-of-type(2) {
     background-color: #7F0947;
     border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    box-shadow:0px 1px 3px black, 0px 0px 2px black inset;
 }
 
 article:nth-of-type(2) button:nth-of-type(2)::after {
@@ -413,6 +421,11 @@ article:nth-of-type(3) section:nth-of-type(1) {
     background-color: black;
     z-index: 1;
     border-radius: 0.1em 0em 1em 0em / 0em 0em 1em 0em;
+}
+
+article:nth-of-type(3) section:nth-of-type(1) :hover {
+background-image: url(../images/5.png);
+  background-size: cover;
 }
 
 /* Game Boy Pocket scherm  */
@@ -766,6 +779,12 @@ article:nth-of-type(4) section:nth-of-type(1) {
     border-bottom-right-radius: 50% 10px;
 }
 
+article:nth-of-type(4) section:nth-of-type(1) :hover {
+background-image: url(../images/6.png);
+  background-size: cover;
+}
+
+
 /* Game Boy Color scherm */
 article:nth-of-type(4) div:nth-of-type(1) {
     position: absolute;
@@ -1091,6 +1110,11 @@ article:nth-of-type(5) section:nth-of-type(1) {
     box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
 }
 
+article:nth-of-type(5) section:nth-of-type(1) :hover {
+background-image: url(../images/7.png);
+  background-size: cover;
+}
+
 /* Game Boy Advance SP scherm */
 article:nth-of-type(5) div:nth-of-type(1) {
     position: absolute;
@@ -1398,6 +1422,11 @@ article:nth-of-type(6) div:nth-of-type(1) {
     background-color: dimgrey;
     z-index: 1;
     box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
+}
+
+article:nth-of-type(6) div:nth-of-type(1):hover {
+background-image: url(../images/8.png);
+  background-size: cover;
 }
 
 /* Game Boy Micro button A */
@@ -1761,6 +1790,11 @@ article:nth-of-type(9) section:nth-of-type(1) {
     box-shadow: inset 0px 0.5px 0px 1px silver;
 }
 
+article:nth-of-type(9) div:nth-of-type(1):hover {
+background-image: url(../images/9.png);
+  background-size: cover;
+}
+
 /* Nintendo DS scherm rand onderkant*/
 article:nth-of-type(9) section:nth-of-type(1)::after {
     content: "";
@@ -2114,3 +2148,14 @@ article:nth-of-type(11) section:nth-of-type(1)::after {
     right: 0.32em;
     background-color: #474747;
 }
+
+
+
+
+/*
+
+.greenscreen:hover {
+background-image: url(../images/4.png);
+  background-size: cover;
+}
+*/

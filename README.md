@@ -110,23 +110,41 @@ Wanneer de gebruiker op een bepaalde knop drukt zal er een video afspelen met ee
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  State focus is nog niet aanwezig bij de knoppen.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik ga deze state later toevoegen.
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Commentaar is (nog) niet aanwezig in de code. 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
+  Ik ga commentaar toevoegen, zodat duidelijk wordt wat wat precies is.
+  Zonder commentaar is het onduidelijk, doordat ik bijna geen gebruik maak van class en ID (die kan je een betekenisvolle naam geven). 
+  
+  
+  
   ### Bevinding 3:
-  ...
+  CSS properties staan niet in dezelfde volgorde. Het is random. 
+
+  #### oplossing:
+  Ik ga binnenkort mijn code 'opruimen' en dan de properties in dezelfde volgorde zetten.
+  
+  
+  
+  ### Bevinding 4:
+  De CSS code is lang - dat kan korter. 
+
+  #### oplossing:
+  Ik zal kijken waar ik code 'dubbel' heb geschreven en zal dit vervolgens weg halen. 
+  
+
+  
+  
+  
+
 
 </details>
 
@@ -193,8 +211,13 @@ Wanneer de gebruiker op een bepaalde knop drukt zal er een video afspelen met ee
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. Game Boy game afbeelding: https://www.polygon.com/features/2019/4/19/18412987/game-boy-best-games-nintendo-pokemon-tetris
-2.Vormen maken: https://bennettfeely.com/clippy/
-3. ...
+1. Game Boy games afbeelding: https://www.polygon.com/features/2019/4/19/18412987/game-boy-best-games-nintendo-pokemon-tetris
+2. Vormen maken: https://bennettfeely.com/clippy/
+3. Game op scherm Game Boy 1989: https://en.wikipedia.org/wiki/Tetris_(Game_Boy_video_game)#/media/File:GB_Tetris.png
+4. Game op scherm Game Boy Pocket: https://dribbble.com/shots/1445031-Gameboy-Pocket
+5. Game op Game Boy Color: https://www.nintendo.nl/Games/Game-Boy-Color/Super-Mario-Bros-Deluxe-266219.html
+6. Game op scherm Game Boy Advance SP: https://www.retronintendokopen.nl/gameboy
+7. Game op scherm Nintendo DS: https://www.juegoviejo.com/portable/nintendo-ds-new-super-mario-bros/
+8. Game op scherm Game Boy Micro: https://www.retronintendokopen.nl/gameboy
 
 </details>
