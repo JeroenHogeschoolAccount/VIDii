@@ -24,7 +24,7 @@ body {
     /*    background-image: url(https://images.unsplash.com/photo-1523878288860-7ad281611901?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80);*/
     /*background-image: linear-gradient(to right top, #b453ff, #9851fb, #7a4ff6, #554df1, #124beb);*/
     /*    background-image: linear-gradient(to left top, #e777ff, #b990ff, #89a2ff, #5fafff, #46b7ff);*/
-    background-image: linear-gradient(to left top, #9a77ff, #835eee, #6c44dc, #5428cb, #3800b9);
+    background-image: var(--kleurAchtergrondBody);
     /*    background-size: 60em 60em;*/
 }
 
@@ -33,12 +33,21 @@ button:not([disabled]) {
 }
 
 :root {
-    --kleurAchtergrondBody: #7b83e3;
+    --kleurAchtergrondBody: linear-gradient(to left top, #9a77ff, #835eee, #6c44dc, #5428cb, #3800b9);
+    --kleurLa: white;
+    --schaduwLa: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
+    --schaduwLaKnop: inset 0px 10px 6px 1px rgba(0, 0, 0, 0.1);
+    --randGameBoy1989Pocket: 0.5em 0.5em 2em 0.5em / 0.5em 0.5em 2em 0.5em;
+    --kleurKnoppenGameboy: black;
+    --kleurDpad: #121421;
+    --kleurGame: #B9B4B6;
+    --schaduwLuidsprekerGameBoy1989: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    --kleurGameBoyAdvanceSP: #3059D4;
 }
 
 @media (prefers-color-scheme:dark) {
     :root {
-        --kleurAchtergrondBody: #454c96;
+        --kleurAchtergrondBody: linear-gradient(to right top, #000b7a, #1a0876, #270571, #30026d, #370069);
     }
 }
 
@@ -46,11 +55,6 @@ main {
     height: 10em;
 }
 
-p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
@@ -65,9 +69,9 @@ article:nth-of-type(1) {
     background-color: #c2c2c2;
     background-color: #e0e0e0;
     border-style: solid;
-    border-color: white;
+    border-color: var(--kleurLa);
     border-width: 0 5em;
-    box-shadow: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--schaduwLa);
 }
 
 /* La voorkant*/
@@ -78,7 +82,7 @@ article:nth-of-type(1)::after {
     height: 5em;
     top: 100%;
     left: -7.5em;
-    background-color: white;
+    background-color: var(--kleurLa);
 }
 
 /* La knop*/
@@ -89,8 +93,8 @@ article:nth-of-type(1)::before {
     height: 2em;
     top: 112.5%;
     left: 27em;
-    background-color: white;
-    box-shadow: inset 0px 10px 6px 1px rgba(0, 0, 0, 0.1);
+    background-color: var(--kleurLa);
+    box-shadow: var(--schaduwLaKnop);
     z-index: 10;
 }
 
@@ -106,7 +110,7 @@ article:nth-of-type(2) {
     top: -38em;
     left: 17em;
     background-color: #C1BEB9;
-    border-radius: 0.5em 0.5em 2em 0.5em / 0.5em 0.5em 2em 0.5em;
+    border-radius: var(--randGameBoy1989Pocket);
     box-shadow:
         inset -.20em -.25em .25em darkgrey,
         inset .25em .25em .25em rgb(255 255 255),
@@ -292,7 +296,7 @@ article:nth-of-type(2) button:nth-of-type(4):active {
     height: 0.8em;
     left: 1.1em;
     top: 10em;
-    background: #121421;
+    background: var(--kleurDpad);
     border-radius: 0.15em;
     box-sizing: border-box;
     border: none;
@@ -305,7 +309,7 @@ article:nth-of-type(2) button:nth-of-type(4):active {
     height: 2.2em;
     left: 0.7em;
     top: -0.7em;
-    background: #121421;
+    background: var(--kleurDpad);
     border-radius: 0.15em;
     border: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
@@ -333,7 +337,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(2) {
     margin-left: 0.6em;
     background: radial-gradient(#b3b3b3, #757573);
     border-radius: 1em;
-    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
 article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(3) {
@@ -343,7 +347,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(3) {
     margin-left: 1.24em;
     border-radius: 1em;
     background: radial-gradient(#b3b3b3, #757573);
-    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
 article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(4) {
@@ -353,7 +357,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(4) {
     margin-left: 1.86em;
     border-radius: 1em;
     background: radial-gradient(#b3b3b3, #757573);
-    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
 article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(5) {
@@ -363,7 +367,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(5) {
     margin-left: 2.5em;
     border-radius: 1em;
     background: radial-gradient(#b3b3b3, #757573);
-    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
 article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(6) {
@@ -373,7 +377,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(6) {
     margin-left: 3.14em;
     border-radius: 1em;
     background: radial-gradient(#b3b3b3, #757573);
-    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
 
@@ -388,7 +392,7 @@ article:nth-of-type(3) {
     top: -54em;
     left: 30em;
     background-color: #F4D405;
-    border-radius: 0.5em 0.5em 2em 0.5em / 0.5em 0.5em 2em 0.5em;
+    border-radius: var(--randGameBoy1989Pocket);
     transform: rotate(-2deg);
     box-shadow:
         inset -.20em -.25em .25em #a89200,
@@ -462,7 +466,7 @@ article:nth-of-type(3) button:nth-of-type(1) {
     height: 1.5em;
     left: 9.55em;
     top: 11.5em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 50%;
     border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
@@ -496,7 +500,7 @@ article:nth-of-type(3) button:nth-of-type(2) {
     height: 1.5em;
     left: 7.8em;
     top: 12.4em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 50%;
     border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
@@ -529,7 +533,7 @@ article:nth-of-type(3) button:nth-of-type(3) {
     height: 0.4em;
     left: 4.4em;
     top: 15.5em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 25%;
     border-style: none;
     transform: rotate(0deg);
@@ -561,7 +565,7 @@ article:nth-of-type(3) button:nth-of-type(4) {
     height: 0.4em;
     left: 6.4em;
     top: 15.5em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 25%;
     border-style: none;
     transform: rotate(0deg);
@@ -593,7 +597,7 @@ article:nth-of-type(3) button:nth-of-type(4):active {
     height: 0.8em;
     left: 1.1em;
     top: 10em;
-    background: #121421;
+    background: var(--kleurDpad);
     border: none;
     border-radius: 0.2em;
     box-sizing: border-box;
@@ -866,7 +870,7 @@ article:nth-of-type(4) button:nth-of-type(1) {
     height: 1.5em;
     left: 9.55em;
     top: 11.5em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 50%;
     border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
@@ -899,7 +903,7 @@ article:nth-of-type(4) button:nth-of-type(2) {
     left: 7.8em;
     top: 12.4em;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
@@ -931,7 +935,7 @@ article:nth-of-type(4) button:nth-of-type(3) {
     left: 4.3em;
     top: 15.5em;
     border-radius: 25%;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-style: none;
     transform: rotate(0deg);
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
@@ -962,7 +966,7 @@ article:nth-of-type(4) button:nth-of-type(4) {
     height: 0.4em;
     left: 6.3em;
     top: 15.5em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 25%;
     border-style: none;
     transform: rotate(0deg);
@@ -994,7 +998,7 @@ article:nth-of-type(4) button:nth-of-type(4):active {
     height: 0.8em;
     left: 1.1em;
     top: 10em;
-    background: #121421;
+    background: var(kleurDpad);
     border: none;
     border-radius: 0.2em;
     box-sizing: border-box;
@@ -1025,7 +1029,7 @@ article:nth-of-type(5) {
     height: 9.4em;
     top: -87em;
     left: 60em;
-    background-color: #3059D4;
+    background-color: var(--kleurGameBoyAdvanceSP);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -1044,7 +1048,7 @@ article:nth-of-type(5)::after {
     width: 10.5em;
     height: 11em;
     top: 100%;
-    background-color: #3059D4;
+    background-color: var(--kleurGameBoyAdvanceSP);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -1062,7 +1066,6 @@ article:nth-of-type(5) section:nth-of-type(1) div:nth-of-type(2) {
     height: 1.6em;
     left: -0.8em;
     top: 8em;
-    background: red;
     z-index: 1;
     background: linear-gradient(#3059D4 20%, #6184ed 56%, #3059D4 90%) no-repeat;
     border-radius: 2em;
@@ -1127,7 +1130,7 @@ article:nth-of-type(5) button:nth-of-type(1) {
     height: 1.3em;
     left: 9.55em;
     top: 16.7em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 50%;
     border-style: none;
     z-index: 2;
@@ -1161,8 +1164,7 @@ article:nth-of-type(5) button:nth-of-type(2) {
     left: 7.9em;
     top: 17.58em;
     border-radius: 50%;
-    background-color: grey;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
     z-index: 2;
@@ -1186,7 +1188,7 @@ article:nth-of-type(5) button:nth-of-type(3) {
     left: 5em;
     top: 22em;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-style: none;
     transform: rotate(0deg);
     z-index: 1;
@@ -1210,7 +1212,7 @@ article:nth-of-type(5) button:nth-of-type(4) {
     height: 0.9em;
     left: 6.6em;
     top: 22em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 50%;
     border-style: none;
     transform: rotate(0deg);
@@ -1244,7 +1246,7 @@ article:nth-of-type(5) button:nth-of-type(5) {
     height: 0.9em;
     left: 5.8em;
     top: 14em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 50%;
     border-style: none;
     transform: rotate(0deg);
@@ -1259,7 +1261,7 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1) {
     height: 0.8em;
     left: 1.3em;
     top: 14.6em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border: none;
     border-radius: 0.2em;
     box-sizing: border-box;
@@ -1287,7 +1289,7 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(2) {
     height: 3.4em;
     left: 0.71em;
     top: 13.3em;
-    background-color: #3059D4;
+    background-color: var(--kleurGameBoyAdvanceSP);
     border-radius: 50%;
     box-sizing: border-box;
     z-index: 1;
@@ -1301,7 +1303,7 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(3) {
     height: 1.7em;
     left: 6em;
     top: 13.96em;
-    background-color: #3059D4;
+    background-color: var(--kleurGameBoyAdvanceSP);
     border-top-left-radius: 14px 14px;
     border-top-right-radius: 14px 14px;
     border-bottom-left-radius: 14px 14px;
@@ -1402,7 +1404,7 @@ article:nth-of-type(6) button:nth-of-type(1) {
     height: 1.2em;
     left: 13.3em;
     top: 2.6em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 50%;
     border-style: none;
     z-index: 2;
@@ -1436,8 +1438,7 @@ article:nth-of-type(6) button:nth-of-type(2) {
     left: 11.7em;
     top: 3.3em;
     border-radius: 50%;
-    background-color: grey;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-style: none;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
     z-index: 2;
@@ -1460,7 +1461,7 @@ article:nth-of-type(6) section:nth-of-type(2) div:nth-of-type(1) {
     height: 0.8em;
     left: 0.6em;
     top: 2.8em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border: none;
     box-sizing: border-box;
     z-index: 2;
@@ -1525,7 +1526,7 @@ article:nth-of-type(7) {
     height: 8em;
     top: 28em;
     left: 18em;
-    background-color: #B9B4B6;
+    background-color: var(--kleurGame);
     transform: rotate(-4deg);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.22);
 }
@@ -1609,7 +1610,7 @@ article:nth-of-type(8) {
     height: 8em;
     top: 30em;
     left: 22em;
-    background-color: #B9B4B6;
+    background-color: var(--kleurGame);
     transform: rotate(4deg);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.22);
 }
@@ -1803,7 +1804,7 @@ article:nth-of-type(9) button:nth-of-type(1) {
     height: 1.1em;
     left: 17.8em;
     top: 15.7em;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-radius: 50%;
     border-style: none;
     z-index: 2;
@@ -1838,7 +1839,7 @@ article:nth-of-type(9) button:nth-of-type(2) {
     left: 16.8em;
     top: 16.8em;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-style: none;
     z-index: 2;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
@@ -1863,7 +1864,7 @@ article:nth-of-type(9) button:nth-of-type(3) {
     left: 15.8em;
     top: 15.7em;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-style: none;
     z-index: 1;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
@@ -1888,7 +1889,7 @@ article:nth-of-type(9) button:nth-of-type(4) {
     left: 16.8em;
     top: 14.6em;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-style: none;
     z-index: 1;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
@@ -1913,7 +1914,7 @@ article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(5) {
     left: 15.8em;
     top: 19em;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-style: none;
     z-index: 1;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
@@ -1938,7 +1939,7 @@ article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(6) {
     left: 15.8em;
     top: 20.2em;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--kleurKnoppenGameboy);
     border-style: none;
     z-index: 1;
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
