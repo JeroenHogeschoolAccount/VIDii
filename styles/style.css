@@ -114,10 +114,16 @@ article:nth-of-type(1)::before {
     left: 17em;
     background-color: #C1BEB9;
     border-radius: var(--randGameBoy1989Pocket);
+    transform: scale(1);
+    transition:  0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     box-shadow:
         inset -.20em -.25em .25em darkgrey,
         inset .25em .25em .25em rgb(255 255 255),
         1em 1em 2em rgb(0 0 0 / .05);
+}
+
+article:nth-of-type(2):hover{
+    transform: scale(1.07) rotate(-4deg);
 }
 
 /* Game Boy 1989 scherm rand */
@@ -405,10 +411,15 @@ article:nth-of-type(3) {
     background-color: #F4D405;
     border-radius: var(--randGameBoy1989Pocket);
     transform: rotate(-2deg);
+    transition:  cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.6s;
     box-shadow:
         inset -.20em -.25em .25em #a89200,
         inset .25em .25em .25em rgb(222, 193, 0),
         1em 1em 2em rgb(0 0 0 / .05);
+}
+
+article:nth-of-type(3):hover{
+    transform: scale(1.07) rotate(-3deg);
 }
 
 /* Game Boy Pocket scherm rand */
@@ -758,11 +769,17 @@ article:nth-of-type(4) {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 50% 20px;
     border-bottom-right-radius: 50% 20px;
+    transition:  cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.6s;
     box-shadow:
         inset -.20em -.25em .25em #b0152c,
         inset .25em .25em .25em #b0152c,
         1em 1em 2em rgb(0 0 0 / .05);
 }
+
+article:nth-of-type(4):hover {
+    transform: scale(1.07) rotate(3deg);
+}
+
 
 /* Game Boy Color scherm rand */
 article:nth-of-type(4) section:nth-of-type(1) {
@@ -1057,10 +1074,15 @@ article:nth-of-type(5) {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transform: rotate(3deg);
+    transition:  0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     box-shadow:
         inset -.20em -.25em .25em #1a3891,
         inset .25em .25em .25em #1a3891,
         1em 1em 2em rgb(0 0 0 / .05);
+}
+
+article:nth-of-type(5):hover{
+    transform: scale(1.07) rotate(5deg);
 }
 
 /* Game Boy Advance SP behuizing beneden */
@@ -1370,10 +1392,15 @@ article:nth-of-type(6) {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    transition:  0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     box-shadow:
         inset -.20em -.25em .25em grey,
         inset .25em .25em .25em #3d3d3d,
         1em 1em 2em rgb(0 0 0 / .05);
+}
+
+article:nth-of-type(6):hover{
+    transform: scale(1.07) rotate(-3deg);
 }
 
 /* Game Boy Micro behuizing binnenkant */
@@ -1726,6 +1753,7 @@ article:nth-of-type(9) {
     top: -85em;
     left: 32em;
     background-color: var(--kleurNintendoDSWit);
+    transition:  0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -1740,6 +1768,11 @@ article:nth-of-type(9) {
         inset -.20em -.25em .25em silver,
         inset .25em .25em .25em silver,
         1em 1em 2em rgb(0 0 0 / .05);
+}
+
+article:nth-of-type(9):hover{
+    transform: scale(1.07);
+    top: -86em;
 }
 
 /* Nintendo DS behuizing onderkant*/
@@ -1863,7 +1896,7 @@ article:nth-of-type(9) section:nth-of-type(2) button:hover {
 
 article:nth-of-type(9) section:nth-of-type(2) button:active {
     cursor: pointer;
-    box-shadow: inset 0px 1px 1px 0px #262729;
+    box-shadow: inset 0px 1px 1px 0px #fafafa;
 }
 
 /* Nintendo DS button B */
@@ -2064,12 +2097,21 @@ article:nth-of-type(9) section:nth-of-type(4) div {
 article:nth-of-type(10) {
     position: absolute;
     width: 10em;
-    height: 10em;
+    height: 11em;
     left: 53em;
     top: 24em;
     background: #FAF69B;
+    transition:  0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    z-index: 3;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
 }
+
+article:nth-of-type(10):hover{
+    transform: scale(1.4);
+    top: 22em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 20px;
+}
+
 
 /* Papiertje titel */
 article:nth-of-type(10) h1 {
@@ -2099,7 +2141,22 @@ article:nth-of-type(11) {
     background-color: white;
     border-radius: 0px 0px 20px 20px;
     transform: rotate(6deg);
+    transition: transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+}
+
+article:nth-of-type(11):hover{
+    transform: rotate(1turn);
+    animation: usbRondje 0.4s infinite;
+}
+
+@keyframes usbRondje{
+  from {
+    transform: rotate(6deg);
+  }
+  to{
+    transform: rotate(365deg);
+  }
 }
 
 /* USB behuizing opslag */
