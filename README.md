@@ -219,5 +219,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 6. Game op scherm Game Boy Advance SP: https://www.retronintendokopen.nl/gameboy
 7. Game op scherm Nintendo DS: https://www.juegoviejo.com/portable/nintendo-ds-new-super-mario-bros/
 8. Game op scherm Game Boy Micro: https://www.retronintendokopen.nl/gameboy
+9. Kleurtjes: https://mycolor.space/gradient
 
 </details>
