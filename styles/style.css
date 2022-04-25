@@ -35,9 +35,13 @@ main {
     height: 10em;
 }
 
+li {
+    list-style: none;
+}
+
 :root {
-/*    --kleurAchtergrondBody: linear-gradient(to left top, #9a77ff, #835eee, #6c44dc, #5428cb, #3800b9);*/
-     --kleurAchtergrondBody: linear-gradient(to right top, #7676fd, #6462fa, #524cf6, #3e34f1, #2512eb);
+        --kleurAchtergrondBody: linear-gradient(to left top, #9a77ff, #835eee, #6c44dc, #5428cb, #3800b9);
+/*    --kleurAchtergrondBody: linear-gradient(to right top, #7676fd, #6462fa, #524cf6, #3e34f1, #2512eb);*/
     --kleurLa: white;
     --schaduwLa: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
     --schaduwLaKnop: inset 0px 10px 6px 1px rgba(0, 0, 0, 0.1);
@@ -180,7 +184,7 @@ article:nth-of-type(2) h1:nth-of-type(1)::before {
     position: absolute;
     left: 18.4em;
     top: 1.7em;
-    font-size:4.5px;
+    font-size: 4.5px;
     font-weight: bolder;
     color: var(--kleurGameBoy1989Blauw);
     font-family: Gloria Hallelujah, sans-serif;
@@ -1082,8 +1086,8 @@ article:nth-of-type(5) {
     top: -87em;
     left: 60em;
     background-color: var(--kleurGameBoyAdvanceSP);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transform: rotate(3deg);
@@ -1108,8 +1112,8 @@ article:nth-of-type(5)::after {
     background-color: var(--kleurGameBoyAdvanceSP);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     box-shadow:
         inset -.20em -.25em .25em #1a3891,
         inset .25em .25em .25em #1a3891,
@@ -1524,6 +1528,52 @@ article:nth-of-type(6) button:nth-of-type(2)::after {
     color: var(--kleurGameBoyABGrijs);
     font-size: 7px;
     font-weight: bold;
+}
+
+/* Game Boy Micro button select*/
+article:nth-of-type(6) button:nth-of-type(3) {
+    position: absolute;
+    width: 1.5em;
+    height: 0.2em;
+    left: 5.4em;
+    top: 7.5em;
+    background-color: var(--kleurKnoppenGameboy);
+    border-style: none;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    z-index: 2;
+}
+
+article:nth-of-type(6) button:nth-of-type(3)::after {
+    content: "SELECT";
+    position: absolute;
+    left: 3.4em;
+    top: 0.1em;
+    color: silver;
+    font-size: 2px;
+    font-weight: lighter;
+}
+
+/* Game Boy Micro button start*/
+article:nth-of-type(6) button:nth-of-type(4) {
+    position: absolute;
+    width: 1.5em;
+    height: 0.2em;
+    left: 7.9em;
+    top: 7.5em;
+    background-color: var(--kleurKnoppenGameboy);
+    border-style: none;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    z-index: 2;
+}
+
+article:nth-of-type(6) button:nth-of-type(4)::after {
+    content: "START";
+    position: absolute;
+    left: 3.6em;
+    top: 0.1em;
+    color: silver;
+    font-size: 2px;
+    font-weight: lighter;
 }
 
 /* Game Boy Micro dpad */
@@ -2012,6 +2062,11 @@ article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(5)::after {
     font-weight: bold;
 }
 
+article:nth-of-type(9) section:nth-of-type(2) button:active {
+    cursor: pointer;
+    box-shadow: inset 0px 1px 1px 0px #fafafa;
+}
+
 /* Nintendo DS button select */
 article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(6) {
     position: absolute;
@@ -2035,6 +2090,11 @@ article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(6)::after {
     color: grey;
     font-size: 0.3em;
     font-weight: bold;
+}
+
+article:nth-of-type(9) section:nth-of-type(2) button:active {
+    cursor: pointer;
+    box-shadow: inset 0px 1px 1px 0px #fafafa;
 }
 
 /* Nintendo DS dpad */
@@ -2251,3 +2311,173 @@ article:nth-of-type(12):hover {
         opacity: 0;
     }
 }
+
+
+
+
+
+/*
+ Dpad button
+.dpad {
+    position: absolute;
+    top: 8.48em;
+    left: 1.33em;
+}
+
+ ul:nth-of-type(1) li button {
+    position: absolute;
+    width: 0.8em;
+    height: 0.77em;
+    top: 2em;
+    background-color: var(--kleurDpad);
+    border-style: none;
+    border-radius: 0.2em 0.2em 0em 0em;
+}
+
+ul:nth-of-type(1) li:nth-of-type(1) button:nth-of-type(1) {
+    position: absolute;
+    top: 2.3em;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+ul:nth-of-type(1) li:nth-of-type(1) button:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    width: 0.95em;
+    height: 1em;
+    left: 0em;
+    top: 0.7em;
+    background-color: var(--kleurDpad);
+    z-index: 1;
+}
+
+ul:nth-of-type(1) li:nth-of-type(2) button:nth-of-type(1) {
+    position: absolute;
+    left: 3.88em;
+    top: 3.14em;
+    transform: rotate(90deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+ul:nth-of-type(1) li:nth-of-type(3) button:nth-of-type(1) {
+    position: absolute;
+    left: 3em;
+    top: 4em;
+    transform: rotate(180deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+
+ul:nth-of-type(1) li:nth-of-type(4) button:nth-of-type(1) {
+    position: absolute;
+    left: 2.2em;
+    top: 3.16em;
+    transform: rotate(270deg);
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+}
+*/
+
+
+
+
+
+
+
+/* CSS MET JAVASCRIPT */
+
+
+/* Interactie knop start Game Boy 1989*/
+#info1.grijs {
+    opacity: 100;
+}
+
+#info1{
+    position: absolute;
+    width: 5.25em;
+    height: 4.76em;
+    left: 0.05em;
+    top: 0.1em;
+    opacity: 0;
+}
+
+
+
+/* Interactie knop start Game Boy Pocket*/
+#info2.geel {
+    opacity: 100;
+}
+
+#info2{
+    position: absolute;
+    width: 5.92em;
+    height: 5.57em;
+    top: 0.09em;
+    opacity:0;
+    border-radius: 0.2em;
+}
+
+
+
+/* Interactie knop start Game Boy Color*/
+#info3.rood {
+    opacity: 100;
+}
+
+#info3{
+    position: absolute;
+    width: 5.14em;
+    height: 4.63em;
+    left: 0.07em;
+    top: 0.12em;
+    opacity:0;
+}
+
+
+
+/* Interactie knop start Game Boy Advance SP*/
+#info4.blauw {
+    opacity: 100;
+}
+
+#info4{
+    position: absolute;
+    width: 7.7em;
+    top: 0.09em;
+    left: 0.07em;
+    opacity:0;
+}
+
+
+
+/* Interactie knop start Game Boy Micro*/
+#info5.zwart {
+    opacity: 100;
+}
+
+#info5{
+    position: absolute;
+    width: 5.65em;
+    top: 0.09em;
+    left: 0.07em;
+    opacity:0;
+}
+
+
+
+/* Interactie knop start Nintendo DS*/
+#info6.wit {
+    opacity: 100;
+}
+
+#info6{
+    position: absolute;
+    width: 7.67em;
+    height: 5.68em;
+    top: 0.09em;
+    left: 0.07em;
+    opacity:0;
+}
+
+
+
+
+
