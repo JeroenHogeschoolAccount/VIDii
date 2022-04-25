@@ -40,8 +40,9 @@ li {
 }
 
 :root {
-        --kleurAchtergrondBody: linear-gradient(to left top, #9a77ff, #835eee, #6c44dc, #5428cb, #3800b9);
-/*    --kleurAchtergrondBody: linear-gradient(to right top, #7676fd, #6462fa, #524cf6, #3e34f1, #2512eb);*/
+    --kleurAchtergrondBody: linear-gradient(to left top, #9a77ff, #835eee, #6c44dc, #5428cb, #3800b9);
+    /*    --kleurAchtergrondBody: linear-gradient(to right top, #000118, #05072c, #020b40, #0a0a53, #1e0064);*/
+    /*        --kleurAchtergrondBody: linear-gradient(to right top, #7676fd, #6462fa, #524cf6, #3e34f1, #2512eb);*/
     --kleurLa: white;
     --schaduwLa: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
     --schaduwLaKnop: inset 0px 10px 6px 1px rgba(0, 0, 0, 0.1);
@@ -76,6 +77,7 @@ article:nth-of-type(1) {
     left: 10em;
     background-color: #c2c2c2;
     background-color: #e0e0e0;
+    background-color: #e8e8e8;
     border-style: solid;
     border-color: var(--kleurLa);
     border-width: 0 5em;
@@ -2197,6 +2199,7 @@ article:nth-of-type(10) h1 {
 article:nth-of-type(10) p {
     font-size: 9px;
     margin-left: .9em;
+    margin-right: 1em;
     font-family: 'Fuzzy Bubbles', cursive;
 }
 
@@ -2390,7 +2393,7 @@ ul:nth-of-type(1) li:nth-of-type(4) button:nth-of-type(1) {
     opacity: 100;
 }
 
-#info1{
+#info1 {
     position: absolute;
     width: 5.25em;
     height: 4.76em;
@@ -2406,12 +2409,12 @@ ul:nth-of-type(1) li:nth-of-type(4) button:nth-of-type(1) {
     opacity: 100;
 }
 
-#info2{
+#info2 {
     position: absolute;
     width: 5.92em;
     height: 5.57em;
     top: 0.09em;
-    opacity:0;
+    opacity: 0;
     border-radius: 0.2em;
 }
 
@@ -2422,13 +2425,13 @@ ul:nth-of-type(1) li:nth-of-type(4) button:nth-of-type(1) {
     opacity: 100;
 }
 
-#info3{
+#info3 {
     position: absolute;
     width: 5.14em;
     height: 4.63em;
     left: 0.07em;
     top: 0.12em;
-    opacity:0;
+    opacity: 0;
 }
 
 
@@ -2438,12 +2441,12 @@ ul:nth-of-type(1) li:nth-of-type(4) button:nth-of-type(1) {
     opacity: 100;
 }
 
-#info4{
+#info4 {
     position: absolute;
     width: 7.7em;
     top: 0.09em;
     left: 0.07em;
-    opacity:0;
+    opacity: 0;
 }
 
 
@@ -2453,12 +2456,12 @@ ul:nth-of-type(1) li:nth-of-type(4) button:nth-of-type(1) {
     opacity: 100;
 }
 
-#info5{
+#info5 {
     position: absolute;
     width: 5.65em;
     top: 0.09em;
     left: 0.07em;
-    opacity:0;
+    opacity: 0;
 }
 
 
@@ -2468,16 +2471,11 @@ ul:nth-of-type(1) li:nth-of-type(4) button:nth-of-type(1) {
     opacity: 100;
 }
 
-#info6{
+#info6 {
     position: absolute;
     width: 7.67em;
     height: 5.68em;
     top: 0.09em;
     left: 0.07em;
-    opacity:0;
+    opacity: 0;
 }
-
-
-
-
-
