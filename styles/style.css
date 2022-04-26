@@ -9,22 +9,13 @@
 
 /* ALGEMENE STYLING */
 
-html,
 body {
     height: 100%;
     margin: 0;
-    background-color: #b5814e;
-    background-color: #847dc7;
-    background-color: white;
-    /*     background-image: url(https://images.unsplash.com/photo-1588421874990-1fe162747f9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);*/
-    /*    background-image: url(https://images.unsplash.com/photo-1531824475211-72594993ce2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);*/
-    /*    background-image: url(https://images.unsplash.com/photo-1611072337226-1140ab367200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1576&q=80);*/
-    /*    background-image: url(https://images.unsplash.com/photo-1594922234647-4ade6282c369?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);*/
-    /*    background-image: url(https://images.unsplash.com/photo-1523878288860-7ad281611901?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80);*/
-    /*background-image: linear-gradient(to right top, #b453ff, #9851fb, #7a4ff6, #554df1, #124beb);*/
-    /*    background-image: linear-gradient(to left top, #e777ff, #b990ff, #89a2ff, #5fafff, #46b7ff);*/
-    background-image: var(--kleurAchtergrondBody);
-    /*    background-size: 60em 60em;*/
+    /*    background-image: url(https://images.pexels.com/photos/168448/pexels-photo-168448.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);*/
+    /*    background-image: url(https://images.pexels.com/photos/168438/pexels-photo-168438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);*/
+    background-size: 100%;
+    background-color: var(--achtergrond);
 }
 
 button:not([disabled]) {
@@ -39,10 +30,13 @@ li {
     list-style: none;
 }
 
+ol {
+    margin: 0;
+    position: absolute;
+}
+
 :root {
-    --kleurAchtergrondBody: linear-gradient(to left top, #9a77ff, #835eee, #6c44dc, #5428cb, #3800b9);
-    /*    --kleurAchtergrondBody: linear-gradient(to right top, #000118, #05072c, #020b40, #0a0a53, #1e0064);*/
-    /*        --kleurAchtergrondBody: linear-gradient(to right top, #7676fd, #6462fa, #524cf6, #3e34f1, #2512eb);*/
+    --achtergrond: #81b2f0;
     --kleurLa: white;
     --schaduwLa: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
     --schaduwLaKnop: inset 0px 10px 6px 1px rgba(0, 0, 0, 0.1);
@@ -61,20 +55,24 @@ li {
 
 @media (prefers-color-scheme:dark) {
     :root {
-        --kleurAchtergrondBody: linear-gradient(to right top, #000b7a, #1a0876, #270571, #30026d, #370069);
+        --achtergrond: #060045;
     }
 }
 
 
 
+
+/**************/
 /* DE OUDE LA */
+/**************/
 
 /* La zijkant en onderkant*/
-article:nth-of-type(1) {
+#la {
     position: relative;
     width: 70em;
     height: 40em;
     left: 10em;
+    margin-top: -41em;
     background-color: #c2c2c2;
     background-color: #e0e0e0;
     background-color: #e8e8e8;
@@ -84,8 +82,38 @@ article:nth-of-type(1) {
     box-shadow: var(--schaduwLa);
 }
 
+/* De la dicht*/
+#la.open {
+    margin-top: -45em;
+    animation: laGaatOpen 2.5s cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes laGaatOpen {
+    0% {
+        margin-top: -41em;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* Knop van de la*/
+#laButton {
+    position: absolute;
+    width: 6.8em;
+    height: 2.3em;
+    top: 112.5%;
+    left: 32.6em;
+    background-color: transparent;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
 /* La voorkant*/
-article:nth-of-type(1)::after {
+main ol:nth-of-type(1)::after {
     content: "";
     position: absolute;
     width: 75em;
@@ -96,7 +124,7 @@ article:nth-of-type(1)::after {
 }
 
 /* La knop*/
-article:nth-of-type(1)::before {
+main ol:nth-of-type(1)::before {
     content: "";
     position: absolute;
     width: 6em;
@@ -110,15 +138,18 @@ article:nth-of-type(1)::before {
 
 
 
+
+/*****************/
 /* GAME BOY 1989 */
+/*****************/
 
 /* Game Boy 1989 behuizing*/
-article:nth-of-type(2) {
-    position: relative;
+ol li:nth-of-type(1) article {
+    position: absolute;
     height: 16em;
     width: 10em;
-    top: -38em;
-    left: 17em;
+    top: 2.2em;
+    left: 2.1em;
     background-color: #C1BEB9;
     border-radius: var(--randGameBoy1989Pocket);
     transform: scale(1);
@@ -129,12 +160,12 @@ article:nth-of-type(2) {
         1em 1em 2em rgb(0 0 0 / .05);
 }
 
-article:nth-of-type(2):hover {
+ol li:nth-of-type(1) article:nth-of-type(1):hover {
     transform: scale(1.07) rotate(-4deg);
 }
 
 /* Game Boy 1989 scherm rand */
-article:nth-of-type(2) section:nth-of-type(1) {
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) {
     position: absolute;
     width: 8.36em;
     height: 6em;
@@ -145,14 +176,13 @@ article:nth-of-type(2) section:nth-of-type(1) {
     border-radius: 0.1em 0em 1em 0em / 0em 0em 1em 0em;
 }
 
-
-article:nth-of-type(2) section:nth-of-type(1) :hover {
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) :hover {
     background-image: url(../images/4.png);
     background-size: cover;
 }
 
 /* Game Boy 1989 scherm */
-article:nth-of-type(2) div:nth-of-type(1) {
+ol li:nth-of-type(1) article:nth-of-type(1) div:nth-of-type(1) {
     position: absolute;
     width: 5.36em;
     height: 4.9em;
@@ -164,7 +194,7 @@ article:nth-of-type(2) div:nth-of-type(1) {
 }
 
 /* Game Boy 1989 naam */
-article:nth-of-type(2) h1:nth-of-type(1) {
+ol li:nth-of-type(1) article:nth-of-type(1) h1:nth-of-type(1) {
     position: absolute;
     font-family: Gloria Hallelujah, sans-serif;
     font-size: 8px;
@@ -173,15 +203,15 @@ article:nth-of-type(2) h1:nth-of-type(1) {
     color: var(--kleurGameBoy1989Blauw);
 }
 
-article:nth-of-type(2) h1:nth-of-type(1)::after {
+ol li:nth-of-type(1) article:nth-of-type(1) h1:nth-of-type(1)::after {
     content: "GAME BOY";
     font-size: 12px;
     font-weight: bold;
     color: var(--kleurGameBoy1989Blauw);
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand', cursive, sans-serif;
 }
 
-article:nth-of-type(2) h1:nth-of-type(1)::before {
+ol li:nth-of-type(1) article:nth-of-type(1) h1:nth-of-type(1)::before {
     content: "TM";
     position: absolute;
     left: 18.4em;
@@ -193,7 +223,7 @@ article:nth-of-type(2) h1:nth-of-type(1)::before {
 }
 
 /* Game Boy 1989 button A */
-article:nth-of-type(2) button:nth-of-type(1) {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(1) {
     position: absolute;
     width: 1.5em;
     height: 1.5em;
@@ -206,7 +236,7 @@ article:nth-of-type(2) button:nth-of-type(1) {
     box-shadow: 0px 1px 3px black, 0px 0px 2px black inset;
 }
 
-article:nth-of-type(2) button:nth-of-type(1)::after {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(1)::after {
     content: "A";
     position: absolute;
     top: 2.8em;
@@ -217,18 +247,17 @@ article:nth-of-type(2) button:nth-of-type(1)::after {
     transform: rotate(-30deg);
 }
 
-article:nth-of-type(2) button:nth-of-type(1):hover {
+article:nth-of-type(1) button:nth-of-type(1):hover {
     cursor: pointer;
 }
 
-
-article:nth-of-type(2) button:nth-of-type(1):active {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(1):active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 /* Game Boy 1989 button B */
-article:nth-of-type(2) button:nth-of-type(2) {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(2) {
     position: absolute;
     width: 1.5em;
     height: 1.5em;
@@ -241,7 +270,7 @@ article:nth-of-type(2) button:nth-of-type(2) {
     box-shadow: 0px 1px 3px black, 0px 0px 2px black inset;
 }
 
-article:nth-of-type(2) button:nth-of-type(2)::after {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(2)::after {
     content: "B";
     position: absolute;
     top: 2.8em;
@@ -252,17 +281,17 @@ article:nth-of-type(2) button:nth-of-type(2)::after {
     transform: rotate(-30deg);
 }
 
-article:nth-of-type(2) button:nth-of-type(2):hover {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(2):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(2) button:nth-of-type(2):active {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(2):active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 /* Game Boy 1989 button select */
-article:nth-of-type(2) button:nth-of-type(3) {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(3) {
     position: absolute;
     width: 1.5em;
     height: 0.4em;
@@ -275,7 +304,7 @@ article:nth-of-type(2) button:nth-of-type(3) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(2) button:nth-of-type(3)::after {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(3)::after {
     content: "SELECT";
     position: relative;
     left: -1em;
@@ -284,17 +313,17 @@ article:nth-of-type(2) button:nth-of-type(3)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(2) button:nth-of-type(3):hover {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(3):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(2) button:nth-of-type(3):active {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(3):active {
     cursor: pointer;
     box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 /* Game Boy 1989 button start */
-article:nth-of-type(2) button:nth-of-type(4) {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(4) {
     position: absolute;
     width: 1.5em;
     height: 0.4em;
@@ -307,7 +336,7 @@ article:nth-of-type(2) button:nth-of-type(4) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(2) button:nth-of-type(4)::after {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(4)::after {
     content: "START";
     position: relative;
     left: -0.6em;
@@ -316,11 +345,11 @@ article:nth-of-type(2) button:nth-of-type(4)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(2) button:nth-of-type(4):hover {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(4):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(2) button:nth-of-type(4):active {
+ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(4):active {
     cursor: pointer;
     box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
@@ -352,7 +381,7 @@ article:nth-of-type(2) button:nth-of-type(4):active {
 }
 
 /* Game Boy 1989 luidspreker*/
-article:nth-of-type(2) section:nth-of-type(3) {
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) {
     position: absolute;
     left: 5.8em;
     top: 8.4em;
@@ -362,11 +391,11 @@ article:nth-of-type(2) section:nth-of-type(3) {
     -webkit-transform: rotate(-30deg);
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(1) {
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(1) {
     display: none;
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(2) {
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(2) {
     position: absolute;
     width: 0.25em;
     height: 1.6em;
@@ -376,7 +405,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(2) {
     box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(3) {
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(3) {
     position: absolute;
     width: 0.25em;
     height: 1.6em;
@@ -386,7 +415,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(3) {
     box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(4) {
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(4) {
     position: absolute;
     width: 0.25em;
     height: 1.6em;
@@ -396,7 +425,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(4) {
     box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(5) {
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(5) {
     position: absolute;
     width: 0.25em;
     height: 1.6em;
@@ -406,7 +435,7 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(5) {
     box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
-article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(6) {
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(6) {
     position: absolute;
     width: 0.25em;
     height: 1.6em;
@@ -418,15 +447,19 @@ article:nth-of-type(2) section:nth-of-type(3) div:nth-of-type(6) {
 
 
 
+
+/*******************/
 /* GAME BOY POCKET */
+/*******************/
 
 /* Game Boy Pocket behuizing */
-article:nth-of-type(3) {
-    position: relative;
+/* Box-shadow geleerd van https://codepen.io/shooft/pen/zYpezwG?editors=1100 */
+ol li:nth-of-type(2) article {
+    position: absolute;
     width: 10em;
     height: 16em;
-    top: -54em;
-    left: 30em;
+    top: 2.2em;
+    left: 15.3em;
     background-color: #F4D405;
     border-radius: var(--randGameBoy1989Pocket);
     transform: rotate(-2deg);
@@ -437,12 +470,12 @@ article:nth-of-type(3) {
         1em 1em 2em rgb(0 0 0 / .05);
 }
 
-article:nth-of-type(3):hover {
+ol li:nth-of-type(2) article:hover {
     transform: scale(1.07) rotate(-3deg);
 }
 
 /* Game Boy Pocket scherm rand */
-article:nth-of-type(3) section:nth-of-type(1) {
+ol li:nth-of-type(2) article section:nth-of-type(1) {
     position: absolute;
     width: 8.45em;
     height: 7.3em;
@@ -453,13 +486,13 @@ article:nth-of-type(3) section:nth-of-type(1) {
     border-radius: 0.1em 0em 1em 0em / 0em 0em 1em 0em;
 }
 
-article:nth-of-type(3) section:nth-of-type(1) :hover {
+ol li:nth-of-type(2) article section:nth-of-type(1) :hover {
     background-image: url(../images/5.png);
     background-size: cover;
 }
 
 /* Game Boy Pocket scherm  */
-article:nth-of-type(3) div:nth-of-type(1) {
+ol li:nth-of-type(2) article div:nth-of-type(1) {
     position: absolute;
     width: 6em;
     height: 5.7em;
@@ -472,7 +505,7 @@ article:nth-of-type(3) div:nth-of-type(1) {
 }
 
 /* Game Boy Pocket naam */
-article:nth-of-type(3) h1 {
+ol li:nth-of-type(2) article h1 {
     position: absolute;
     top: 16.5em;
     left: 4.7em;
@@ -483,14 +516,14 @@ article:nth-of-type(3) h1 {
     z-index: 1;
 }
 
-article:nth-of-type(3) h1::after {
+ol li:nth-of-type(2) article h1::after {
     content: "Pocket";
     color: gray;
     font-size: 6px;
     font-weight: 400;
 }
 
-article:nth-of-type(3) h1::before {
+ol li:nth-of-type(2) article h1::before {
     content: "NINTENDO";
     position: absolute;
     width: 8em;
@@ -506,7 +539,7 @@ article:nth-of-type(3) h1::before {
 }
 
 /* Game Boy Pocket button A */
-article:nth-of-type(3) button:nth-of-type(1) {
+ol li:nth-of-type(2) article button:nth-of-type(1) {
     position: absolute;
     width: 1.5em;
     height: 1.5em;
@@ -518,7 +551,7 @@ article:nth-of-type(3) button:nth-of-type(1) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(3) button:nth-of-type(1)::after {
+ol li:nth-of-type(2) article:nth-of-type(1) button:nth-of-type(1)::after {
     content: "A";
     position: absolute;
     top: 2.8em;
@@ -529,18 +562,18 @@ article:nth-of-type(3) button:nth-of-type(1)::after {
     transform: rotate(-30deg);
 }
 
-article:nth-of-type(3) button:nth-of-type(1):hover {
+ol li:nth-of-type(2) article section:nth-of-type(2) button:nth-of-type(1):hover {
     cursor: pointer;
 }
 
 
-article:nth-of-type(3) button:nth-of-type(1):active {
+ol li:nth-of-type(2) article button:nth-of-type(1):active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px #a89200;
 }
 
 /* Game Boy Pocket button B */
-article:nth-of-type(3) button:nth-of-type(2) {
+ol li:nth-of-type(2) article button:nth-of-type(2) {
     position: absolute;
     width: 1.5em;
     height: 1.5em;
@@ -552,7 +585,7 @@ article:nth-of-type(3) button:nth-of-type(2) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(3) button:nth-of-type(2)::after {
+ol li:nth-of-type(2) article button:nth-of-type(2)::after {
     content: "B";
     position: absolute;
     top: 2.8em;
@@ -563,17 +596,17 @@ article:nth-of-type(3) button:nth-of-type(2)::after {
     transform: rotate(-30deg);
 }
 
-article:nth-of-type(3) button:nth-of-type(2):hover {
+ol li:nth-of-type(2) article button:nth-of-type(2):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(3) button:nth-of-type(2):active {
+ol li:nth-of-type(2) article button:nth-of-type(2):active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px #a89200;
 }
 
 /* Game Boy Pocket button select */
-article:nth-of-type(3) button:nth-of-type(3) {
+ol li:nth-of-type(2) article button:nth-of-type(3) {
     position: absolute;
     width: 1.5em;
     height: 0.4em;
@@ -586,7 +619,7 @@ article:nth-of-type(3) button:nth-of-type(3) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(3) button:nth-of-type(3)::after {
+ol li:nth-of-type(2) article button:nth-of-type(3)::after {
     content: "SELECT";
     position: relative;
     left: -1em;
@@ -595,17 +628,17 @@ article:nth-of-type(3) button:nth-of-type(3)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(3) button:nth-of-type(3):hover {
+ol li:nth-of-type(2) article button:nth-of-type(3):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(3) button:nth-of-type(3):active {
+ol li:nth-of-type(2) article button:nth-of-type(3):active {
     cursor: pointer;
     box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 /* Game Boy Pocket button start */
-article:nth-of-type(3) button:nth-of-type(4) {
+ol li:nth-of-type(2) article button:nth-of-type(4) {
     position: absolute;
     width: 1.5em;
     height: 0.4em;
@@ -618,7 +651,7 @@ article:nth-of-type(3) button:nth-of-type(4) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(3) button:nth-of-type(4)::after {
+ol li:nth-of-type(2) article button:nth-of-type(4)::after {
     content: "START";
     position: relative;
     left: -0.6em;
@@ -627,11 +660,11 @@ article:nth-of-type(3) button:nth-of-type(4)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(3) button:nth-of-type(4):hover {
+ol li:nth-of-type(2) article button:nth-of-type(4):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(3) button:nth-of-type(4):active {
+ol li:nth-of-type(2) article button:nth-of-type(4):active {
     cursor: pointer;
     box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
@@ -651,7 +684,7 @@ article:nth-of-type(3) button:nth-of-type(4):active {
 }
 
 /* Game Boy Pocket luidspreker */
-article:nth-of-type(3) section:nth-of-type(3) {
+ol li:nth-of-type(2) article section:nth-of-type(3) {
     position: absolute;
     left: 5.8em;
     top: 8.4em;
@@ -661,14 +694,14 @@ article:nth-of-type(3) section:nth-of-type(3) {
     -webkit-transform: rotate(-30deg);
 }
 
-article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(1) {
+ol li:nth-of-type(2) article section:nth-of-type(3) div:nth-of-type(1) {
     display: none;
 }
 
-article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(2) {
+ol li:nth-of-type(2) article section:nth-of-type(3) div:nth-of-type(2) {
     position: absolute;
     width: 0.3em;
-    height: 0.3em;
+    height: .3em;
     left: 0.4em;
     top: 0.9em;
     background: radial-gradient(#b3b3b3, #757573);
@@ -677,7 +710,7 @@ article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(2) {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.);
 }
 
-article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(3) {
+ol li:nth-of-type(2) article section:nth-of-type(3) div:nth-of-type(3) {
     position: absolute;
     width: 0.3em;
     height: 0.3em;
@@ -689,7 +722,7 @@ article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(3) {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(3)::after {
+ol li:nth-of-type(2) article section:nth-of-type(3) div:nth-of-type(3)::after {
     content: "";
     position: absolute;
     width: 0.3em;
@@ -701,10 +734,10 @@ article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(3)::after {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4) {
+ol li:nth-of-type(2) article section:nth-of-type(3) div:nth-of-type(4) {
     position: absolute;
     width: 0.3em;
-    height: 0.3em;
+    height: .3em;
     top: 0.5em;
     background: radial-gradient(#b3b3b3, #757573);
     margin-left: 1.86em;
@@ -712,7 +745,7 @@ article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4) {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4)::after {
+ol li:nth-of-type(2) article section:nth-of-type(3) div:nth-of-type(4)::after {
     position: absolute;
     content: "";
     width: 0.3em;
@@ -724,7 +757,7 @@ article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4)::after {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4)::before {
+ol li:nth-of-type(2) article section:nth-of-type(3) div:nth-of-type(4)::before {
     content: "";
     position: absolute;
     width: 0.3em;
@@ -736,7 +769,7 @@ article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(4)::before {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(5) {
+ol li:nth-of-type(2) article section:nth-of-type(3) div:nth-of-type(5) {
     position: absolute;
     width: 0.3em;
     height: 0.3em;
@@ -748,7 +781,7 @@ article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(5) {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(5)::after {
+ol li:nth-of-type(2) article section:nth-of-type(3) div:nth-of-type(5)::after {
     content: "";
     position: absolute;
     width: 0.3em;
@@ -760,7 +793,7 @@ article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(5)::after {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(6) {
+ol li:nth-of-type(2) article section:nth-of-type(3) div:nth-of-type(6) {
     position: absolute;
     background: radial-gradient(#b3b3b3, #757573);
     width: 0.3em;
@@ -774,15 +807,18 @@ article:nth-of-type(3) section:nth-of-type(3) div:nth-of-type(6) {
 
 
 
+
+/*****************/
 /* GAME BOY COLOR*/
+/*****************/
 
 /* Game Boy Color behuizing */
-article:nth-of-type(4) {
-    position: relative;
+ol li:nth-of-type(3) article {
+    position: absolute;
     width: 10em;
     height: 17em;
-    top: -70em;
-    left: 44em;
+    top: 2em;
+    left: 29.4em;
     background-color: #EA2642;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -795,13 +831,12 @@ article:nth-of-type(4) {
         1em 1em 2em rgb(0 0 0 / .05);
 }
 
-article:nth-of-type(4):hover {
+ol li:nth-of-type(3) article:hover {
     transform: scale(1.07) rotate(3deg);
 }
 
-
 /* Game Boy Color scherm rand */
-article:nth-of-type(4) section:nth-of-type(1) {
+ol li:nth-of-type(3) article section:nth-of-type(1) {
     position: absolute;
     width: 8.45em;
     height: 7.3em;
@@ -815,14 +850,13 @@ article:nth-of-type(4) section:nth-of-type(1) {
     border-bottom-right-radius: 50% 10px;
 }
 
-article:nth-of-type(4) section:nth-of-type(1) :hover {
+ol li:nth-of-type(3) article section:nth-of-type(1) :hover {
     background-image: url(../images/6.png);
     background-size: cover;
 }
 
-
 /* Game Boy Color scherm */
-article:nth-of-type(4) div:nth-of-type(1) {
+ol li:nth-of-type(3) article div:nth-of-type(1) {
     position: absolute;
     width: 5.3em;
     height: 4.8em;
@@ -834,7 +868,7 @@ article:nth-of-type(4) div:nth-of-type(1) {
 }
 
 /* Game Boy Color naam */
-article:nth-of-type(4) h1 {
+ol li:nth-of-type(3) article h1 {
     position: absolute;
     top: 13.4em;
     left: 4.7em;
@@ -846,11 +880,11 @@ article:nth-of-type(4) h1 {
     z-index: 1;
 }
 
-article:nth-of-type(4) span:nth-of-type(1) {
+ol li:nth-of-type(3) article span:nth-of-type(1) {
     position: relative;
     left: 6.6em;
     top: 8.4em;
-    font-family: 'Kalam', cursive;
+    font-family: 'Kalam', cursive, sans-serif;
     font-size: 0.8em;
     font-style: italic;
     font-weight: bold;
@@ -858,23 +892,23 @@ article:nth-of-type(4) span:nth-of-type(1) {
     z-index: 1;
 }
 
-article:nth-of-type(4) span:nth-of-type(2) {
+ol li:nth-of-type(3) article span:nth-of-type(2) {
     position: relative;
     top: 8.4em;
     left: 6.2em;
     font-style: italic;
     font-size: 0.8em;
     font-weight: bold;
-    font-family: 'Kalam', cursive;
+    font-family: 'Kalam', cursive, sans-serif;
     color: #6E77B8;
     z-index: 1;
 }
 
-article:nth-of-type(4) span:nth-of-type(3) {
+ol li:nth-of-type(3) article span:nth-of-type(3) {
     position: relative;
     top: 8.4em;
     left: 5.9em;
-    font-family: 'Kalam', cursive;
+    font-family: 'Kalam', cursive, sans-serif;
     font-size: 0.8em;
     font-style: italic;
     font-weight: bold;
@@ -882,11 +916,11 @@ article:nth-of-type(4) span:nth-of-type(3) {
     z-index: 1;
 }
 
-article:nth-of-type(4) span:nth-of-type(4) {
+ol li:nth-of-type(3) article span:nth-of-type(4) {
     position: relative;
     top: 8.4em;
     left: 5.5em;
-    font-family: 'Kalam', cursive;
+    font-family: 'Kalam', cursive, sans-serif;
     font-size: 0.8em;
     font-style: italic;
     font-weight: bold;
@@ -894,11 +928,11 @@ article:nth-of-type(4) span:nth-of-type(4) {
     z-index: 1;
 }
 
-article:nth-of-type(4) span:nth-of-type(5) {
+ol li:nth-of-type(3) article span:nth-of-type(5) {
     position: relative;
     top: 8.4em;
     left: 5.1em;
-    font-family: 'Kalam', cursive;
+    font-family: 'Kalam', cursive, sans-serif;
     font-size: 0.8em;
     font-style: italic;
     font-weight: bold;
@@ -906,7 +940,7 @@ article:nth-of-type(4) span:nth-of-type(5) {
     z-index: 1;
 }
 
-article:nth-of-type(4) h1::before {
+ol li:nth-of-type(3) article h1::before {
     content: "NINTENDO";
     position: absolute;
     width: 8em;
@@ -922,7 +956,7 @@ article:nth-of-type(4) h1::before {
 }
 
 /* Game Boy Color button A */
-article:nth-of-type(4) button:nth-of-type(1) {
+ol li:nth-of-type(3) article button:nth-of-type(1) {
     position: absolute;
     width: 1.5em;
     height: 1.5em;
@@ -934,7 +968,7 @@ article:nth-of-type(4) button:nth-of-type(1) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(4) button:nth-of-type(1)::after {
+ol li:nth-of-type(3) article button:nth-of-type(1)::after {
     content: "A";
     position: absolute;
     top: 0.95em;
@@ -944,17 +978,17 @@ article:nth-of-type(4) button:nth-of-type(1)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(4) button:nth-of-type(1):hover {
+ol li:nth-of-type(3) article button:nth-of-type(1):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(4) button:nth-of-type(1):active {
+ol li:nth-of-type(3) article button:nth-of-type(1):active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px #b0152c;
 }
 
 /* Game Boy Color button B */
-article:nth-of-type(4) button:nth-of-type(2) {
+ol li:nth-of-type(3) article button:nth-of-type(2) {
     position: absolute;
     width: 1.5em;
     height: 1.5em;
@@ -966,7 +1000,7 @@ article:nth-of-type(4) button:nth-of-type(2) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(4) button:nth-of-type(2)::after {
+ol li:nth-of-type(3) article button:nth-of-type(2)::after {
     content: "B";
     position: absolute;
     left: 1.1em;
@@ -976,17 +1010,17 @@ article:nth-of-type(4) button:nth-of-type(2)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(4) button:nth-of-type(2):hover {
+ol li:nth-of-type(3) article button:nth-of-type(2):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(4) button:nth-of-type(2):active {
+ol li:nth-of-type(3) article button:nth-of-type(2):active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px #b0152c;
 }
 
 /* Game Boy Color button select */
-article:nth-of-type(4) button:nth-of-type(3) {
+ol li:nth-of-type(3) article button:nth-of-type(3) {
     position: absolute;
     width: 1.5em;
     height: 0.4em;
@@ -999,7 +1033,7 @@ article:nth-of-type(4) button:nth-of-type(3) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(4) button:nth-of-type(3)::after {
+ol li:nth-of-type(3) article button:nth-of-type(3)::after {
     content: "SELECT";
     position: relative;
     left: -1em;
@@ -1008,17 +1042,17 @@ article:nth-of-type(4) button:nth-of-type(3)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(4) button:nth-of-type(3):hover {
+ol li:nth-of-type(3) article button:nth-of-type(3):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(4) button:nth-of-type(3):active {
+ol li:nth-of-type(3) article button:nth-of-type(3):active {
     cursor: pointer;
     box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 /* Game Boy Color button start */
-article:nth-of-type(4) button:nth-of-type(4) {
+ol li:nth-of-type(3) article button:nth-of-type(4) {
     position: absolute;
     width: 1.5em;
     height: 0.4em;
@@ -1031,7 +1065,7 @@ article:nth-of-type(4) button:nth-of-type(4) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(4) button:nth-of-type(4)::after {
+ol li:nth-of-type(3) article button:nth-of-type(4)::after {
     content: "START";
     position: relative;
     left: -0.6em;
@@ -1040,11 +1074,11 @@ article:nth-of-type(4) button:nth-of-type(4)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(4) button:nth-of-type(4):hover {
+ol li:nth-of-type(3) article button:nth-of-type(4):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(4) button:nth-of-type(4):active {
+ol li:nth-of-type(3) article button:nth-of-type(4):active {
     cursor: pointer;
     box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
@@ -1063,30 +1097,20 @@ article:nth-of-type(4) button:nth-of-type(4):active {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-/*
-article:nth-of-type(4) section:nth-of-type(3) {
-    position: absolute;
-    left: 5.8em;
-    top: 8.4em;
-    margin-top: 6.1em;
-    transform: rotate(-35deg);
-    -ms-transform: rotate(-30deg);
-    -webkit-transform: rotate(-30deg);
-}
-*/
 
 
 
-
+/**********************/
 /* GAME BOY ADVANCE SP*/
+/**********************/
 
 /* Game Boy Advance SP behuizing boven */
-article:nth-of-type(5) {
-    position: relative;
+ol li:nth-of-type(4) article {
+    position: absolute;
     width: 10.5em;
     height: 9.4em;
-    top: -87em;
-    left: 60em;
+    top: 2.1em;
+    left: 45.3em;
     background-color: var(--kleurGameBoyAdvanceSP);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -1100,12 +1124,12 @@ article:nth-of-type(5) {
         1em 1em 2em rgb(0 0 0 / .05);
 }
 
-article:nth-of-type(5):hover {
+ol li:nth-of-type(4) article:hover {
     transform: scale(1.07) rotate(5deg);
 }
 
 /* Game Boy Advance SP behuizing beneden */
-article:nth-of-type(5)::after {
+ol li:nth-of-type(4) article::after {
     content: "";
     position: absolute;
     width: 10.5em;
@@ -1123,7 +1147,7 @@ article:nth-of-type(5)::after {
 }
 
 /* Game Boy Advance SP ronde balk */
-article:nth-of-type(5) section:nth-of-type(1) div:nth-of-type(2) {
+ol li:nth-of-type(4) article section:nth-of-type(1) div:nth-of-type(2) {
     position: absolute;
     width: 10.5em;
     height: 1.6em;
@@ -1139,7 +1163,7 @@ article:nth-of-type(5) section:nth-of-type(1) div:nth-of-type(2) {
 }
 
 /* Game Boy Advance SP scherm rand */
-article:nth-of-type(5) section:nth-of-type(1) {
+ol li:nth-of-type(4) article section:nth-of-type(1) {
     position: absolute;
     width: 8.7em;
     height: 6.4em;
@@ -1151,13 +1175,13 @@ article:nth-of-type(5) section:nth-of-type(1) {
     box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
 }
 
-article:nth-of-type(5) section:nth-of-type(1) :hover {
+ol li:nth-of-type(4) article section:nth-of-type(1) :hover {
     background-image: url(../images/7.png);
     background-size: cover;
 }
 
 /* Game Boy Advance SP scherm */
-article:nth-of-type(5) div:nth-of-type(1) {
+ol li:nth-of-type(4) article div:nth-of-type(1) {
     position: absolute;
     width: 7.8em;
     height: 4.9em;
@@ -1169,7 +1193,7 @@ article:nth-of-type(5) div:nth-of-type(1) {
 }
 
 /* Game Boy Advance SP naam */
-article:nth-of-type(5) h1 {
+ol li:nth-of-type(4) article h1 {
     position: absolute;
     top: 15em;
     left: 6.15em;
@@ -1181,7 +1205,7 @@ article:nth-of-type(5) h1 {
     z-index: 1;
 }
 
-article:nth-of-type(5) h1::before {
+ol li:nth-of-type(4) article h1::before {
     content: "Advance SP";
     position: absolute;
     width: 8em;
@@ -1192,7 +1216,7 @@ article:nth-of-type(5) h1::before {
 }
 
 /* Game Boy Advance SP button A */
-article:nth-of-type(5) button:nth-of-type(1) {
+ol li:nth-of-type(4) article button:nth-of-type(1) {
     position: absolute;
     width: 1.3em;
     height: 1.3em;
@@ -1205,7 +1229,7 @@ article:nth-of-type(5) button:nth-of-type(1) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(5) button:nth-of-type(1)::after {
+ol li:nth-of-type(4) article button:nth-of-type(1)::after {
     content: "A";
     position: absolute;
     top: 0.7em;
@@ -1215,17 +1239,17 @@ article:nth-of-type(5) button:nth-of-type(1)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(5) section:nth-of-type(2) button:hover {
+ol li:nth-of-type(4) article section:nth-of-type(2) button:hover {
     cursor: pointer;
 }
 
-article:nth-of-type(5) section:nth-of-type(2) button:active {
+ol li:nth-of-type(4) article section:nth-of-type(2) button:active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px #262729;
 }
 
 /* Game Boy Advance SP button B */
-article:nth-of-type(5) button:nth-of-type(2) {
+ol li:nth-of-type(4) article button:nth-of-type(2) {
     position: absolute;
     width: 1.3em;
     height: 1.3em;
@@ -1234,11 +1258,11 @@ article:nth-of-type(5) button:nth-of-type(2) {
     border-radius: 50%;
     background-color: var(--kleurKnoppenGameboy);
     border-style: none;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
     z-index: 2;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(5) button:nth-of-type(2)::after {
+ol li:nth-of-type(4) article button:nth-of-type(2)::after {
     content: "B";
     position: absolute;
     left: 1em;
@@ -1249,7 +1273,7 @@ article:nth-of-type(5) button:nth-of-type(2)::after {
 }
 
 /* Game Boy Advance SP button select */
-article:nth-of-type(5) button:nth-of-type(3) {
+ol li:nth-of-type(4) article button:nth-of-type(3) {
     position: absolute;
     width: 0.9em;
     height: 0.9em;
@@ -1263,7 +1287,7 @@ article:nth-of-type(5) button:nth-of-type(3) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(5) button:nth-of-type(3)::after {
+ol li:nth-of-type(4) article button:nth-of-type(3)::after {
     content: "SELECT";
     position: relative;
     left: -2em;
@@ -1274,7 +1298,7 @@ article:nth-of-type(5) button:nth-of-type(3)::after {
 }
 
 /* Game Boy Advance SP button start */
-article:nth-of-type(5) button:nth-of-type(4) {
+ol li:nth-of-type(4) article button:nth-of-type(4) {
     position: absolute;
     width: 0.5em;
     height: 0.9em;
@@ -1288,7 +1312,7 @@ article:nth-of-type(5) button:nth-of-type(4) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(5) button:nth-of-type(4)::after {
+ol li:nth-of-type(4) article button:nth-of-type(4)::after {
     content: "START";
     position: relative;
     left: -1.7em;
@@ -1298,17 +1322,17 @@ article:nth-of-type(5) button:nth-of-type(4)::after {
     top: -3.5em;
 }
 
-article:nth-of-type(5) button:nth-of-type(4):hover {
+ol li:nth-of-type(4) article button:nth-of-type(4):hover {
     cursor: pointer;
 }
 
-article:nth-of-type(5) button:nth-of-type(4):active {
+ol li:nth-of-type(4) article button:nth-of-type(4):active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px #262729;
 }
 
 /* Game Boy Advance SP button midden */
-article:nth-of-type(5) button:nth-of-type(5) {
+ol li:nth-of-type(4) article button:nth-of-type(5) {
     position: absolute;
     width: 0.5em;
     height: 0.9em;
@@ -1323,7 +1347,7 @@ article:nth-of-type(5) button:nth-of-type(5) {
 }
 
 /* Game Boy Advance SP dpad */
-article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1) {
+ol li:nth-of-type(4) article section:nth-of-type(2) div:nth-of-type(1) {
     position: absolute;
     width: 2.2em;
     height: 0.8em;
@@ -1337,7 +1361,7 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1)::after {
+ol li:nth-of-type(4) article section:nth-of-type(2) div:nth-of-type(1)::after {
     content: "";
     position: absolute;
     width: 2.2em;
@@ -1351,7 +1375,7 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(1)::after {
 }
 
 /* Game Boy Advance SP schaduw vorm dpad */
-article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(2) {
+ol li:nth-of-type(4) article section:nth-of-type(2) div:nth-of-type(2) {
     position: absolute;
     width: 3.4em;
     height: 3.4em;
@@ -1365,7 +1389,7 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(2) {
 }
 
 /* Game Boy Advance SP schaduw vorm A B  */
-article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(3) {
+ol li:nth-of-type(4) article section:nth-of-type(2) div:nth-of-type(3) {
     position: absolute;
     width: 3.6em;
     height: 1.7em;
@@ -1382,30 +1406,20 @@ article:nth-of-type(5) section:nth-of-type(2) div:nth-of-type(3) {
     box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.8);
 }
 
-/*
-article:nth-of-type(5) section:nth-of-type(3) {
-    position: absolute;
-    left: 5.8em;
-    top: 8.4em;
-    margin-top: 6.1em;
-    transform: rotate(-35deg);
-    -ms-transform: rotate(-30deg);
-    -webkit-transform: rotate(-30deg);
-}
-*/
 
 
 
-
+/****************/
 /*GAME BOY MICRO*/
+/****************/
 
 /* Game Boy Micro behuizing buitenkant */
-article:nth-of-type(6) {
-    position: relative;
+ol li:nth-of-type(5) article {
+    position: absolute;
     width: 12.7em;
     height: 6.5em;
-    left: 17em;
-    top: -78.5em;
+    top: 20.24em;
+    left: 2.1em;
     background-color: #3d3d3d;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -1418,12 +1432,12 @@ article:nth-of-type(6) {
         1em 1em 2em rgb(0 0 0 / .05);
 }
 
-article:nth-of-type(6):hover {
+ol li:nth-of-type(5) article:hover {
     transform: scale(1.07) rotate(-3deg);
 }
 
 /* Game Boy Micro behuizing binnenkant */
-article:nth-of-type(6)::after {
+ol li:nth-of-type(5) article::after {
     content: "";
     position: absolute;
     width: 12.7em;
@@ -1440,26 +1454,8 @@ article:nth-of-type(6)::after {
         1em 1em 2em rgb(0 0 0 / .09);
 }
 
-/*
-article:nth-of-type(6) section:nth-of-type(1) div:nth-of-type(2) {
-    position: absolute;
-    width: 10.5em;
-    height: 1.6em;
-    left: -0.8em;
-    top: 8em;
-    background: red;
-    z-index: 1;
-    background: linear-gradient(#3059D4 20%, #6184ed 56%, #3059D4 90%) no-repeat;
-    border-radius: 2em;
-    box-shadow:
-        inset -.20em -.25em .25em #1a3891,
-        inset .25em .25em .25em #1a3891,
-        1em 1em 2em rgb(0 0 0 / .05);
-}
-*/
-
 /* Game Boy Micro scherm */
-article:nth-of-type(6) div:nth-of-type(1) {
+ol li:nth-of-type(5) article div:nth-of-type(1) {
     position: absolute;
     width: 5.8em;
     height: 3.9em;
@@ -1470,13 +1466,13 @@ article:nth-of-type(6) div:nth-of-type(1) {
     box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
 }
 
-article:nth-of-type(6) div:nth-of-type(1):hover {
+ol li:nth-of-type(5) article div:nth-of-type(1):hover {
     background-image: url(../images/8.png);
     background-size: cover;
 }
 
 /* Game Boy Micro button A */
-article:nth-of-type(6) button:nth-of-type(1) {
+ol li:nth-of-type(5) article button:nth-of-type(1) {
     position: absolute;
     width: 1.2em;
     height: 1.2em;
@@ -1489,7 +1485,7 @@ article:nth-of-type(6) button:nth-of-type(1) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(6) button:nth-of-type(1)::after {
+ol li:nth-of-type(5) article button:nth-of-type(1)::after {
     content: "A";
     position: absolute;
     top: 0.7em;
@@ -1499,17 +1495,17 @@ article:nth-of-type(6) button:nth-of-type(1)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(6) section:nth-of-type(2) button:hover {
+ol li:nth-of-type(5) article section:nth-of-type(2) button:hover {
     cursor: pointer;
 }
 
-article:nth-of-type(6) section:nth-of-type(2) button:active {
+ol li:nth-of-type(5) article section:nth-of-type(2) button:active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px #262729;
 }
 
 /* Game Boy Micro button B */
-article:nth-of-type(6) button:nth-of-type(2) {
+ol li:nth-of-type(5) article button:nth-of-type(2) {
     position: absolute;
     width: 1.2em;
     height: 1.2em;
@@ -1522,7 +1518,7 @@ article:nth-of-type(6) button:nth-of-type(2) {
     z-index: 2;
 }
 
-article:nth-of-type(6) button:nth-of-type(2)::after {
+ol li:nth-of-type(5) article button:nth-of-type(2)::after {
     content: "B";
     position: absolute;
     left: 0.85em;
@@ -1533,7 +1529,7 @@ article:nth-of-type(6) button:nth-of-type(2)::after {
 }
 
 /* Game Boy Micro button select*/
-article:nth-of-type(6) button:nth-of-type(3) {
+ol li:nth-of-type(5) article button:nth-of-type(3) {
     position: absolute;
     width: 1.5em;
     height: 0.2em;
@@ -1545,7 +1541,7 @@ article:nth-of-type(6) button:nth-of-type(3) {
     z-index: 2;
 }
 
-article:nth-of-type(6) button:nth-of-type(3)::after {
+ol li:nth-of-type(5) article button:nth-of-type(3)::after {
     content: "SELECT";
     position: absolute;
     left: 3.4em;
@@ -1556,7 +1552,7 @@ article:nth-of-type(6) button:nth-of-type(3)::after {
 }
 
 /* Game Boy Micro button start*/
-article:nth-of-type(6) button:nth-of-type(4) {
+ol li:nth-of-type(5) article button:nth-of-type(4) {
     position: absolute;
     width: 1.5em;
     height: 0.2em;
@@ -1568,7 +1564,7 @@ article:nth-of-type(6) button:nth-of-type(4) {
     z-index: 2;
 }
 
-article:nth-of-type(6) button:nth-of-type(4)::after {
+ol li:nth-of-type(5) article button:nth-of-type(4)::after {
     content: "START";
     position: absolute;
     left: 3.6em;
@@ -1579,7 +1575,7 @@ article:nth-of-type(6) button:nth-of-type(4)::after {
 }
 
 /* Game Boy Micro dpad */
-article:nth-of-type(6) section:nth-of-type(2) div:nth-of-type(1) {
+ol li:nth-of-type(5) article section:nth-of-type(2) div:nth-of-type(1) {
     position: absolute;
     width: 2.2em;
     height: 0.8em;
@@ -1592,7 +1588,7 @@ article:nth-of-type(6) section:nth-of-type(2) div:nth-of-type(1) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 
-article:nth-of-type(6) section:nth-of-type(2) div:nth-of-type(1)::after {
+ol li:nth-of-type(5) article section:nth-of-type(2) div:nth-of-type(1)::after {
     content: "";
     position: absolute;
     width: 2.2em;
@@ -1605,7 +1601,7 @@ article:nth-of-type(6) section:nth-of-type(2) div:nth-of-type(1)::after {
 }
 
 /* Game Boy Micro luidspreker */
-article:nth-of-type(6) section:nth-of-type(3) div:nth-of-type(1) {
+ol li:nth-of-type(5) article section:nth-of-type(3) div:nth-of-type(1) {
     position: absolute;
     width: 0.3em;
     height: 0.15em;
@@ -1616,7 +1612,7 @@ article:nth-of-type(6) section:nth-of-type(3) div:nth-of-type(1) {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.4);
 }
 
-article:nth-of-type(6) section:nth-of-type(3) div:nth-of-type(1)::after {
+ol li:nth-of-type(5) article section:nth-of-type(3) div:nth-of-type(1)::after {
     content: "";
     position: absolute;
     width: 0.3em;
@@ -1627,7 +1623,7 @@ article:nth-of-type(6) section:nth-of-type(3) div:nth-of-type(1)::after {
     box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.4);
 }
 
-article:nth-of-type(6) section:nth-of-type(3) div:nth-of-type(1)::before {
+ol li:nth-of-type(5) article section:nth-of-type(3) div:nth-of-type(1)::before {
     content: "";
     position: absolute;
     width: 0.3em;
@@ -1641,22 +1637,24 @@ article:nth-of-type(6) section:nth-of-type(3) div:nth-of-type(1)::before {
 
 
 
+/***************/
 /* OUDE GAME 1 */
+/***************/
 
 /* Oude game 1 behuizing */
-article:nth-of-type(7) {
+ol li:nth-of-type(6) article {
     position: absolute;
     width: 7em;
     height: 8em;
-    top: 28em;
-    left: 18em;
+    top: 28.3em;
+    left: 3.5em;
     background-color: var(--kleurGame);
     transform: rotate(-4deg);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.22);
 }
 
 /* Game game 1 plek van merk */
-article:nth-of-type(7)::before {
+ol li:nth-of-type(6) article::before {
     content: "";
     position: absolute;
     width: 6em;
@@ -1669,7 +1667,7 @@ article:nth-of-type(7)::before {
 }
 
 /* Game game 1 merk */
-article:nth-of-type(7) h1:nth-of-type(1) {
+ol li:nth-of-type(6) article h1:nth-of-type(1) {
     position: absolute;
     top: 1.5em;
     left: 2.6em;
@@ -1678,7 +1676,7 @@ article:nth-of-type(7) h1:nth-of-type(1) {
     color: grey;
 }
 
-article:nth-of-type(7) h1:nth-of-type(1)::after {
+ol li:nth-of-type(6) article h1:nth-of-type(1)::after {
     content: "GAME BOY";
     font-size: 8px;
     font-weight: 400;
@@ -1686,7 +1684,7 @@ article:nth-of-type(7) h1:nth-of-type(1)::after {
 }
 
 /* Game game 1 plek afbeelding */
-article:nth-of-type(7) section:nth-of-type(1) {
+ol li:nth-of-type(6) article section:nth-of-type(1) {
     position: absolute;
     width: 5.4em;
     height: 4.4em;
@@ -1697,7 +1695,7 @@ article:nth-of-type(7) section:nth-of-type(1) {
 }
 
 /* Game game 1 pijltje */
-article:nth-of-type(7) section:nth-of-type(1)::after {
+ol li:nth-of-type(6) article section:nth-of-type(1)::after {
     position: absolute;
     content: "";
     width: 1.1em;
@@ -1710,7 +1708,7 @@ article:nth-of-type(7) section:nth-of-type(1)::after {
 }
 
 /* Game game 1 afbeelding */
-article:nth-of-type(7) section:nth-of-type(1) img:nth-of-type(1) {
+ol li:nth-of-type(6) article section:nth-of-type(1) img:nth-of-type(1) {
     position: absolute;
     width: 5.2em;
     height: 4.2em;
@@ -1724,22 +1722,24 @@ article:nth-of-type(7) section:nth-of-type(1) img:nth-of-type(1) {
 
 
 
+/**************/
 /* OUDE GAME 2*/
+/**************/
 
 /* Game 2 behuizing */
-article:nth-of-type(8) {
+ol li:nth-of-type(7) article {
     position: absolute;
     width: 7em;
     height: 8em;
     top: 30em;
-    left: 22em;
+    left: 8em;
     background-color: var(--kleurGame);
     transform: rotate(4deg);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.22);
 }
 
 /* Game 2 plek van merk */
-article:nth-of-type(8)::before {
+ol li:nth-of-type(7) article::before {
     content: "";
     position: absolute;
     width: 6em;
@@ -1752,7 +1752,7 @@ article:nth-of-type(8)::before {
 }
 
 /* Game 2 merk */
-article:nth-of-type(8) h1:nth-of-type(1) {
+ol li:nth-of-type(7) article h1:nth-of-type(1) {
     position: absolute;
     top: 1.5em;
     left: 2.6em;
@@ -1761,7 +1761,7 @@ article:nth-of-type(8) h1:nth-of-type(1) {
     color: grey;
 }
 
-article:nth-of-type(8) h1:nth-of-type(1)::after {
+ol li:nth-of-type(7) article h1:nth-of-type(1)::after {
     content: "GAME BOY";
     font-size: 8px;
     font-weight: 400;
@@ -1769,7 +1769,7 @@ article:nth-of-type(8) h1:nth-of-type(1)::after {
 }
 
 /* Game 2 plek afbeelding */
-article:nth-of-type(8) section:nth-of-type(1) {
+ol li:nth-of-type(7) article section:nth-of-type(1) {
     position: absolute;
     width: 5.4em;
     height: 4.4em;
@@ -1780,7 +1780,7 @@ article:nth-of-type(8) section:nth-of-type(1) {
 }
 
 /* Game 2 pijltje */
-article:nth-of-type(8) section:nth-of-type(1)::after {
+ol li:nth-of-type(7) article section:nth-of-type(1)::after {
     position: absolute;
     content: "";
     width: 1.1em;
@@ -1793,7 +1793,7 @@ article:nth-of-type(8) section:nth-of-type(1)::after {
 }
 
 /* Game 2 afbeelding */
-article:nth-of-type(8) section:nth-of-type(1) img:nth-of-type(1) {
+ol li:nth-of-type(7) article section:nth-of-type(1) img:nth-of-type(1) {
     position: absolute;
     width: 5.2em;
     height: 4.2em;
@@ -1807,41 +1807,36 @@ article:nth-of-type(8) section:nth-of-type(1) img:nth-of-type(1) {
 
 
 
-
+/***************/
 /* NINTENDO DS */
+/***************/
 
 /* Nintendo DS behuizing bovenkant*/
-article:nth-of-type(9) {
-    position: relative;
+ol li:nth-of-type(8) article {
+    position: absolute;
     width: 16.5em;
     height: 9em;
-    top: -85em;
-    left: 32em;
+    top: 19.9em;
+    left: 18em;
     background-color: var(--kleurNintendoDSWit);
     transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    /*
-    box-shadow:
- .2em -.25em 1em silver,
- .15em .25em 1em silver,
-        1em 1em 2em rgb(0 0 0 / .04);
-*/
     box-shadow:
         inset -.20em -.25em .25em silver,
         inset .25em .25em .25em silver,
         1em 1em 2em rgb(0 0 0 / .05);
 }
 
-article:nth-of-type(9):hover {
+ol li:nth-of-type(8) article:hover {
     transform: scale(1.07);
-    top: -86em;
+    top: 18em;
 }
 
 /* Nintendo DS behuizing onderkant*/
-article:nth-of-type(9)::after {
+ol li:nth-of-type(8) article::after {
     content: "";
     position: absolute;
     width: 16.5em;
@@ -1859,7 +1854,7 @@ article:nth-of-type(9)::after {
 }
 
 /* Nintendo DS ronde balk*/
-article:nth-of-type(9) section:nth-of-type(1) div:nth-of-type(2) {
+ol li:nth-of-type(8) article section:nth-of-type(1) div:nth-of-type(2) {
     position: absolute;
     width: 16.5em;
     height: 1.5em;
@@ -1876,7 +1871,7 @@ article:nth-of-type(9) section:nth-of-type(1) div:nth-of-type(2) {
 }
 
 /* Nintendo DS scherm rand bovenkant*/
-article:nth-of-type(9) section:nth-of-type(1) {
+ol li:nth-of-type(8) article section:nth-of-type(1) {
     position: absolute;
     width: 8.7em;
     height: 6.7em;
@@ -1888,13 +1883,13 @@ article:nth-of-type(9) section:nth-of-type(1) {
     box-shadow: inset 0px 0.5px 0px 1px silver;
 }
 
-article:nth-of-type(9) div:nth-of-type(1):hover {
+ol li:nth-of-type(8) article div:nth-of-type(1):hover {
     background-image: url(../images/9.png);
     background-size: cover;
 }
 
 /* Nintendo DS scherm rand onderkant*/
-article:nth-of-type(9) section:nth-of-type(1)::after {
+ol li:nth-of-type(8) article section:nth-of-type(1)::after {
     content: "";
     position: absolute;
     width: 8.7em;
@@ -1906,7 +1901,7 @@ article:nth-of-type(9) section:nth-of-type(1)::after {
 }
 
 /* Nintendo DS scherm bovenkant*/
-article:nth-of-type(9) section:nth-of-type(1) div:nth-of-type(1) {
+ol li:nth-of-type(8) article section:nth-of-type(1) div:nth-of-type(1) {
     position: absolute;
     width: 7.8em;
     height: 5.8em;
@@ -1919,7 +1914,7 @@ article:nth-of-type(9) section:nth-of-type(1) div:nth-of-type(1) {
 }
 
 /* Nintendo DS scherm onderkant*/
-article:nth-of-type(9) section:nth-of-type(1) div:nth-of-type(1)::after {
+ol li:nth-of-type(8) article section:nth-of-type(1) div:nth-of-type(1)::after {
     content: "";
     position: absolute;
     width: 7.8em;
@@ -1931,7 +1926,7 @@ article:nth-of-type(9) section:nth-of-type(1) div:nth-of-type(1)::after {
 }
 
 /* Nintendo DS button A */
-article:nth-of-type(9) button:nth-of-type(1) {
+ol li:nth-of-type(8) article button:nth-of-type(1) {
     position: absolute;
     width: 1.1em;
     height: 1.1em;
@@ -1945,7 +1940,7 @@ article:nth-of-type(9) button:nth-of-type(1) {
     box-shadow: 2px 2px 3px -2px black;
 }
 
-article:nth-of-type(9) button:nth-of-type(1)::after {
+ol li:nth-of-type(8) article button:nth-of-type(1)::after {
     content: "A";
     position: absolute;
     top: 0.5em;
@@ -1955,17 +1950,17 @@ article:nth-of-type(9) button:nth-of-type(1)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(9) section:nth-of-type(2) button:hover {
+ol li:nth-of-type(8) article section:nth-of-type(2) button:hover {
     cursor: pointer;
 }
 
-article:nth-of-type(9) section:nth-of-type(2) button:active {
+ol li:nth-of-type(8) article section:nth-of-type(2) button:active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px #fafafa;
 }
 
 /* Nintendo DS button B */
-article:nth-of-type(9) button:nth-of-type(2) {
+ol li:nth-of-type(8) article button:nth-of-type(2) {
     position: absolute;
     width: 1.1em;
     height: 1.1em;
@@ -1979,7 +1974,7 @@ article:nth-of-type(9) button:nth-of-type(2) {
     box-shadow: 2px 2px 3px -2px black;
 }
 
-article:nth-of-type(9) button:nth-of-type(2)::after {
+ol li:nth-of-type(8) article button:nth-of-type(2)::after {
     content: "B";
     position: absolute;
     left: 0.75em;
@@ -1990,7 +1985,7 @@ article:nth-of-type(9) button:nth-of-type(2)::after {
 }
 
 /* Nintendo DS button Y */
-article:nth-of-type(9) button:nth-of-type(3) {
+ol li:nth-of-type(8) article button:nth-of-type(3) {
     position: absolute;
     width: 1.1em;
     height: 1.1em;
@@ -2004,7 +1999,7 @@ article:nth-of-type(9) button:nth-of-type(3) {
     box-shadow: 2px 2px 3px -2px black;
 }
 
-article:nth-of-type(9) button:nth-of-type(3)::after {
+ol li:nth-of-type(8) article button:nth-of-type(3)::after {
     content: "Y";
     position: absolute;
     left: 0.75em;
@@ -2015,7 +2010,7 @@ article:nth-of-type(9) button:nth-of-type(3)::after {
 }
 
 /* Nintendo DS button X */
-article:nth-of-type(9) button:nth-of-type(4) {
+ol li:nth-of-type(8) article button:nth-of-type(4) {
     position: absolute;
     width: 1.1em;
     height: 1.1em;
@@ -2029,7 +2024,7 @@ article:nth-of-type(9) button:nth-of-type(4) {
     box-shadow: 2px 2px 3px -2px black;
 }
 
-article:nth-of-type(9) button:nth-of-type(4)::after {
+ol li:nth-of-type(8) article button:nth-of-type(4)::after {
     content: "X";
     position: absolute;
     left: 0.75em;
@@ -2040,7 +2035,7 @@ article:nth-of-type(9) button:nth-of-type(4)::after {
 }
 
 /* Nintendo DS button start */
-article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(5) {
+ol li:nth-of-type(8) article section:nth-of-type(2) button:nth-of-type(5) {
     position: absolute;
     width: 0.9em;
     height: 0.9em;
@@ -2054,7 +2049,7 @@ article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(5) {
     box-shadow: 2px 2px 3px -2px black;
 }
 
-article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(5)::after {
+ol li:nth-of-type(8) article section:nth-of-type(2) button:nth-of-type(5)::after {
     content: "START";
     position: absolute;
     left: 3.6em;
@@ -2064,13 +2059,13 @@ article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(5)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(9) section:nth-of-type(2) button:active {
+ol li:nth-of-type(8) article section:nth-of-type(2) button:active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px #fafafa;
 }
 
 /* Nintendo DS button select */
-article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(6) {
+ol li:nth-of-type(8) article section:nth-of-type(2) button:nth-of-type(6) {
     position: absolute;
     width: 0.9em;
     height: 0.9em;
@@ -2084,7 +2079,7 @@ article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(6) {
     box-shadow: 2px 2px 3px -2px black;
 }
 
-article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(6)::after {
+ol li:nth-of-type(8) article section:nth-of-type(2) button:nth-of-type(6)::after {
     content: "SELECT";
     position: absolute;
     left: 3.6em;
@@ -2094,13 +2089,13 @@ article:nth-of-type(9) section:nth-of-type(2) button:nth-of-type(6)::after {
     font-weight: bold;
 }
 
-article:nth-of-type(9) section:nth-of-type(2) button:active {
+ol li:nth-of-type(8) article section:nth-of-type(2) button:active {
     cursor: pointer;
     box-shadow: inset 0px 1px 1px 0px #fafafa;
 }
 
 /* Nintendo DS dpad */
-article:nth-of-type(9) section:nth-of-type(2) div:nth-of-type(1) {
+ol li:nth-of-type(8) article section:nth-of-type(2) div:nth-of-type(1) {
     position: absolute;
     width: 2.2em;
     height: 0.8em;
@@ -2115,7 +2110,7 @@ article:nth-of-type(9) section:nth-of-type(2) div:nth-of-type(1) {
     box-shadow: 2px 2px 3px -2px black;
 }
 
-article:nth-of-type(9) section:nth-of-type(2) div:nth-of-type(1)::after {
+ol li:nth-of-type(8) article section:nth-of-type(2) div:nth-of-type(1)::after {
     content: "";
     position: absolute;
     width: 2.2em;
@@ -2129,16 +2124,16 @@ article:nth-of-type(9) section:nth-of-type(2) div:nth-of-type(1)::after {
     box-shadow: 2px 2px 3px -2px black;
 }
 
-/* Nintendo DS luidspreker X */
-article:nth-of-type(9) section:nth-of-type(3) {
-    position: relative;
+/* Nintendo DS luidspreker */
+ol li:nth-of-type(8) article section:nth-of-type(3) {
+    position: absolute;
     display: flex;
     gap: 0.2em;
-    top: 4.5em;
-    left: 1.5em;
+    top: 4.2em;
+    left: 13.7em;
 }
 
-article:nth-of-type(9) section:nth-of-type(3) div {
+ol li:nth-of-type(8) article section:nth-of-type(3) div {
     width: 0.3em;
     height: 0.3em;
     justify-content: center;
@@ -2147,33 +2142,36 @@ article:nth-of-type(9) section:nth-of-type(3) div {
     background-color: black;
 }
 
-article:nth-of-type(9) section:nth-of-type(4) {
-    position: relative;
+ol li:nth-of-type(8) article section:nth-of-type(4) {
+    position: absolute;
     display: flex;
     top: 4.2em;
-    left: 13.8em;
+    left: 1.8em;
     gap: 0.2em;
 }
 
-article:nth-of-type(9) section:nth-of-type(4) div {
+ol li:nth-of-type(8) article section:nth-of-type(4) div {
     justify-content: center;
     align-items: center;
     width: 0.3em;
     height: 0.3em;
-    background-color: red;
     border-radius: 50%;
     background-color: black;
 }
 
 
+
+
+/*************/
 /* PAPIERTJE */
+/*************/
 
 /* Papiertje zelf */
-article:nth-of-type(10) {
+ol li:nth-of-type(9) article {
     position: absolute;
     width: 10em;
     height: 11em;
-    left: 53em;
+    left: 38.4em;
     top: 24em;
     background: #FAF69B;
     transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
@@ -2181,39 +2179,41 @@ article:nth-of-type(10) {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
 }
 
-article:nth-of-type(10):hover {
+ol li:nth-of-type(9) article:hover {
     transform: scale(1.4);
     top: 22em;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 20px;
 }
 
-
 /* Papiertje titel */
-article:nth-of-type(10) h1 {
+ol li:nth-of-type(9) article h1 {
     font-size: 13px;
     margin-left: 0.5em;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Fuzzy Bubbles', cursive, sans-serif;
 }
 
 /* Papiertje de rest */
-article:nth-of-type(10) p {
+ol li:nth-of-type(9) article p {
     font-size: 9px;
     margin-left: .9em;
     margin-right: 1em;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Fuzzy Bubbles', cursive, sans-serif;
 }
 
 
 
+
+/*******/
 /* USB */
+/*******/
 
 /* USB behuizing */
-article:nth-of-type(11) {
+ol li:nth-of-type(10) article {
     position: absolute;
     width: 2.4em;
     height: 3.5em;
-    top: 30em;
-    left: 65em;
+    top: 29em;
+    left: 50.9em;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
     transform: rotate(6deg);
@@ -2221,7 +2221,7 @@ article:nth-of-type(11) {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
 }
 
-article:nth-of-type(11):hover {
+ol li:nth-of-type(10) article:hover {
     transform: rotate(1turn);
     animation: usbRondje 0.4s infinite;
 }
@@ -2237,7 +2237,7 @@ article:nth-of-type(11):hover {
 }
 
 /* USB behuizing opslag */
-article:nth-of-type(11)::before {
+ol li:nth-of-type(10) article::before {
     content: "1GB";
     position: absolute;
     width: 8em;
@@ -2251,7 +2251,7 @@ article:nth-of-type(11)::before {
 }
 
 /* USB behuizing bovenkant */
-article:nth-of-type(11) section:nth-of-type(1) {
+ol li:nth-of-type(10) article section:nth-of-type(1) {
     position: absolute;
     width: 1.8em;
     height: 1.6em;
@@ -2262,7 +2262,7 @@ article:nth-of-type(11) section:nth-of-type(1) {
 }
 
 /* USB gat links */
-article:nth-of-type(11) section:nth-of-type(1)::before {
+ol li:nth-of-type(10) article section:nth-of-type(1)::before {
     content: "";
     position: absolute;
     width: 0.4em;
@@ -2273,7 +2273,7 @@ article:nth-of-type(11) section:nth-of-type(1)::before {
 }
 
 /* USB gat rechts */
-article:nth-of-type(11) section:nth-of-type(1)::after {
+ol li:nth-of-type(10) article section:nth-of-type(1)::after {
     content: "";
     position: absolute;
     width: 0.4em;
@@ -2285,20 +2285,23 @@ article:nth-of-type(11) section:nth-of-type(1)::after {
 
 
 
+
+/********/
 /* Stof */
-article:nth-of-type(12) {
+/********/
+ol li:nth-of-type(11) article {
     position: absolute;
     width: 1em;
     height: 1em;
     top: 20em;
-    left: 71em;
+    left: 57em;
     background-color: white;
     border-radius: 50%;
     filter: blur(4px);
     opacity: 0.6;
 }
 
-article:nth-of-type(12):hover {
+ol li:nth-of-type(11) article:hover {
     animation: stofWeg 7.5s 0.30s ease-out 1;
 }
 
@@ -2313,6 +2316,142 @@ article:nth-of-type(12):hover {
         transform: scale(7);
         opacity: 0;
     }
+}
+
+
+
+
+/**********************/
+/* CSS MET JAVASCRIPT */
+/**********************/
+
+/* Interactie knop start Game Boy 1989*/
+#info1.grijs {
+    opacity: 100;
+    transition: 0.3s;
+    animation: oudMaarWerktNog 0.7s 2;
+}
+
+@keyframes oudMaarWerktNog {
+    0% {
+        opacity: 0
+    }
+
+    20% {
+        opacity: 100
+    }
+
+    30% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 100
+    }
+
+    70% {
+        opacity: 0
+    }
+
+    85% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 100
+    }
+}
+
+#info1 {
+    position: absolute;
+    width: 5.25em;
+    height: 4.76em;
+    left: 0.05em;
+    top: 0.1em;
+    opacity: 0;
+}
+
+
+
+/* Interactie knop start Game Boy Pocket*/
+#info2.geel {
+    opacity: 100;
+    transition: 0.3s;
+}
+
+#info2 {
+    position: absolute;
+    width: 5.92em;
+    height: 5.57em;
+    top: 0.09em;
+    opacity: 0;
+    border-radius: 0.2em;
+}
+
+
+
+/* Interactie knop start Game Boy Color*/
+#info3.rood {
+    opacity: 100;
+    transition: 0.3s;
+}
+
+#info3 {
+    position: absolute;
+    width: 5.14em;
+    height: 4.63em;
+    left: 0.07em;
+    top: 0.12em;
+    opacity: 0;
+}
+
+
+
+/* Interactie knop start Game Boy Advance SP*/
+#info4.blauw {
+    opacity: 100;
+    transition: 0.3s;
+}
+
+#info4 {
+    position: absolute;
+    width: 7.65em;
+    top: 0.09em;
+    left: 0.07em;
+    opacity: 0;
+}
+
+
+
+/* Interactie knop start Game Boy Micro*/
+#info5.zwart {
+    opacity: 100;
+    transition: 0.5s;
+    transition: 0.3s;
+}
+
+#info5 {
+    position: absolute;
+    width: 5.65em;
+    top: 0.09em;
+    left: 0.07em;
+    opacity: 0;
+}
+
+
+
+/* Interactie knop start Nintendo DS*/
+#info6.wit {
+    opacity: 100;
+}
+
+#info6 {
+    position: absolute;
+    width: 7.67em;
+    height: 5.68em;
+    top: 0.09em;
+    left: 0.07em;
+    opacity: 0;
 }
 
 
@@ -2378,104 +2517,3 @@ ul:nth-of-type(1) li:nth-of-type(4) button:nth-of-type(1) {
     box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
 }
 */
-
-
-
-
-
-
-
-/* CSS MET JAVASCRIPT */
-
-
-/* Interactie knop start Game Boy 1989*/
-#info1.grijs {
-    opacity: 100;
-}
-
-#info1 {
-    position: absolute;
-    width: 5.25em;
-    height: 4.76em;
-    left: 0.05em;
-    top: 0.1em;
-    opacity: 0;
-}
-
-
-
-/* Interactie knop start Game Boy Pocket*/
-#info2.geel {
-    opacity: 100;
-}
-
-#info2 {
-    position: absolute;
-    width: 5.92em;
-    height: 5.57em;
-    top: 0.09em;
-    opacity: 0;
-    border-radius: 0.2em;
-}
-
-
-
-/* Interactie knop start Game Boy Color*/
-#info3.rood {
-    opacity: 100;
-}
-
-#info3 {
-    position: absolute;
-    width: 5.14em;
-    height: 4.63em;
-    left: 0.07em;
-    top: 0.12em;
-    opacity: 0;
-}
-
-
-
-/* Interactie knop start Game Boy Advance SP*/
-#info4.blauw {
-    opacity: 100;
-}
-
-#info4 {
-    position: absolute;
-    width: 7.7em;
-    top: 0.09em;
-    left: 0.07em;
-    opacity: 0;
-}
-
-
-
-/* Interactie knop start Game Boy Micro*/
-#info5.zwart {
-    opacity: 100;
-}
-
-#info5 {
-    position: absolute;
-    width: 5.65em;
-    top: 0.09em;
-    left: 0.07em;
-    opacity: 0;
-}
-
-
-
-/* Interactie knop start Nintendo DS*/
-#info6.wit {
-    opacity: 100;
-}
-
-#info6 {
-    position: absolute;
-    width: 7.67em;
-    height: 5.68em;
-    top: 0.09em;
-    left: 0.07em;
-    opacity: 0;
-}

@@ -11,6 +11,7 @@ function infoTeZien1() {
 	deInfo1.classList.toggle("grijs");
 }
 
+
 // Info scherm 2 - Game Boy Pocket
 var deButtonStart2 = document.getElementById("start2");
 var deInfo2 = document.getElementById("info2");
@@ -55,7 +56,6 @@ function infoTeZien5() {
 }
 
 
-
 // Info scherm 6
 var deButtonStart6 = document.getElementById("start6");
 var deInfo6 = document.getElementById("info6");
@@ -65,4 +65,33 @@ deButtonStart6.addEventListener("click", infoTeZien6);
 function infoTeZien6() {
 	deInfo6.classList.toggle("wit");
 }
+
+
+
+
+// La open doen
+var deButtonLa = document.getElementById("laButton");
+var deLa = document.getElementById("la");
+
+deButtonLa.addEventListener("click", laOpenDoen);
+
+function laOpenDoen() {
+	deLa.classList.toggle("open");
+}
+
+
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 40) {
+        deLa.classList.add("open");
+    }
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 38) {
+        deLa.classList.remove("open");
+    }
+});
+
+
+
 

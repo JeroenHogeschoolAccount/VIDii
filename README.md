@@ -220,5 +220,10 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 7. Game op scherm Nintendo DS: https://www.juegoviejo.com/portable/nintendo-ds-new-super-mario-bros/
 8. Game op scherm Game Boy Micro: https://www.retronintendokopen.nl/gameboy
 9. Kleurtjes: https://mycolor.space/gradient
+10. ol witruimte weghalen: https://stackoverflow.com/questions/27618000/why-ul-adds-extra-top-margin
+11. Transitie: https://easings.net
+12. Animatie laten stoppen bij laatste frame: https://stackoverflow.com/questions/4359627/stopping-a-css3-animation-on-last-frame
+13. JavaScript keycode: https://keycode.info/for/arrow-up
+14. Schaduw randen van Game Boy oefening: https://codepen.io/shooft/pen/zYpezwG?editors=1100
 
 </details>
