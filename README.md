@@ -219,13 +219,13 @@ Ik ben me hiervan bewust en dit lijkt ook echt als een beginnersfout. Ik heb gep
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/5.png" width="700px" alt="eindproduct la dicht">
+  <img src="readme-images/500.png" width="700px" alt="eindproduct la dicht">
   
-  <img src="readme-images/6.png" width="700px" alt="eindproduct la open">
+  <img src="readme-images/600.png" width="700px" alt="eindproduct la open">
   
-  <img src="readme-images/7.png" width="700px" alt="eindproduct la open">
+  <img src="readme-images/700.png" width="700px" alt="eindproduct la open">
   
-  <img src="readme-images/8.png" width="700px" alt="eindproduct la open">
+  <img src="readme-images/800.png" width="700px" alt="eindproduct la open">
 
 
   ### Dit ging goed/Heb ik geleerd: 
