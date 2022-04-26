@@ -45,7 +45,7 @@ function infoTeZien4() {
 }
 
 
-// Info scherm 5 - Nintendo DS
+// Info scherm 5 - Nintendo DS Lite
 var deButtonStart5 = document.getElementById("start5");
 var deInfo5 = document.getElementById("info5");
 
@@ -68,7 +68,7 @@ function infoTeZien6() {
 
 
 
-// La open doen
+// La open en dicht doen
 var deButtonLa = document.getElementById("laButton");
 var deLa = document.getElementById("la");
 
@@ -94,7 +94,7 @@ document.addEventListener('keydown', function (e) {
 
 
 // Muziek
-// Ik wilde graag iets met geluid proberen, helaas kreeg ik het zelf niet voor elkaar. Ik zag toevallig dat Amber ook iets met geluid had gedaan - en heb daarom naar haar JavaScript bestand gekeken. Hier heb ik van geleerd en dit vervolgens toegepast in mijn werk.
+// Ik wilde graag iets met geluid proberen, helaas kreeg ik het zelf net niet voor elkaar. Ik zag toevallig dat Amber ook iets met geluid had gemaakt - en heb daarom naar haar JavaScript bestand gekeken. Hier heb ik van geleerd en dit vervolgens toegepast in mijn werk.
 var geluidAanDoen = document.querySelector(".muziekje");
 
 var audioBestand = document.querySelector("main> ol > li:first-of-type > audio");

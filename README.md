@@ -173,7 +173,7 @@ Ik heb de voorwerpen in een ol > li gezet. Dit is netter en bovendien moest dit 
 
 
   ### Bevinding 2:
-D=pad is gemaakt met div, het is beter dit te maken met een button (of vier verschillende buttons). 
+D-pad is gemaakt met div, het is beter dit te maken met een button (of vier verschillende buttons). 
 
   #### oplossing:
   Ik heb geprobeerd de D-pad te maken met buttons - ik vond dit wel erg lastig. Uiteindelijk is dit volgens mij redelijk gelukt, alleen had ik problemen met het toevoegen ervan in de article. De code ging dan 'stuk'. Door te weinig tijd heb ik dit helaas niet kunnen 'repareren' en heb ik de oude div weer erbij gehaald. De nieuwe D-pad staat wel in de code (HTML & CSS), maar staat in het 'grijs'. 
@@ -200,6 +200,14 @@ Animatie van de la ontbreekt.
   #### oplossing:
 Ik heb een animatie gemaakt wanneer de gebruiker de la open doet. De la is ook te bedienen met de pijltjes toetsen (pijltje naar boven en beneden).
 
+
+
+  ### Bevinding 6:
+id "dpad" wordt vaker dan 1 keer gebruikt in de HTML. 
+
+  #### oplossing:
+Ik ben me hiervan bewust en dit lijkt ook echt als een beginnersfout. Ik heb geprobeerd dit te veranderen in een class, maar vreemd genoeg werkt dit niet in CSS (maar een id wel...). Er zal vast ergens een foutje in mijn code zitten, maar ik ben er nog niet achtergekomen waar precies. Als ik tijd over heb zal ik dit proberen op te lossen.   
+
 </details>
 
 
@@ -221,12 +229,15 @@ Ik heb een animatie gemaakt wanneer de gebruiker de la open doet. De la is ook t
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Ik vond het een leuk vak en ook een hele leuke opdracht. Ik had vorig jaar het vak Frontend voor Designers gevolgd, dus ik wist wel al wat van CSS af. Echter was het wel al weer bijna een jaar geleden, dus ik moest wel weer echt even inkomen. Ik ben uiteindelijk blij met het visuele eindresultaat. Ik heb gekozen om alles te maken met CSS - het kostte me erg veel tijd, maar het geeft me uiteindelijk wel een veel beter gevoel. Illustraties maken in Illustrator voelt voor mij toch een beetje als 'valsspelen' bij dit vak. Doordat ik alles met CSS heb gemaakt heb ik ook weer meer geleerd over het maken van voorwerpen/vormen. Ook heb ik geleerd hoe ik geluid met HTMl & JavaScript kan schrijven. Dit wist ik tot heden niet, maar wilde ik wel altijd al graag leren. Ook is het gelukt om met JavaScript de buttons werkend te krijgen.  
   
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  In het begin vond ik het lastig om de la te maken. Ik wist niet meer zo goed hoe ik dit het beste kon doen. Docent Sanne had een beginnetje voor me gemaakt. Dit hielp me goed op weg. Ik ben begonnen om de voorwerpen met CSS te maken. Nadat ik ze allemaal had gemaakt moesten ze in een ol en li. Dit kreeg ik niet voor elkaar zonder dat mijn website 'heel' bleef. Ik heb hierover een vraag gesteld en met het antwoord van Sanne kwam ik weer verder. Het heeft me wel erg veel tijd gekost, doordat de "nth-of-type" niet meer juist was. Soms was ik uren bezig om te vinden waarom sommige voorwerpen geen vormgeving meer hadden. Uiteindelijk het probleem gevonden en is het achteraf heel logisch... Verder kwam ik wel in tijdnood waardoor ik niet alle foutjes/verbeteringen heb kunnen vinden/repareren/uitvoeren (van de feedback - vermeld in dit verslag). Zoals het vormgeven van de focus state, korter maken van de code (dubbel geschreven regels CSS weghalen), D-pad veranderen in een button, elke h1 bovenaan de article zetten, de dpad id naar class veranderen en een div van de 3D schaduw te veranderen naar een section.  
+  Oh en ik wilde ook nog een Nintendo switch maken die ergens zou liggen op de grond (onder de la), maar door te weinig tijd ben ik hier niet aan toe gekomen. 
+  
+DIT NOG VERANDEREN, MISSCHIEN HEB IK MORGEN NOG EEN BEETJE TIJD OM DINGEN TE VERBETEREN. CSS KORTER MAKEN LUKT DENK IK NOG.  
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>

@@ -6,8 +6,9 @@
 }
 
 
-
+/********************/
 /* ALGEMENE STYLING */
+/********************/
 
 body {
     height: 100%;
@@ -36,11 +37,12 @@ ol {
 }
 
 :root {
+    /*Algemeen + random*/
     --achtergrond: #81b2f0;
-    --kleurLa: white;
-    --schaduwLa: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
-    --schaduwLaKnop: inset 0px 10px 6px 1px rgba(0, 0, 0, 0.1);
     --randGameBoy1989Pocket: 0.5em 0.5em 2em 0.5em / 0.5em 0.5em 2em 0.5em;
+
+    /*kleurtjes*/
+    --kleurLa: white;
     --kleurKnoppenGameboy: black;
     --kleurDpad: #121421;
     --kleurGame: #B9B4B6;
@@ -51,8 +53,14 @@ ol {
     --kleurGameBoy1989Blauw: #1C2162;
     --kleurGameBoyABGrijs: #696969;
     --kleurNintendoDSWit: white;
+    
+    /*Schaduw*/
+    --schaduwLa: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
+    --schaduwLaKnop: inset 0px 10px 6px 1px rgba(0, 0, 0, 0.1);
+    
+    /*Afstand*/
     --hoogteLaGameboy: 2.2em;
-    --breedteGameAfbeelding:7em;
+    --breedteGameAfbeelding: 7em;
 }
 
 @media (prefers-color-scheme:dark) {
@@ -159,7 +167,10 @@ ol li:nth-of-type(1) article {
     box-shadow:
         inset -.20em -.25em .25em darkgrey,
         inset .25em .25em .25em rgb(255 255 255),
-        1em 1em 2em rgb(0 0 0 / .05);
+        1em 1em 2em rgb(0 0 0 / .05),
+        0.2em 0.2em 0.2em rgb(0 0 0 / .1);
+
+    1em 1em 1em black;
 }
 
 ol li:nth-of-type(1) article:nth-of-type(1):hover {
@@ -469,7 +480,8 @@ ol li:nth-of-type(2) article {
     box-shadow:
         inset -.20em -.25em .25em #a89200,
         inset .25em .25em .25em rgb(222, 193, 0),
-        1em 1em 2em rgb(0 0 0 / .05);
+        1em 1em 2em rgb(0 0 0 / .05),
+        0.2em 0.2em 0.2em rgb(0 0 0 / .1);
 }
 
 ol li:nth-of-type(2) article:hover {
@@ -830,7 +842,8 @@ ol li:nth-of-type(3) article {
     box-shadow:
         inset -.20em -.25em .25em #b0152c,
         inset .25em .25em .25em #b0152c,
-        1em 1em 2em rgb(0 0 0 / .05);
+        1em 1em 2em rgb(0 0 0 / .05),
+        0.2em 0.2em 0.2em rgb(0 0 0 / .1);
 }
 
 ol li:nth-of-type(3) article:hover {
@@ -1123,7 +1136,8 @@ ol li:nth-of-type(4) article {
     box-shadow:
         inset -.20em -.25em .25em #1a3891,
         inset .25em .25em .25em #1a3891,
-        1em 1em 2em rgb(0 0 0 / .05);
+        1em 1em 2em rgb(0 0 0 / .05),
+        0.2em 0.2em 0.2em rgb(0 0 0 / .1);
 }
 
 ol li:nth-of-type(4) article:hover {
@@ -1145,7 +1159,8 @@ ol li:nth-of-type(4) article::after {
     box-shadow:
         inset -.20em -.25em .25em #1a3891,
         inset .25em .25em .25em #1a3891,
-        1em 1em 2em rgb(0 0 0 / .05);
+        1em 1em 2em rgb(0 0 0 / .05),
+        0.2em 0.2em 0.2em rgb(0 0 0 / .1);
 }
 
 /* Game Boy Advance SP ronde balk */
@@ -1431,7 +1446,8 @@ ol li:nth-of-type(5) article {
     box-shadow:
         inset -.20em -.25em .25em grey,
         inset .25em .25em .25em #3d3d3d,
-        1em 1em 2em rgb(0 0 0 / .05);
+        1em 1em 2em rgb(0 0 0 / .05),
+        0.2em 0.2em 0.2em rgb(0 0 0 / .1);
 }
 
 ol li:nth-of-type(5) article:hover {
@@ -1468,7 +1484,7 @@ ol li:nth-of-type(5) article div:nth-of-type(1) {
     box-shadow: inset 0px 0.5px 0px 1px rgba(0, 0, 0, 1);
 }
 
-ol li:nth-of-type(5) article div:nth-of-type(1):hover {
+ol li:nth-of-type(5) article section:nth-of-type(1) div:nth-of-type(1):hover {
     background-image: url(../images/8.png);
     background-size: cover;
 }
@@ -1652,7 +1668,8 @@ ol li:nth-of-type(6) article {
     left: 3.5em;
     background-color: var(--kleurGame);
     transform: rotate(-4deg);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.22);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.22),
+        0.1em 0.1em 0.1em rgb(0 0 0 / .1);
 }
 
 /* Game game 1 plek van merk */
@@ -1737,7 +1754,8 @@ ol li:nth-of-type(7) article {
     left: 8em;
     background-color: var(--kleurGame);
     transform: rotate(4deg);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.22);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.22),
+        0.1em 0.1em 0.1em rgb(0 0 0 / .1);
 }
 
 /* Game 2 plek van merk */
@@ -1829,7 +1847,8 @@ ol li:nth-of-type(8) article {
     box-shadow:
         inset -.20em -.25em .25em silver,
         inset .25em .25em .25em silver,
-        1em 1em 2em rgb(0 0 0 / .05);
+        1em 1em 2em rgb(0 0 0 / .05),
+        0.2em 0.2em 0.2em rgb(0 0 0 / .1);
 }
 
 ol li:nth-of-type(8) article:hover {
@@ -1852,7 +1871,8 @@ ol li:nth-of-type(8) article::after {
     box-shadow:
         inset -.20em -.25em .25em silver,
         inset .25em .25em .25em silver,
-        1em 1em 2em rgb(0 0 0 / .05);
+        1em 1em 2em rgb(0 0 0 / .05),
+        0.2em 0.2em 0.2em rgb(0 0 0 / .1);
 }
 
 /* Nintendo DS ronde balk*/
@@ -1885,7 +1905,7 @@ ol li:nth-of-type(8) article section:nth-of-type(1) {
     box-shadow: inset 0px 0.5px 0px 1px silver;
 }
 
-ol li:nth-of-type(8) article div:nth-of-type(1):hover {
+ol li:nth-of-type(8) article section:nth-of-type(1) div:nth-of-type(1):hover {
     background-image: url(../images/9.png);
     background-size: cover;
 }
@@ -2388,6 +2408,7 @@ ol li:nth-of-type(11) article:hover {
     top: 0.09em;
     opacity: 0;
     border-radius: 0.2em;
+    background-size: cover;
 }
 
 
@@ -2461,7 +2482,7 @@ ol li:nth-of-type(11) article:hover {
 
 
 /*
- Dpad button
+ Nieuwe D-pad 
 .dpad {
     position: absolute;
     top: 8.48em;
