@@ -55,9 +55,10 @@ De laatste keer was vorig jaar bij het vak "Frontend voor Designers".
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
   - Nette code 
-  - Game Boy maken met HTML & CSS
+  - Game Boy/vormen maken met HTML & CSS
   - Animaties 
   - Knoppen van de Game Boy werken (met JavaScript)
+  - Geluid kunnen toevoegen 
  
 </details>
 
@@ -73,18 +74,18 @@ De laatste keer was vorig jaar bij het vak "Frontend voor Designers".
  Goed kijken waar de aan/uit knop zit - dit is bij elke Game Boy anders. Soms zit het aan de bovenkant, waardoor ik even goed moet kijken hoe ik dit werkend wil krijgen (animatie en interactie).
 
   #### oplossing:
-Ik heb hier nog geen oplossing voor. Ik zou eventueel de gebruiker op een andere knop kunnen laten klikken, maar dit is wel minder realistisch. 
+Ik heb hier nog geen oplossing voor. Ik zou eventueel de gebruiker op een andere knop kunnen laten klikken, maar dit is wel minder realistisch. Update: ik heb ervoor gekozen om de gebruiker te laten drukken op de "START" knop, deze is bij elke Game Boy aanwezig. 
 
 
   ### Bevinding 2:
   Ik had nog niet nagedacht over easter eggs.
 
   #### oplossing:
-Tijdens het feedbackgesprek kreeg ik idee over een mogelijke easter egg. Wanneer de gebruiker de la dicht doet, kan ik ervoor zorgen dat iets te zien is op de grond (onder de la). 
+Tijdens het feedbackgesprek kreeg ik idee over een mogelijke easter egg. Wanneer de gebruiker de la dicht doet, kan ik ervoor zorgen dat iets te zien is op de grond (onder de la). Bijvoorbeeld kleding of rommel. 
 
 
   ### Bevinding 3:
-Mijn plan was om alles te maken met code - ook alle verschillende Game Boys. Ik kreeg tijdens het feedbackgesprek te horen dat het misschien beter is om niet alles met CSS te maken in verband met de korte tijd die we hebben.
+Mijn plan was om alles te maken met code - ook alle verschillende Game Boys. Ik kreeg tijdens het feedbackgesprek te horen dat het misschien beter is om niet alles met CSS te maken in verband met de korte tijd die we hebben. 
 
   #### oplossing:
 Wanneer ik merk dat ik te weinig tijd heb, kan ik ervoor kiezen om bijvoorbeeld een paar Game Boys in CSS te maken en de rest in Adobe Illustrator (het scherm en de buttons wel met CSS, zodat ik wel animaties en interacties kan toevoegen).
@@ -110,10 +111,10 @@ Wanneer de gebruiker op een bepaalde knop drukt zal er een video afspelen met ee
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  State focus is nog niet aanwezig bij de knoppen.
+  State focus is nog basic.
 
   #### oplossing:
-  Ik ga deze state later toevoegen.
+  Ik zal deze later veranderen. 
 
 
 
@@ -122,7 +123,7 @@ Wanneer de gebruiker op een bepaalde knop drukt zal er een video afspelen met ee
 
   #### oplossing:
   Ik ga commentaar toevoegen, zodat duidelijk wordt wat wat precies is.
-  Zonder commentaar is het onduidelijk, doordat ik bijna geen gebruik maak van class en ID (die kan je een betekenisvolle naam geven). 
+  Zonder commentaar is het onduidelijk, omdat ik bijna geen gebruik maak van class en id (die kan je een betekenisvolle naam geven). 
   
   
   
@@ -140,6 +141,14 @@ Wanneer de gebruiker op een bepaalde knop drukt zal er een video afspelen met ee
   #### oplossing:
   Ik zal kijken waar ik code 'dubbel' heb geschreven en zal dit vervolgens weg halen. 
   
+  
+  
+  ### Bevinding 5:
+  Afbeeldingen bevatten geen alt. 
+
+  #### oplossing:
+  Ik heb alle afbeeldingen een alt gegeven. 
+  
 
   
   
@@ -156,23 +165,40 @@ Wanneer de gebruiker op een bepaalde knop drukt zal er een video afspelen met ee
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+Met CSS gemaakte voorwerpen staan los in de main, dit is geen nette code. 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+Ik heb de voorwerpen in een ol > li gezet. Dit is netter en bovendien moest dit ook om mijn la interactief te maken.  
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+D=pad is gemaakt met div, het is beter dit te maken met een button (of vier verschillende buttons). 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+  Ik heb geprobeerd de D-pad te maken met buttons - ik vond dit wel erg lastig. Uiteindelijk is dit volgens mij redelijk gelukt, alleen had ik problemen met het toevoegen ervan in de article. De code ging dan 'stuk'. Door te weinig tijd heb ik dit helaas niet kunnen 'repareren' en heb ik de oude div weer erbij gehaald. De nieuwe D-pad staat wel in de code (HTML & CSS), maar staat in het 'grijs'. 
 
 
   ### Bevinding 3:
-  ...
+ Voor Google en screenreaders is het beter om een h1 in een article als eerste op te nemen. 
+
+  #### oplossing:
+Ik heb dit verwerkt in de eerste article van de Game Boy 1989. Bij de GameBoy Pocket, Color en Advance SP heb ik dit ook geprobeerd, maar werkte vervolgens mijn CSS er niet meer van... Ik denk dat het iets te maken heeft met "nth-of-type" dat makkelijk te repareren is, alleen heb ik het door te weinig nog niet kunnen vinden. Vandaar dat deze feedback alleen bij de de Game Boy 1989 is verwerkt.  
+
+
+  ### Bevinding 4:
+Div bij regel 154 en 155 van HTML kunnen beter vervangen worden door iets wat netter is. 
+
+  #### oplossing:
+Ik weet dat deze div niet netjes is. Deze div heb ik gebruikt om een  '3D schaduw' te maken. Ik had eerst geprobeerd een section te stijlen, maar dit lukte niet. Ik denk dat dit wederom te maken heeft met een "nth-of-type" foutje. Voor nu heb ik even gebruik gemaakt van 'plakband' (door een div te gebruiken), maar het is de bedoeling dat als ik tijd over heb dit op een betere manier ga realiseren. 
+
+
+
+  ### Bevinding 5:
+Animatie van de la ontbreekt. 
+
+  #### oplossing:
+Ik heb een animatie gemaakt wanneer de gebruiker de la open doet. De la is ook te bedienen met de pijltjes toetsen (pijltje naar boven en beneden).
 
 </details>
 
@@ -185,13 +211,18 @@ Wanneer de gebruiker op een bepaalde knop drukt zal er een video afspelen met ee
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/5.png" width="700px" alt="eindproduct la dicht">
+  
+  <img src="readme-images/6.png" width="700px" alt="eindproduct la open">
+  
+  <img src="readme-images/7.png" width="700px" alt="eindproduct la open">
+  
+  <img src="readme-images/8.png" width="700px" alt="eindproduct la open">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  
 
 
   ### Dit was lastig/Is niet gelukt:
