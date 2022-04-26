@@ -225,5 +225,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 12. Animatie laten stoppen bij laatste frame: https://stackoverflow.com/questions/4359627/stopping-a-css3-animation-on-last-frame
 13. JavaScript keycode: https://keycode.info/for/arrow-up
 14. Schaduw randen van Game Boy oefening: https://codepen.io/shooft/pen/zYpezwG?editors=1100
+15. Muziekje Game Boy 1989: https://freesound.org/people/milton./sounds/105251/?page=1#comment
 
 </details>

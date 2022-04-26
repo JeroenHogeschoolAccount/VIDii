@@ -68,7 +68,6 @@ function infoTeZien6() {
 
 
 
-
 // La open doen
 var deButtonLa = document.getElementById("laButton");
 var deLa = document.getElementById("la");
@@ -94,4 +93,18 @@ document.addEventListener('keydown', function (e) {
 
 
 
+// Muziek
+// Ik wilde graag iets met geluid proberen, helaas kreeg ik het zelf niet voor elkaar. Ik zag toevallig dat Amber ook iets met geluid had gedaan - en heb daarom naar haar JavaScript bestand gekeken. Hier heb ik van geleerd en dit vervolgens toegepast in mijn werk.
+var geluidAanDoen = document.querySelector(".muziekje");
+
+var audioBestand = document.querySelector("main> ol > li:first-of-type > audio");
+geluidAanDoen.addEventListener("click", muziekGaatAan);
+
+function muziekGaatAan() {
+    if (audioBestand.paused ) {
+        audioBestand.play();
+    } else {
+        audioBestand.pause();
+    }
+}
 

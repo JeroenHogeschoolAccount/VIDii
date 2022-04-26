@@ -51,6 +51,8 @@ ol {
     --kleurGameBoy1989Blauw: #1C2162;
     --kleurGameBoyABGrijs: #696969;
     --kleurNintendoDSWit: white;
+    --hoogteLaGameboy: 2.2em;
+    --breedteGameAfbeelding:7em;
 }
 
 @media (prefers-color-scheme:dark) {
@@ -148,7 +150,7 @@ ol li:nth-of-type(1) article {
     position: absolute;
     height: 16em;
     width: 10em;
-    top: 2.2em;
+    top: var(--hoogteLaGameboy);
     left: 2.1em;
     background-color: #C1BEB9;
     border-radius: var(--randGameBoy1989Pocket);
@@ -458,7 +460,7 @@ ol li:nth-of-type(2) article {
     position: absolute;
     width: 10em;
     height: 16em;
-    top: 2.2em;
+    top: var(--hoogteLaGameboy);
     left: 15.3em;
     background-color: #F4D405;
     border-radius: var(--randGameBoy1989Pocket);
@@ -1644,7 +1646,7 @@ ol li:nth-of-type(5) article section:nth-of-type(3) div:nth-of-type(1)::before {
 /* Oude game 1 behuizing */
 ol li:nth-of-type(6) article {
     position: absolute;
-    width: 7em;
+    width: var(--breedteGameAfbeelding);
     height: 8em;
     top: 28.3em;
     left: 3.5em;
@@ -1729,7 +1731,7 @@ ol li:nth-of-type(6) article section:nth-of-type(1) img:nth-of-type(1) {
 /* Game 2 behuizing */
 ol li:nth-of-type(7) article {
     position: absolute;
-    width: 7em;
+    width: var(--breedteGameAfbeelding);
     height: 8em;
     top: 30em;
     left: 8em;
