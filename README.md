@@ -235,7 +235,7 @@ Ik ben me hiervan bewust en dit lijkt ook echt als een beginnersfout. Ik heb gep
 
   ### Dit was lastig/Is niet gelukt:
   In het begin vond ik het lastig om de la te maken. Ik wist niet meer zo goed hoe ik dit het beste kon doen. Docent Sanne had een beginnetje voor me gemaakt. Dit hielp me goed op weg. Ik ben begonnen om de voorwerpen met CSS te maken. Nadat ik ze allemaal had gemaakt moesten ze in een ol en li. Dit kreeg ik niet voor elkaar zonder dat mijn website 'heel' bleef. Ik heb hierover een vraag gesteld en met het antwoord van Sanne kwam ik weer verder. Het heeft me wel erg veel tijd gekost, doordat de "nth-of-type" niet meer juist was. Soms was ik uren bezig om te vinden waarom sommige voorwerpen geen vormgeving meer hadden. Uiteindelijk het probleem gevonden en is het achteraf heel logisch... Verder kwam ik wel in tijdnood waardoor ik niet alle foutjes/verbeteringen heb kunnen vinden/repareren/uitvoeren (van de feedback - vermeld in dit verslag). Zoals het vormgeven van de focus state, korter maken van de hele code (dubbel geschreven regels CSS weghalen), D-pad veranderen in een button, elke h1 bovenaan de article zetten, de dpad id naar class veranderen en een div van de 3D schaduw te veranderen naar een section.  
-  Oh en ik wilde ook nog een Nintendo switch maken die ergens zou liggen op de grond (onder de la), maar door te weinig tijd ben ik hier niet aan toe gekomen. 
+  Oh en ik wilde ook nog een Nintendo switch maken die ergens zou liggen op de grond (onder de la), maar door te weinig tijd ben ik hier niet aan toegekomen. 
   
   Ik heb wel een deel van mijn code korter kunnen maken (niet alles want ik kwam in tijdnood). Hieronder is een before and after te zien. 
   
