@@ -87,31 +87,20 @@ ol {
     width: 70em;
     height: 40em;
     left: 10em;
-    margin-top: -41em;
+    transform:translateY(-40.1em);
     background-color: #c2c2c2;
     background-color: #e0e0e0;
     background-color: #e8e8e8;
     border-style: solid;
     border-color: var(--kleurLa);
     border-width: 0 5em;
+    transition: transform 2.5s cubic-bezier(0.33, 1, 0.68, 1);
     box-shadow: var(--schaduwLa);
 }
 
 /* De la dicht*/
 #la.open {
-    margin-top: -45em;
-    animation: laGaatOpen 2.5s cubic-bezier(0.33, 1, 0.68, 1);
-    animation-fill-mode: forwards;
-}
-
-@keyframes laGaatOpen {
-    0% {
-        margin-top: -41em;
-    }
-
-    100% {
-        margin-top: 0;
-    }
+transform: translateY(0em);
 }
 
 /* button van de la voor JavaScript*/

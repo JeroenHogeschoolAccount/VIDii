@@ -239,9 +239,9 @@ Ik ben me hiervan bewust en dit lijkt ook echt als een beginnersfout. Ik heb gep
   
   Ik heb wel een deel van mijn code korter kunnen maken (niet alles want ik kwam in tijdnood). Hieronder is een before and after te zien. 
   
-  <img src="readme-images/9.png" width="700px" alt="CSS code korter gemaakt - oud">
+  <img src="readme-images/9.png" width="500px" alt="CSS code korter gemaakt - oud">
   
-  <img src="readme-images/10.png" width="700px" alt="CSS code korter gemaakt - nieuw">
+  <img src="readme-images/10.png" width="500px" alt="CSS code korter gemaakt - nieuw">
   
 </details>
 
