@@ -99,6 +99,7 @@ ol {
 }
 
 /* De la dicht*/
+/* Bron: Hulp van Sanne*/
 #la.open {
 transform: translateY(0em);
 }
@@ -2416,8 +2417,6 @@ ol li:nth-of-type(11) article:hover {
     left: 0.07em;
     opacity: 0;
 }
-
-
 
 
 

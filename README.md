@@ -229,7 +229,7 @@ Ik ben me hiervan bewust en dit lijkt ook echt als een beginnersfout. Ik heb gep
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Ik vond het een leuk vak en ook een hele leuke opdracht. Ik had vorig jaar het vak Frontend voor Designers gevolgd, dus ik wist wel al wat van CSS af. Echter was het wel al weer bijna een jaar geleden, dus ik moest wel weer echt even inkomen. Ik ben uiteindelijk blij met het visuele eindresultaat. Ik heb gekozen om alles te maken met CSS - het kostte me erg veel tijd, maar het geeft me uiteindelijk wel een veel beter gevoel. Illustraties maken in Illustrator voelt voor mij toch een beetje als 'valsspelen' bij dit vak. Doordat ik alles met CSS heb gemaakt heb ik ook weer meer geleerd over het maken van voorwerpen/vormen. Ook heb ik geleerd hoe ik geluid met HTMl & JavaScript kan schrijven. Dit wist ik tot heden niet, maar wilde ik wel altijd al graag leren. Ook is het gelukt om met JavaScript de buttons werkend te krijgen.  
+  Ik vond het een leuk vak en ook een hele leuke opdracht. Ik had vorig jaar het vak Frontend voor Designers gevolgd, dus ik wist wel al wat van CSS af. Echter was het wel al weer bijna een jaar geleden, dus ik moest wel weer echt even inkomen. Ik ben uiteindelijk blij met het visuele eindresultaat. Ik heb gekozen om alles te maken met CSS - het kostte me erg veel tijd, maar het geeft me uiteindelijk wel een veel beter gevoel. Illustraties maken in Illustrator voelt voor mij toch een beetje als 'valsspelen' bij dit vak. Doordat ik alles met CSS heb gemaakt heb ik ook weer meer geleerd over het maken van voorwerpen/vormen. Ook heb ik geleerd hoe ik geluid met HTMl & JavaScript kan schrijven. Dit wist ik tot heden niet, maar wilde ik wel altijd al graag leren. Ook is het gelukt om met JavaScript de buttons werkend te krijgen en heb ik geleerd dat ik met transform:translateY veel soepelere animaties kan maken. 
   
 
 
@@ -274,5 +274,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 16. Lettertype Roboto: https://fonts.google.com/specimen/Roboto?query=roboto
 17. Lettertype Fuzzy Bubbles: https://fonts.google.com/specimen/Fuzzy+Bubbles?query=fuzzy
 18. Lettertype Patrick Hand: https://fonts.google.com/specimen/Patrick+Hand?query=patrick
+
 
 </details>

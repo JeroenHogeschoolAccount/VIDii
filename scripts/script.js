@@ -107,4 +107,3 @@ function muziekGaatAan() {
         audioBestand.pause();
     }
 }
-
