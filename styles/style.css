@@ -23,6 +23,10 @@ button:not([disabled]) {
     cursor: darkgrey;
 }
 
+butoton:hover {
+    cursor: pointer;
+}
+
 main {
     height: 10em;
 }
@@ -35,6 +39,7 @@ ol {
     margin: 0;
     position: absolute;
 }
+
 
 :root {
     /*Algemeen + random*/
@@ -109,7 +114,7 @@ ol {
     }
 }
 
-/* Knop van de la*/
+/* button van de la voor JavaScript*/
 #laButton {
     position: absolute;
     width: 6.8em;
@@ -133,7 +138,7 @@ main ol:nth-of-type(1)::after {
     background-color: var(--kleurLa);
 }
 
-/* La knop*/
+/* La knop design*/
 main ol:nth-of-type(1)::before {
     content: "";
     position: absolute;
@@ -169,8 +174,6 @@ ol li:nth-of-type(1) article {
         inset .25em .25em .25em rgb(255 255 255),
         1em 1em 2em rgb(0 0 0 / .05),
         0.2em 0.2em 0.2em rgb(0 0 0 / .1);
-
-    1em 1em 1em black;
 }
 
 ol li:nth-of-type(1) article:nth-of-type(1):hover {
@@ -227,8 +230,8 @@ ol li:nth-of-type(1) article:nth-of-type(1) h1:nth-of-type(1)::after {
 ol li:nth-of-type(1) article:nth-of-type(1) h1:nth-of-type(1)::before {
     content: "TM";
     position: absolute;
-    left: 18.4em;
     top: 1.7em;
+    left: 18.4em;
     font-size: 4.5px;
     font-weight: bolder;
     color: var(--kleurGameBoy1989Blauw);
@@ -238,14 +241,13 @@ ol li:nth-of-type(1) article:nth-of-type(1) h1:nth-of-type(1)::before {
 /* Game Boy 1989 button A */
 ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(1) {
     position: absolute;
-    width: 1.5em;
-    height: 1.5em;
-    left: 9.55em;
+    width: 1.51em;
+    height: 1.51em;
     top: 11.5em;
+    left: 9.55em;
     border-radius: 50%;
     background-color: #7F0947;
     border-style: none;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
     box-shadow: 0px 1px 3px black, 0px 0px 2px black inset;
 }
 
@@ -272,14 +274,13 @@ ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(1):active {
 /* Game Boy 1989 button B */
 ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(2) {
     position: absolute;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.51em;
+    height: 1.51em;
     left: 7.8em;
     top: 12.4em;
     border-radius: 50%;
     background-color: #7F0947;
     border-style: none;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
     box-shadow: 0px 1px 3px black, 0px 0px 2px black inset;
 }
 
@@ -326,15 +327,6 @@ ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(3)::after {
     font-weight: bold;
 }
 
-ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(3):hover {
-    cursor: pointer;
-}
-
-ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(3):active {
-    cursor: pointer;
-    box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
-}
-
 /* Game Boy 1989 button start */
 ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(4) {
     position: absolute;
@@ -358,11 +350,11 @@ ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(4)::after {
     font-weight: bold;
 }
 
-ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(4):hover {
+ol li:nth-of-type(1) article:nth-of-type(1) button:hover{
     cursor: pointer;
 }
 
-ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(4):active {
+ol li:nth-of-type(1) article:nth-of-type(1) button:active{
     cursor: pointer;
     box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
@@ -404,59 +396,39 @@ ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) {
     -webkit-transform: rotate(-30deg);
 }
 
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div{
+    position: absolute;
+    width: 0.25em;
+    height: 1.6em;
+    border-radius: 1em;
+    background: radial-gradient(#b3b3b3, #757573);
+    box-shadow: var(--schaduwLuidsprekerGameBoy1989);
+}
+
 ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(1) {
     display: none;
 }
 
 ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(2) {
-    position: absolute;
-    width: 0.25em;
-    height: 1.6em;
     margin-left: 0.6em;
-    background: radial-gradient(#b3b3b3, #757573);
-    border-radius: 1em;
-    box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
 ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(3) {
-    position: absolute;
-    width: 0.25em;
-    height: 1.6em;
     margin-left: 1.24em;
-    border-radius: 1em;
-    background: radial-gradient(#b3b3b3, #757573);
-    box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
 ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(4) {
-    position: absolute;
-    width: 0.25em;
-    height: 1.6em;
     margin-left: 1.86em;
-    border-radius: 1em;
-    background: radial-gradient(#b3b3b3, #757573);
-    box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
 ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(5) {
-    position: absolute;
-    width: 0.25em;
-    height: 1.6em;
     margin-left: 2.5em;
-    border-radius: 1em;
-    background: radial-gradient(#b3b3b3, #757573);
-    box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
 
 ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div:nth-of-type(6) {
-    position: absolute;
-    width: 0.25em;
-    height: 1.6em;
     margin-left: 3.14em;
-    border-radius: 1em;
-    background: radial-gradient(#b3b3b3, #757573);
-    box-shadow: var(--schaduwLuidsprekerGameBoy1989);
 }
+
 
 
 
@@ -555,14 +527,14 @@ ol li:nth-of-type(2) article h1::before {
 /* Game Boy Pocket button A */
 ol li:nth-of-type(2) article button:nth-of-type(1) {
     position: absolute;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.52em;
+    height: 1.52em;
     left: 9.55em;
     top: 11.5em;
     background-color: var(--kleurKnoppenGameboy);
     border-radius: 50%;
     border-style: none;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2.1px black;
 }
 
 ol li:nth-of-type(2) article:nth-of-type(1) button:nth-of-type(1)::after {
@@ -589,14 +561,14 @@ ol li:nth-of-type(2) article button:nth-of-type(1):active {
 /* Game Boy Pocket button B */
 ol li:nth-of-type(2) article button:nth-of-type(2) {
     position: absolute;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.52em;
+    height: 1.52em;
     left: 7.8em;
     top: 12.4em;
     background-color: var(--kleurKnoppenGameboy);
     border-radius: 50%;
     border-style: none;
-    box-shadow: 0px 0px 1px black, 0px 0.1px 2px black;
+    box-shadow: 0px 0px 1px black, 0px 0.1px 2.1px black;
 }
 
 ol li:nth-of-type(2) article button:nth-of-type(2)::after {
@@ -895,64 +867,43 @@ ol li:nth-of-type(3) article h1 {
     z-index: 1;
 }
 
-ol li:nth-of-type(3) article span:nth-of-type(1) {
+ol li:nth-of-type(3) article span{
     position: relative;
-    left: 6.6em;
-    top: 8.4em;
     font-family: 'Kalam', cursive, sans-serif;
     font-size: 0.8em;
     font-style: italic;
     font-weight: bold;
-    color: #BB4B7E;
     z-index: 1;
+}
+
+ol li:nth-of-type(3) article span:nth-of-type(1) {
+    left: 6.6em;
+    top: 8.4em;
+    color: #BB4B7E;
 }
 
 ol li:nth-of-type(3) article span:nth-of-type(2) {
-    position: relative;
     top: 8.4em;
     left: 6.2em;
-    font-style: italic;
-    font-size: 0.8em;
-    font-weight: bold;
-    font-family: 'Kalam', cursive, sans-serif;
     color: #6E77B8;
-    z-index: 1;
 }
 
 ol li:nth-of-type(3) article span:nth-of-type(3) {
-    position: relative;
     top: 8.4em;
     left: 5.9em;
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 0.8em;
-    font-style: italic;
-    font-weight: bold;
     color: #96D096;
-    z-index: 1;
 }
 
 ol li:nth-of-type(3) article span:nth-of-type(4) {
-    position: relative;
     top: 8.4em;
     left: 5.5em;
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 0.8em;
-    font-style: italic;
-    font-weight: bold;
     color: yellow;
-    z-index: 1;
 }
 
 ol li:nth-of-type(3) article span:nth-of-type(5) {
-    position: relative;
     top: 8.4em;
     left: 5.1em;
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 0.8em;
-    font-style: italic;
-    font-weight: bold;
     color: #0DA9C7;
-    z-index: 1;
 }
 
 ol li:nth-of-type(3) article h1::before {
