@@ -107,3 +107,18 @@ function muziekGaatAan() {
         audioBestand.pause();
     }
 }
+
+
+// La 
+var geluidAanDoenJa = document.querySelector(".test");
+
+var audioBestandJa = document.querySelector("main> ol > li:first-of-type > audio:last-of-type");
+geluidAanDoenJa.addEventListener("click", muziekGaatAanJa);
+
+function muziekGaatAanJa() {
+    if (audioBestandJa.paused ) {
+        audioBestandJa.play();
+    } else {
+        audioBestandJa.pause();
+    }
+}

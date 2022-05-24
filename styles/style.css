@@ -10,13 +10,24 @@
 /* ALGEMENE STYLING */
 /********************/
 
+html {
+    height: 100%;
+}
+
 body {
     height: 100%;
     margin: 0;
     /*    background-image: url(https://images.pexels.com/photos/168448/pexels-photo-168448.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);*/
     /*    background-image: url(https://images.pexels.com/photos/168438/pexels-photo-168438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);*/
+    /*
     background-size: 100%;
     background-color: var(--achtergrond);
+    background-image: linear-gradient(to right bottom, #9b00ff, #0084ff, #00b3ff, #00d3ff, #12ebd8);
+    background-image: linear-gradient(to right top, #465fff, #3f51fb, #3a41f7, #382ef1, #3812eb);
+    background-image: linear-gradient(to right top, #ff89e5, #e365e2, #bf43e3, #8f25e6, #3812eb);
+*/
+    /*    background-image: linear-gradient(to right top, #6ae5ff, #00c4ff, #009dff, #006cff, #2100ff);*/
+    background-image: linear-gradient(to right top, #1a0062, #210086, #2500ad, #2600d5, #2100ff);
 }
 
 button:not([disabled]) {
@@ -40,6 +51,11 @@ ol {
     position: absolute;
 }
 
+button:focus{
+    
+ outline: 3px dashed #4bff14;
+}
+
 
 :root {
     /*Algemeen + random*/
@@ -58,11 +74,11 @@ ol {
     --kleurGameBoy1989Blauw: #1C2162;
     --kleurGameBoyABGrijs: #696969;
     --kleurNintendoDSWit: white;
-    
+
     /*Schaduw*/
     --schaduwLa: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
     --schaduwLaKnop: inset 0px 10px 6px 1px rgba(0, 0, 0, 0.1);
-    
+
     /*Afstand*/
     --hoogteLaGameboy: 2.2em;
     --breedteGameAfbeelding: 7em;
@@ -76,6 +92,53 @@ ol {
 
 
 
+/**************/
+/* TEKST UITLEG  */
+/**************/
+
+/* Section uitleg */
+main section:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section uitleg hoofdstuk 1  */
+main section:nth-of-type(1) h1 {
+    position: absolute;
+    top: 10em;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+    animation: aanEnUit 1s infinite ease;
+}
+
+/* Section uitleg p  */
+main section:nth-of-type(1) p {
+    position: absolute;
+    top: 24em;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 1em;
+    animation: aanEnUit 1s infinite ease;
+}
+
+/* Animatie aan en uit */
+@keyframes aanEnUit {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 
 /**************/
 /* DE OUDE LA */
@@ -87,7 +150,7 @@ ol {
     width: 70em;
     height: 40em;
     left: 10em;
-    transform:translateY(-40.1em);
+    transform: translateY(-40.1em);
     background-color: #c2c2c2;
     background-color: #e0e0e0;
     background-color: #e8e8e8;
@@ -98,10 +161,15 @@ ol {
     box-shadow: var(--schaduwLa);
 }
 
+/* La stukje loeren*/
+#la:hover {
+    transform: translateY(-38em);
+}
+
 /* De la dicht*/
 /* Bron: Hulp van Sanne*/
 #la.open {
-transform: translateY(0em);
+    transform: translateY(0em);
 }
 
 /* button van de la voor JavaScript*/
@@ -202,10 +270,10 @@ ol li:nth-of-type(1) article:nth-of-type(1) div:nth-of-type(1) {
 /* Game Boy 1989 naam */
 ol li:nth-of-type(1) article:nth-of-type(1) h1:nth-of-type(1) {
     position: absolute;
-    font-family: Gloria Hallelujah, sans-serif;
-    font-size: 8px;
     top: 13.4em;
     left: 1.7em;
+    font-family: Gloria Hallelujah, sans-serif;
+    font-size: 8px;
     color: var(--kleurGameBoy1989Blauw);
 }
 
@@ -340,11 +408,11 @@ ol li:nth-of-type(1) article:nth-of-type(1) button:nth-of-type(4)::after {
     font-weight: bold;
 }
 
-ol li:nth-of-type(1) article:nth-of-type(1) button:hover{
+ol li:nth-of-type(1) article:nth-of-type(1) button:hover {
     cursor: pointer;
 }
 
-ol li:nth-of-type(1) article:nth-of-type(1) button:active{
+ol li:nth-of-type(1) article:nth-of-type(1) button:active {
     cursor: pointer;
     box-shadow: inset 0px 0.1px 1px 0px rgba(0, 0, 0, 0.6);
 }
@@ -386,7 +454,7 @@ ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) {
     -webkit-transform: rotate(-30deg);
 }
 
-ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div{
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(3) div {
     position: absolute;
     width: 0.25em;
     height: 1.6em;
@@ -857,7 +925,7 @@ ol li:nth-of-type(3) article h1 {
     z-index: 1;
 }
 
-ol li:nth-of-type(3) article span{
+ol li:nth-of-type(3) article span {
     position: relative;
     font-family: 'Kalam', cursive, sans-serif;
     font-size: 0.8em;

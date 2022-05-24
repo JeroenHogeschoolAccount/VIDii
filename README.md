@@ -243,6 +243,19 @@ Ik ben me hiervan bewust en dit lijkt ook echt als een beginnersfout. Ik heb gep
   
   <img src="readme-images/10.png" width="500px" alt="CSS code korter gemaakt - nieuw">
   
+  
+  
+  ### Eerste beoordeling ziek & kleine aanpassingen
+  Helaas geen gebruik kunnen maken van de eerste beoordeling wegens griep, ik ga daarom gebruik maken van het moment voor de herkansing. Voor dit moment heb ik wel wat kleine aanpassingen gedaan, zoals een andere achtergrondkleur, een korte uitleg van 'besturing', eigen  icoontje gemaakt, een geluid van een la toegevoegd en een custom focus state gemaakt. 
+  Door (medische) omstandigheden ben ik niet aan toegekomen om alle foutjes van vóór beoordeling 1 weg te werken. 
+  
+  
+  <img src="readme-images/11.png" width="700px" alt="eindproduct la open">
+  
+  <img src="readme-images/12.png" width="700px" alt="eindproduct la open">
+  
+  <img src="readme-images/13.png" width="700px" alt="eindproduct la open">
+  
 </details>
 
 
@@ -274,6 +287,8 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 16. Lettertype Roboto: https://fonts.google.com/specimen/Roboto?query=roboto
 17. Lettertype Fuzzy Bubbles: https://fonts.google.com/specimen/Fuzzy+Bubbles?query=fuzzy
 18. Lettertype Patrick Hand: https://fonts.google.com/specimen/Patrick+Hand?query=patrick
+19. Lettertype VT323: https://fonts.google.com/specimen/VT323
+20. Geluid la: https://freesound.org/people/Flem0527/sounds/630015/
 
 
 </details>
