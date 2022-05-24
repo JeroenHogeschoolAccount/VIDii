@@ -295,6 +295,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 18. Lettertype Patrick Hand: https://fonts.google.com/specimen/Patrick+Hand?query=patrick
 19. Lettertype VT323: https://fonts.google.com/specimen/VT323
 20. Geluid la: https://freesound.org/people/Flem0527/sounds/630015/
+21. Mooie kleurtjes: https://mycolor.space/gradient
 
 
 </details>
