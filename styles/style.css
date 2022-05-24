@@ -50,11 +50,7 @@ ol {
     margin: 0;
     position: absolute;
 }
-
-button:focus{
-    
- outline: 3px dashed #4bff14;
-}
+                                                                
 
 
 :root {
@@ -216,7 +212,7 @@ main ol:nth-of-type(1)::before {
 /* GAME BOY 1989 */
 /*****************/
 
-/* Game Boy 1989 behuizing*/
+/* Game Boy 1989 behuizing */
 ol li:nth-of-type(1) article {
     position: absolute;
     height: 16em;
@@ -253,6 +249,34 @@ ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) {
 ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) :hover {
     background-image: url(../images/4.png);
     background-size: cover;
+}
+
+/* Game Boy 1989 lampje */
+ol li:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    width: 0.4em;
+    height: 0.4em;
+    top: 2em;
+    left: 0.4em;
+    z-index: 4;
+    background-color: lime;
+    border-radius: 50%;
+    animation: lampje 2s infinite;
+}
+
+@keyframes lampje{
+    0%{
+        box-shadow: 0em 0em 3.5em 0.1em lime;
+    }
+    
+    50%{
+        box-shadow: 0em 0em 2.3em 0.8em lime;
+    }
+    
+      100%{
+        box-shadow: 0em 0em 3.5em 0.1em lime;
+    }
 }
 
 /* Game Boy 1989 scherm */
@@ -533,6 +557,34 @@ ol li:nth-of-type(2) article section:nth-of-type(1) {
 ol li:nth-of-type(2) article section:nth-of-type(1) :hover {
     background-image: url(../images/5.png);
     background-size: cover;
+}
+
+/* Game Boy Pocket lampje */
+ol li:nth-of-type(2) article:nth-of-type(1) section:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    width: 0.3em;
+    height: 0.3em;
+    top: 2em;
+    left: 0.4em;
+    z-index: 4;
+    background-color: red;
+    border-radius: 50%;
+    animation: lampjeTwee 4s infinite;
+}
+
+@keyframes lampjeTwee{
+    0%{
+        box-shadow: 0em 0em 3.5em 0.1em red;
+    }
+    
+    50%{
+        box-shadow: 0em 0em 1.7em 0.8em red;
+    }
+    
+      100%{
+        box-shadow: 0em 0em 3.5em 0.1em red;
+    }
 }
 
 /* Game Boy Pocket scherm  */

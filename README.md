@@ -246,15 +246,21 @@ Ik ben me hiervan bewust en dit lijkt ook echt als een beginnersfout. Ik heb gep
   
   
   ### Eerste beoordeling ziek & kleine aanpassingen
-  Helaas geen gebruik kunnen maken van de eerste beoordeling wegens griep, ik ga daarom gebruik maken van het moment voor de herkansing. Voor dit moment heb ik wel wat kleine aanpassingen gedaan, zoals een andere achtergrondkleur, een korte uitleg van 'besturing', eigen  icoontje gemaakt, een geluid van een la toegevoegd en een custom focus state gemaakt. 
+  Helaas geen gebruik kunnen maken van de eerste beoordeling wegens griep, ik ga daarom gebruik maken van het moment voor de herkansing. Voor dit moment heb ik wel wat extra 'dingen' toegevoegd, zoals een andere achtergrondkleur, een korte uitleg van 'besturing', eigen  icoontje gemaakt, geluid van een la toegevoegd en twee lampjes gemaakt met animatie.
   Door (medische) omstandigheden ben ik niet aan toegekomen om alle foutjes van vóór beoordeling 1 weg te werken. 
+  
+  Hieronder is het eindresultaat te zien.
   
   
   <img src="readme-images/11.png" width="700px" alt="eindproduct la open">
   
-  <img src="readme-images/12.png" width="700px" alt="eindproduct la open">
+  <img src="readme-images/1200.png" width="700px" alt="eindproduct la open">
   
-  <img src="readme-images/13.png" width="700px" alt="eindproduct la open">
+  <img src="readme-images/1300.png" width="700px" alt="eindproduct la open">
+  
+  <img src="readme-images/14.png" width="700px" alt="eindproduct la open">
+  
+  
   
 </details>
 
