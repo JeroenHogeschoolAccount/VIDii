@@ -142,10 +142,13 @@ main section:nth-of-type(1) p {
 
 /* La zijkant en onderkant*/
 #la {
+    
+    --breedte:70em;
+    
     position: relative;
-    width: 70em;
+    width: var(--breedte);
     height: 40em;
-    left: 10em;
+    left: calc(50% - var(--breedte) / 2);
     transform: translateY(-40.1em);
     background-color: #c2c2c2;
     background-color: #e0e0e0;
